@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body class="WebSiteHomePage">
@@ -19,25 +23,24 @@
                 </div>
                 <div class="right">
                     <nav>
-                        <ul class="menuBox">
-                            <li class="menuItem"><a href="#">ABOUT US</a></li>
-                            <li class="menuItem"><a href="#">PRODUCTS</a></li>
-                            <li class="menuItem"><a href="#">SOLUTIONS</a></li>
-                            <li class="menuItem"><a href="#">BLOG</a></li>
-                            <li class="menuItem"><a href="#">NEWS</a></li>
-                            <li class="menuItem"><a href="#">CUSTOMER STORIES</a></li>
+                        <ul class="menuBox" itemscope itemtype="https://google.com">
+                            <li class="menuItem" itemprop="name"><a href="#" itemprop="url">ABOUT US</a></li>
+                            <li class="menuItem" itemprop="name"><a href="#" itemprop="url">PRODUCTS</a></li>
+                            <li class="menuItem" itemprop="name"><a href="#" itemprop="url">SOLUTIONS</a></li>
+                            <li class="menuItem" itemprop="name"><a href="#" itemprop="url">BLOG</a></li>
+                            <li class="menuItem" itemprop="name"><a href="#" itemprop="url">NEWS</a></li>
+                            <li class="menuItem" itemprop="name"><a href="#" itemprop="url">CUSTOMER STORIES</a></li>
+                            <li class="menuItem" itemprop="name"><a href="#" class="btn" itemprop="url">CONTACT US</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="funcBox">
-                        <a href="#" class="btn">Contact Us</a>
-                        <div class="iconBox" class="red">
-                            <a href="#">
-                                <img src="./svg/Vector.svg" alt="語言">
-                            </a>
-                            <a href="#">
-                                <img src="./svg/Feather Icon.svg" alt="搜尋">
-                            </a>
-                        </div>
+                        <a href="#">
+                            <img src="./svg/language.svg" alt="語言">
+                        </a>
+                        <a href="#">
+                            <img src="./svg/search.svg" alt="搜尋">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -52,7 +55,7 @@
                 </figure>
                 <div class="wrap">
                     <div class="bannerBox">
-                        <div class="leftBox">
+                        <div class="titleBox">
                             <div class="title">
                                 Find Harmony Between
                                 Movement and Stillness
@@ -88,8 +91,158 @@
                     </div>
                 </div>
             </div>
+            <div class="aboutArea blue"> about區
+                <div class="wrap">
+                    <div class="aboutBox">
+                        <div class="leftBox">
+                            <div class="titleBox">
+                                <div class="title"></div>
+                                <div class="line"></div>
+                                <div class="subtitle"></div>
+                                <div class="btnBox">
+                                    <a href="#  " class="btn"></a>
+                                </div>
+                            </div>
+                            <div class="featureBox">
+                                <div class="featureItem">
+                                    <figure class="featureIcon">
+                                        <img src="" alt="坐著圖示">
+                                    </figure>
+                                    <div class="featureTitle"></div>
+                                    <div class="featureText"></div>
+                                </div>
+                                <div class="featureItem">
+                                    <figure class="featureIcon">
+                                        <img src="" alt="坐著圖示">
+                                    </figure>
+                                    <div class="featureTitle"></div>
+                                    <div class="featureText"></div>
+                                </div>
+                            </div>
+                            <div class="numberBox">
+                                先空著，這邊要看公司套件的數字動畫效果
+                            </div>
+                        </div>
+                        <div class="rightBox">
+                            slick輪播
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teamArea wood">
+                <div class="wrap">
+                    <div class="teamBox">
+                        <div class="titleBox pink">
+                            <div class="title">Our Team</div>
+                            <div class="line"></div>
+                            <div class="text">Our instructors come from diverse backgrounds, including yoga therapy,
+                                Pilates, rehabilitation, and body–mind training. With a focus on scientific
+                                movement, mindful alignment, and safety-first instruction, we guide each student
+                                with precision and care.
+                            </div>
+                            <div class="btnBox">
+                                <a href="#" class="btn">
+                                    Learn more
+                                    <img src="./svg/btnArrow.svg" alt="按鈕箭頭">
+                                </a>
+                            </div>
+                            <div class="arrowBox"></div>
+                        </div>
+                        <div class="rightBox yellow">
+                            <div class="teamList">
+                                <div class="teamItem">
+                                    <a href="#" class="linkWrap"></a>
+                                    <div class="item">
+                                        <figure class="Img">
+                                            <img src="./img/team1.png" alt="團隊成員">
+                                        </figure>
+                                        <div class="textBox">
+                                            <div class="top">
+                                                <div class="tag">Pilates</div>
+                                                <div class="name">Sora Kim</div>
+                                            </div>
+                                            <div class="desc">Focuses on breathwork, mindfulness practices, and
+                                                emotional grounding.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="teamItem">
+                                    <a href="#" class="linkWrap"></a>
+                                    <div class="item">
+                                        <figure class="Img">
+                                            <img src="./img/team1.png" alt="團隊成員">
+                                        </figure>
+                                        <div class="textBox">
+                                            <div class="top">
+                                                <div class="tag">Pilates</div>
+                                                <div class="name">Sora Kim</div>
+                                            </div>
+                                            <div class="desc">Focuses on breathwork, mindfulness practices, and
+                                                emotional grounding.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="teamItem">
+                                    <a href="#" class="linkWrap"></a>
+                                    <div class="item">
+                                        <figure class="Img">
+                                            <img src="./img/team1.png" alt="團隊成員">
+                                        </figure>
+                                        <div class="textBox">
+                                            <div class="top">
+                                                <div class="tag">Pilates</div>
+                                                <div class="name">Sora Kim</div>
+                                            </div>
+                                            <div class="desc">Focuses on breathwork, mindfulness practices, and
+                                                emotional grounding.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="teamItem">
+                                    <a href="#" class="linkWrap"></a>
+                                    <div class="item">
+                                        <figure class="Img">
+                                            <img src="./img/team1.png" alt="團隊成員">
+                                        </figure>
+                                        <div class="textBox">
+                                            <div class="top">
+                                                <div class="tag">Pilates</div>
+                                                <div class="name">Sora Kim</div>
+                                            </div>
+                                            <div class="desc">Focuses on breathwork, mindfulness practices, and
+                                                emotional grounding.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="arrowBox">
+                            <a href="" class="slickArrow slickPrev">
+                                <img src="./svg/prevArrow.svg" alt="左鍵頭">
+                            </a>
+                            <span class="arrowSeparate"></span>
+                            <a href="" class="slickArrow slickNext">
+                                <img src="./svg/nextArrow.svg" alt="右鍵頭">
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $('.teamList').slick({
+                // appendArrows: $('.teamArea .arrowBox'),
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            });
+        });
+    </script>
 </body>
 
 </html>

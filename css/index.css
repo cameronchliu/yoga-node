@@ -58,8 +58,58 @@ figure {
 
 .wrap {
   width: 100%;
-  max-width: 1415px;
-  margin: auto;
+  max-width: 1515px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.titleBox {
+  width: 50%;
+  max-width: 535px;
+}
+.titleBox > div + div {
+  margin-top: 25px;
+}
+.titleBox .title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  color: #2c4109;
+  font-size: 45px;
+}
+.titleBox .subtitle {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  color: #2c4109;
+  font-size: 24px;
+}
+.titleBox .line {
+  width: 35px;
+  height: 2px;
+  background-color: #2c4109;
+}
+.titleBox .text {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  color: #2c4109;
+  font-size: 16px;
+}
+
+.btnBox .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 160px;
+  height: 45px;
+  background-color: #2c4109;
+  font-family: "Lato";
+  font-weight: 700;
+  color: #fff;
+  font-size: 14px;
+}
+.btnBox .btn img {
+  width: 30px;
+  height: 10px;
 }
 
 header {
@@ -115,30 +165,12 @@ header .funcBox {
   height: 100%;
   display: flex;
 }
-header .funcBox .btn {
+header .funcBox a {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 100%;
   padding: 0 10px;
-  background-color: #2c4109;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 16px;
-}
-header .funcBox .iconBox {
-  display: flex;
-}
-header .funcBox .iconBox a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-}
-header .funcBox .iconBox img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .bannerArea {
@@ -158,52 +190,8 @@ header .funcBox .iconBox img {
   align-items: center;
   height: 100%;
 }
-.bannerArea .leftBox {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  width: 50%;
-  max-width: 535px;
-}
-.bannerArea .leftBox .title {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  color: #2c4109;
+.bannerArea .title {
   font-size: 54px;
-}
-.bannerArea .leftBox .subtitle {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 700;
-  color: #2c4109;
-  font-size: 24px;
-}
-.bannerArea .leftBox .line {
-  width: 35px;
-  height: 2px;
-  background-color: #2c4109;
-}
-.bannerArea .leftBox .text {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  color: #2c4109;
-  font-size: 16px;
-}
-.bannerArea .leftBox .btnBox .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  width: 160px;
-  height: 45px;
-  background-color: #2c4109;
-  font-family: "Lato";
-  font-weight: 700;
-  color: #fff;
-  font-size: 14px;
-}
-.bannerArea .leftBox .btnBox .btn img {
-  width: 30px;
-  height: 10px;
 }
 .bannerArea .rightBox {
   position: relative;
@@ -282,4 +270,79 @@ header .funcBox .iconBox img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.teamArea {
+  padding: 140px 0 110px;
+}
+.teamArea .wrap {
+  max-width: 1770px;
+  padding: 0 50px 0;
+  margin-right: 10px;
+  margin-left: auto;
+}
+.teamArea .teamBox {
+  display: flex;
+  justify-content: space-between;
+}
+.teamArea .titleBox {
+  max-width: 335px;
+}
+.teamArea .rightBox {
+  width: 50%;
+}
+.teamArea .rightBox .teamItem {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  padding: 0 25px;
+}
+.teamArea .rightBox .linkWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.teamArea .rightBox .Img {
+  width: 370px;
+  height: 355px;
+  margin-bottom: 25px;
+}
+.teamArea .rightBox .Img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.teamArea .rightBox .textBox .top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.teamArea .rightBox .textBox .top .tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 30px;
+  background-color: #2c4109;
+  border-radius: 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+}
+.teamArea .rightBox .textBox .top .name {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  color: #2d2d2d;
+  font-size: 26px;
+}
+.teamArea .rightBox .textBox .desc {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  color: #2d2d2d;
+  font-size: 16px;
 }

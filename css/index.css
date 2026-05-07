@@ -395,7 +395,7 @@ header .funcBox a {
 .aboutArea .numberBox .plus {
   display: block;
   position: absolute;
-  right: -30%;
+  right: -25px;
   top: 0;
   font-size: 40px;
 }

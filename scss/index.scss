@@ -127,7 +127,6 @@ $BrownColor: #b4a885;
             width: 100%;
             object-fit: contain;
         }
-        
     }
     .arrowSeparate {
         display: inline-block;
@@ -140,13 +139,14 @@ $BrownColor: #b4a885;
 // --------- header ---------
 
 header {
-    width: 100%;
-    height: 80px;
-
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
+
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
 
     .wrap {
         max-width: 100%;
@@ -184,7 +184,6 @@ header {
 
         .menuItem {
             height: 100%;
-
             a {
                 display: flex;
                 align-items: center;
@@ -192,6 +191,24 @@ header {
                 padding: 0 10px; //增加使用者體驗
 
                 @include text;
+            }
+            &.isBtn {
+                display: flex;
+                align-items: center;
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 190px;
+                height: 50px;
+                background-color: $GreenColor;
+                color: $whiteColor;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: $BrownColor;
+                }
             }
         }
     }

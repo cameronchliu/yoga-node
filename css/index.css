@@ -153,6 +153,26 @@ figure {
   background-color: rgba(44, 65, 9, 0.35);
 }
 
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.icon .arrow {
+  width: 23px;
+  height: 5px;
+}
+.icon img {
+  display: block;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .tag {
   display: inline-flex;
   justify-content: center;
@@ -522,15 +542,8 @@ header .funcBox a {
   position: absolute;
   right: 0;
   top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
   margin-top: 45px;
   margin-right: 30px;
-  border-radius: 50%;
-  border: 1px solid #fff;
 }
 .serviceArea .item .icon .arrow {
   width: 23px;
@@ -603,6 +616,10 @@ header .funcBox a {
   flex-direction: column;
   align-items: center;
 }
+.newsArea .bottomBox {
+  display: flex;
+  gap: 55px;
+}
 .newsArea .item {
   position: relative;
 }
@@ -611,61 +628,85 @@ header .funcBox a {
   inset: 0;
   z-index: 1;
 }
-.newsArea .left .Img {
-  width: 685px;
-  height: 350px;
-  margin-bottom: 20px;
-  overflow: hidden;
-}
-.newsArea .left .Img img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.newsArea .left .Txt .top {
+.newsArea .top {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 15px;
 }
-.newsArea .left .Txt .date {
+.newsArea .date {
   font-family: "Poppins";
   font-weight: 400;
   color: #333;
   font-size: 14px;
 }
-.newsArea .left .Txt .tag {
+.newsArea .tag {
   padding: 15px 15px;
   height: 29px;
   background-color: #333;
 }
-.newsArea .left .Txt .center {
-  margin-bottom: 10px;
-}
-.newsArea .left .Txt .title {
+.newsArea .title {
   margin-bottom: 10px;
   font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #000;
   font-size: 22px;
 }
-.newsArea .left .Txt .desc {
+.newsArea .leftBox {
+  width: 100%;
+  max-width: 685px;
+}
+.newsArea .leftBox .Img {
+  width: 685px;
+  height: 350px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.newsArea .leftBox .Img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.newsArea .leftBox .Txt .center {
+  margin-bottom: 10px;
+}
+.newsArea .leftBox .Txt .desc {
   font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #666;
   font-size: 16px;
 }
-.newsArea .left .Txt .btnBox {
+.newsArea .leftBox .Txt .btnBox {
   width: -moz-fit-content;
   width: fit-content;
   position: relative;
   z-index: 2;
 }
-.newsArea .left .Txt .btn {
+.newsArea .leftBox .Txt .btn {
   justify-content: flex-start;
   background-color: transparent;
   color: #2c4109;
   font-size: 16px;
+}
+.newsArea .rightBox {
+  width: 100%;
+  max-width: 675px;
+}
+.newsArea .rightBox .newsRightList .slick-list {
+  margin: -30px 0;
+}
+.newsArea .rightBox .newsRightList .slick-dots {
+  bottom: -50px;
+}
+.newsArea .rightBox .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+  padding: 25px 0;
+}
+.newsArea .rightBox .icon {
+  border: 1px solid #2c4109;
 }
 
 .teamArea {

@@ -8,6 +8,7 @@ $font-lato: "Lato";
 $font-poppins: "Poppins";
 $GreenColor: #2c4109;
 $whiteColor: #fff;
+$WhiteGrayColor: #dedede;
 $LightGrayColor: #d9d9d9;
 $MidGrayColor: #666;
 $DarkGrayColor: #2d2d2d;
@@ -135,6 +136,25 @@ $BrownColor: #b4a885;
         width: 1px;
         height: 25px;
         background-color: rgba(44, 65, 9, 0.35);
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid $whiteColor;
+    .arrow {
+        width: 23px;
+        height: 5px;
+    }
+    img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
     }
 }
 
@@ -513,15 +533,8 @@ header {
             position: absolute;
             right: 0;
             top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 45px;
-            height: 45px;
             margin-top: 45px;
             margin-right: 30px;
-            border-radius: 50%;
-            border: 1px solid $whiteColor;
             .arrow {
                 width: 23px;
                 height: 5px;
@@ -600,6 +613,10 @@ header {
             align-items: center;
         }
     }
+    .bottomBox {
+        display: flex;
+        gap: 55px;
+    }
     // -------- 兩個slick共用 --------
     .item {
         position: relative;
@@ -609,8 +626,38 @@ header {
         inset: 0;
         z-index: 1;
     }
+
+    .top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .date {
+        @include text(
+            $color: $BlackGrayColor,
+            $family: $font-poppins,
+            $size: 14px,
+            $weight: 400
+        );
+    }
+
+    .tag {
+        padding: 15px 15px;
+        height: 29px;
+        background-color: $BlackGrayColor;
+    }
+
+    .title {
+        margin-bottom: 10px;
+        @include text($color: $BlackColor, $size: 22px);
+    }
+
     // ---------- left slick ----------
-    .left {
+    .leftBox {
+        width: 100%;
+        max-width: 685px;
         .Img {
             width: 685px;
             height: 350px;
@@ -622,38 +669,12 @@ header {
             }
         }
         .Txt {
-            // ------- top -------
-
-            .top {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                margin-bottom: 15px;
-            }
-            .date {
-                @include text(
-                    $color: $BlackGrayColor,
-                    $family: $font-poppins,
-                    $size: 14px,
-                    $weight: 400
-                );
-            }
-            .tag {
-                padding: 15px 15px;
-                height: 29px;
-                background-color: $BlackGrayColor;
-            }
-
             // -------- center --------
 
             .center {
                 margin-bottom: 10px;
             }
 
-            .title {
-                margin-bottom: 10px;
-                @include text($color: $BlackColor, $size: 22px);
-            }
             .desc {
                 @include text($color: $MidGrayColor);
             }
@@ -671,6 +692,29 @@ header {
                 color: $GreenColor;
                 font-size: 16px;
             }
+        }
+    }
+    // ---------- right slick ----------
+    .rightBox {
+        width: 100%;
+        max-width: 675px;
+        .newsRightList {
+            .slick-list {
+                margin: -30px 0;
+            }
+            .slick-dots {
+                bottom: -50px;
+            }
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $WhiteGrayColor;
+            padding: 25px 0;
+        }
+        .icon {
+            border: 1px solid $GreenColor;
         }
     }
 }

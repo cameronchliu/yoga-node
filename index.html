@@ -305,7 +305,7 @@
                             </div>
                         </div>
                         <div class="bottomBox">
-                            <div class="left">
+                            <div class="leftBox">
                                 <div class="newsLeftList">
                                     <div class="newLeftItem">
                                         <div class="item">
@@ -334,22 +334,128 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="newLeftItem">
+                                        <div class="item">
+                                            <a href="#" class="linkWrap"></a>
+                                            <figure class="Img">
+                                                <img src="./img/NewsLeftImg1.jpg" alt="news圖片">
+                                            </figure>
+                                            <div class="Txt">
+                                                <div class="top">
+                                                    <div class="date">2024.09.23</div>
+                                                    <div class="tag">Course Update</div>
+                                                </div>
+                                                <div class="center">
+                                                    <div class="title">Yoga × Pilates Hybrid Class Now Open 第二筆</div>
+                                                    <div class="desc">
+                                                        Enhance both flexibility and core strength in one
+                                                        integrated session.
+                                                    </div>
+                                                </div>
+                                                <div class="btnBox">
+                                                    <a href="#" class="btn">
+                                                        Learn more
+                                                        <img src="./svg/btnArrowDrak.svg" alt="按鈕箭頭">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="right">
+                            <div class="rightBox">
                                 <div class="newsRightList">
                                     <div class="newsRightItem">
                                         <div class="item">
                                             <a href="#" class="linkWrap"></a>
                                             <div class="left">
-                                                <div class="tag"></div>
-                                                <div class="date"></div>
-                                                <div class="title"></div>
+                                                <div class="top">
+                                                    <div class="tag">Article</div>
+                                                    <div class="date">2024.09.23</div>
+                                                </div>
+                                                <div class="title">How Pilates Helps Relieve Lower Back Tension</div>
                                             </div>
                                             <div class="right">
                                                 <div class="icon">
                                                     <figure class="arrow">
-                                                        <img src="./svg/btnArrow.svg" alt="箭頭">
+                                                        <img src="./svg/btnArrowDrak.svg" alt="箭頭">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newsRightItem">
+                                        <div class="item">
+                                            <a href="#" class="linkWrap"></a>
+                                            <div class="left">
+                                                <div class="top">
+                                                    <div class="tag">Article</div>
+                                                    <div class="date">2024.09.23</div>
+                                                </div>
+                                                <div class="title">How Pilates Helps Relieve Lower Back Tension</div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="icon">
+                                                    <figure class="arrow">
+                                                        <img src="./svg/btnArrowDrak.svg" alt="箭頭">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newsRightItem">
+                                        <div class="item">
+                                            <a href="#" class="linkWrap"></a>
+                                            <div class="left">
+                                                <div class="top">
+                                                    <div class="tag">Event</div>
+                                                    <div class="date">2024.09.23</div>
+                                                </div>
+                                                <div class="title">May Special: Two Free Trial Classes for New Members
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="icon">
+                                                    <figure class="arrow">
+                                                        <img src="./svg/btnArrowDrak.svg" alt="箭頭">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newsRightItem">
+                                        <div class="item">
+                                            <a href="#" class="linkWrap"></a>
+                                            <div class="left">
+                                                <div class="top">
+                                                    <div class="tag">Studio Update</div>
+                                                    <div class="date">2024.09.23</div>
+                                                </div>
+                                                <div class="title">Meditation Room Renovated and Reopened</div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="icon">
+                                                    <figure class="arrow">
+                                                        <img src="./svg/btnArrowDrak.svg" alt="箭頭">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="newsRightItem">
+                                        <div class="item">
+                                            <a href="#" class="linkWrap"></a>
+                                            <div class="left">
+                                                <div class="top">
+                                                    <div class="tag">Studio Update</div>
+                                                    <div class="date">2024.09.23</div>
+                                                </div>
+                                                <div class="title">Meditation Room Renovated and Reopened</div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="icon">
+                                                    <figure class="arrow">
+                                                        <img src="./svg/btnArrowDrak.svg" alt="箭頭">
                                                     </figure>
                                                 </div>
                                             </div>
@@ -579,6 +685,9 @@
     </div>
     <script>
         $(document).ready(function () {
+
+            // ------ about ------
+
             $('.aboutList').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -592,6 +701,36 @@
                 prevArrow: $('.aboutArea .prevArrow'),
                 nextArrow: $('.aboutArea .nextArrow')
             });
+
+            // ------ news ------
+
+            $('.newsLeftList').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4500,
+                speed: 600,
+                arrows: false,
+                dots: false,
+                fade: true
+            });
+            $('.newsRightList').slick({
+                vertical:true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 4500,
+                speed: 600,
+                arrows: false,
+                dots: true,
+            });
+
+
+
+            // ------ team ------
+
             $('.teamList').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,

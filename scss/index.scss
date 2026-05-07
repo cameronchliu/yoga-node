@@ -147,6 +147,7 @@ $BrownColor: #b4a885;
     height: 45px;
     border-radius: 50%;
     border: 1px solid $whiteColor;
+    transition: all 0.3s ease-in-out;
     .arrow {
         width: 23px;
         height: 5px;
@@ -620,6 +621,11 @@ header {
     // -------- 兩個slick共用 --------
     .item {
         position: relative;
+        .title {
+            margin-bottom: 10px;
+            transition: all 0.3s ease-in-out;
+            @include text($color: $BlackColor, $size: 22px);
+        }
     }
     .linkWrap {
         position: absolute;
@@ -647,11 +653,7 @@ header {
         padding: 15px 15px;
         height: 29px;
         background-color: $BlackGrayColor;
-    }
-
-    .title {
-        margin-bottom: 10px;
-        @include text($color: $BlackColor, $size: 22px);
+        transition: all 0.3s ease-in-out;
     }
 
     // ---------- left slick ----------
@@ -706,6 +708,22 @@ header {
                 bottom: -50px;
             }
         }
+        .newsRightItem {
+            &:hover {
+                .tag {
+                    background-color: $GreenColor;
+                }
+                .title {
+                    color: $GreenColor;
+                }
+                .icon {
+                    background-color: $GreenColor;
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
         .item {
             display: flex;
             justify-content: space-between;
@@ -713,6 +731,7 @@ header {
             border-bottom: 1px solid $WhiteGrayColor;
             padding: 25px 0;
         }
+
         .icon {
             border: 1px solid $GreenColor;
         }

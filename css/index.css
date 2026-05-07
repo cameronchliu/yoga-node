@@ -60,6 +60,10 @@ figure {
   background-color: gray;
 }
 
+.orange {
+  background-color: orangered;
+}
+
 .wrap {
   width: 100%;
   height: 100%;
@@ -96,6 +100,12 @@ figure {
   font-size: 16px;
 }
 
+.actionBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btnBox .btn {
   display: flex;
   justify-content: center;
@@ -104,7 +114,8 @@ figure {
   width: 160px;
   height: 45px;
   background-color: #2c4109;
-  font-family: "Lato";
+  transition: all 0.3s ease-in-out;
+  font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #fff;
   font-size: 14px;
@@ -112,6 +123,34 @@ figure {
 .btnBox .btn img {
   width: 30px;
   height: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.btnBox .btn:hover {
+  background-color: #b4a885;
+}
+.btnBox .btn:hover img {
+  transform: translateX(10%);
+}
+
+.arrowBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.arrowBox .arrow {
+  width: 10px;
+}
+.arrowBox .arrow img {
+  display: block;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.arrowBox .arrowSeparate {
+  display: inline-block;
+  width: 1px;
+  height: 25px;
+  background-color: rgba(44, 65, 9, 0.35);
 }
 
 header {
@@ -200,6 +239,9 @@ header .funcBox a {
 .bannerArea .titleBox .title {
   font-size: 54px;
 }
+.bannerArea .titleBox .btn {
+  font-family: "Lato";
+}
 .bannerArea .rightBox {
   position: relative;
   display: flex;
@@ -277,6 +319,128 @@ header .funcBox a {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.aboutArea {
+  padding: 90px 0 150px;
+  overflow: hidden;
+}
+.aboutArea .wrap {
+  max-width: 1715px;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: auto;
+}
+.aboutArea .aboutBox {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutArea .leftBox {
+  width: 100%;
+  max-width: 600px;
+}
+.aboutArea .leftBox > div + div {
+  margin-top: 40px;
+}
+.aboutArea .titleBox {
+  width: 100%;
+  max-width: 500px;
+}
+.aboutArea .featureBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 520px;
+}
+.aboutArea .featureBox .Img {
+  width: 65px;
+  height: 60px;
+}
+.aboutArea .featureBox .Img + div {
+  margin-top: 10px;
+}
+.aboutArea .featureBox .Img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aboutArea .featureBox .title {
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+  color: #2c4109;
+  font-size: 24px;
+}
+.aboutArea .featureBox .text {
+  font-family: "Cormorant Garamond";
+  font-weight: 400;
+  color: #2d2d2d;
+  font-size: 16px;
+}
+.aboutArea .numberBox {
+  width: 100%;
+  display: flex;
+  gap: 70px;
+  color: #b4a885;
+}
+.aboutArea .numberBox .number {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: 400;
+}
+.aboutArea .numberBox .plus {
+  display: block;
+  position: absolute;
+  right: -30%;
+  top: 0;
+  font-size: 40px;
+}
+.aboutArea .numberBox .Txt {
+  font-family: "Cormorant Garamond";
+  font-size: 22px;
+  font-weight: 700;
+}
+.aboutArea .rightBox {
+  width: 100%;
+  max-width: 1040px;
+  overflow: hidden;
+}
+.aboutArea .rightBox .Img {
+  width: 325px;
+  height: 500px;
+  overflow: hidden;
+}
+.aboutArea .rightBox .Img img {
+  display: block;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aboutArea .aboutList {
+  padding-top: 80px;
+}
+.aboutArea .aboutList .slick-list {
+  margin: 0 -22.5px;
+  overflow: visible;
+}
+.aboutArea .aboutList .slick-slide {
+  padding: 0 22.5px;
+}
+.aboutArea .aboutList .slick-center .item {
+  transform: translateY(-15%);
+}
+.aboutArea .item {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.aboutArea .linkWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .serviceArea {
@@ -425,34 +589,6 @@ header .funcBox a {
 .teamArea .leftBox .titleBox .text {
   text-align: justify;
   line-height: 30px;
-}
-.teamArea .leftBox .actionBox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.teamArea .leftBox .actionBox .btn {
-  font-family: "Cormorant Garamond";
-}
-.teamArea .leftBox .actionBox .arrowBox {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.teamArea .leftBox .actionBox .arrow {
-  width: 10px;
-}
-.teamArea .leftBox .actionBox .arrow img {
-  display: block;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.teamArea .leftBox .actionBox .arrowSeparate {
-  display: inline-block;
-  width: 1px;
-  height: 25px;
-  background-color: rgba(44, 65, 9, 0.35);
 }
 .teamArea .rightBox {
   width: 100%;

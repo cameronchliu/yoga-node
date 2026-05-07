@@ -11,6 +11,7 @@ $whiteColor: #fff;
 $LightGrayColor: #d9d9d9;
 $DarkGrayColor: #2d2d2d;
 $BlackColor: #000;
+$BrownColor: #b4a885;
 
 @mixin text($color: $GreenColor, $size: 16px, $weight: 700, $family: $font-en) {
     font-family: $family;
@@ -48,6 +49,10 @@ $BlackColor: #000;
     background-color: gray;
 }
 
+.orange {
+    background-color: orangered;
+}
+
 // --------- global style --------
 
 .wrap {
@@ -80,6 +85,12 @@ $BlackColor: #000;
     }
 }
 
+.actionBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btnBox {
     .btn {
         display: flex;
@@ -89,13 +100,43 @@ $BlackColor: #000;
         width: 160px;
         height: 45px;
         background-color: $GreenColor;
-        @include text($family: $font-lato, $size: 14px, $color: $whiteColor);
+        transition: all 0.3s ease-in-out;
+        @include text($family: $font-en, $size: 14px, $color: $whiteColor);
         img {
             width: 30px;
             height: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            background-color: $BrownColor;
+            img {
+                transform: translateX(10%);
+            }
         }
     }
 }
+
+.arrowBox {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .arrow {
+        width: 10px;
+        img {
+            display: block;
+            width: 100%;
+            object-fit: contain;
+        }
+        
+    }
+    .arrowSeparate {
+        display: inline-block;
+        width: 1px;
+        height: 25px;
+        background-color: rgba(44, 65, 9, 0.35);
+    }
+}
+
 // --------- header ---------
 
 header {
@@ -195,6 +236,9 @@ header {
         .title {
             font-size: 54px;
         }
+        .btn {
+            font-family: $font-lato;
+        }
     }
     .rightBox {
         position: relative;
@@ -270,7 +314,131 @@ header {
     }
 }
 
-// --------- Service ---------
+// --------- about ---------
+
+.aboutArea {
+    padding: 90px 0 150px;
+    overflow: hidden;
+    .wrap {
+        max-width: calc(1665px + 50px);
+        padding-right: 0;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .aboutBox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // ----------- left ------------
+
+    .leftBox {
+        width: 100%;
+        max-width: 600px;
+        & > div + div {
+            margin-top: 40px;
+        }
+    }
+    .titleBox {
+        width: 100%;
+        max-width: 500px;
+    }
+    .featureBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 520px;
+        .Img {
+            width: 65px;
+            height: 60px;
+            & + div {
+                margin-top: 10px;
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .title {
+            @include text($size: 24px);
+        }
+        .text {
+            @include text($color: $DarkGrayColor, $weight: 400);
+        }
+    }
+    .numberBox {
+        width: 100%;
+        display: flex;
+        gap: 70px;
+        color: $BrownColor;
+        .number {
+            position: relative;
+            width: fit-content;
+            font-family: $font-poppins;
+            font-size: 60px;
+            font-weight: 400;
+        }
+        .plus {
+            display: block;
+            position: absolute;
+            right: -30%;
+            top: 0;
+            font-size: 40px;
+        }
+        .Txt {
+            font-family: $font-en;
+            font-size: 22px;
+            font-weight: 700;
+        }
+    }
+
+    // ----------- right ------------
+
+    .rightBox {
+        width: 100%;
+        max-width: 1040px;
+        overflow: hidden;
+
+        .Img {
+            width: 325px;
+            height: 500px;
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .aboutList {
+        padding-top: 80px;
+        .slick-list {
+            margin: 0 -22.5px;
+            overflow: visible;
+        }
+        .slick-slide {
+            padding: 0 22.5px;
+        }
+        .slick-center {
+            .item {
+                transform: translateY(-15%);
+            }
+        }
+    }
+    .item {
+        position: relative;
+        transition: all 0.4s ease-in-out;
+    }
+    .linkWrap {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+}
+
+// --------- service ---------
 
 .serviceArea {
     position: relative; //給裝飾物定位用
@@ -389,7 +557,7 @@ header {
     }
 }
 
-// --------- Team ---------
+// --------- team ---------
 
 .teamArea {
     position: relative; //給裝飾物定位用
@@ -417,33 +585,6 @@ header {
             .text {
                 text-align: justify;
                 line-height: 30px;
-            }
-        }
-        .actionBox {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .btn {
-                font-family: $font-en;
-            }
-            .arrowBox {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-            }
-            .arrow {
-                width: 10px;
-                img {
-                    display: block;
-                    width: 100%;
-                    object-fit: contain;
-                }
-            }
-            .arrowSeparate {
-                display: inline-block;
-                width: 1px;
-                height: 25px;
-                background-color: rgba(44, 65, 9, 0.35);
             }
         }
     }

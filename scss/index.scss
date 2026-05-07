@@ -587,7 +587,17 @@ header {
 
 .newsArea {
     padding: 150px 0 140px;
-
+    .topBox {
+        display: flex;
+        justify-content: center;
+    }
+    .titleBox {
+        width: 100%;
+        max-width: 670px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 // --------- team ---------

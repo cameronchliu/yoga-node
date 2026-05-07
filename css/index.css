@@ -582,6 +582,17 @@ header .funcBox a {
 .newsArea {
   padding: 150px 0 140px;
 }
+.newsArea .topBox {
+  display: flex;
+  justify-content: center;
+}
+.newsArea .titleBox {
+  width: 100%;
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .teamArea {
   position: relative;

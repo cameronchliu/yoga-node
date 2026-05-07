@@ -1,13 +1,16 @@
 @import "reset";
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Noto+Serif+TC:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lato:wght@300;400;700;900&family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap");
 
 // ------- variable -------
 
-$font-en: "Cormorant Garamond", serif;
+$font-en: "Cormorant Garamond";
 $font-lato: "Lato";
+$font-poppins: "Poppins";
 $GreenColor: #2c4109;
 $whiteColor: #fff;
-$garyColor: #2d2d2d;
+$LightGrayColor: #d9d9d9;
+$DarkGrayColor: #2d2d2d;
+$BlackColor: #000;
 
 @mixin text($color: $GreenColor, $size: 16px, $weight: 700, $family: $font-en) {
     font-family: $family;
@@ -26,7 +29,7 @@ $garyColor: #2d2d2d;
 }
 
 .red {
-    background-color: red;
+    background-color: rgb(189, 73, 73);
 }
 
 .pink {
@@ -41,19 +44,21 @@ $garyColor: #2d2d2d;
     background-color: yellow;
 }
 
+.gray {
+    background-color: gray;
+}
+
 // --------- global style --------
 
 .wrap {
     width: 100%;
+    height: 100%;
     max-width: 1515px;
     padding: 0 50px;
     margin: 0 auto;
 }
 
 .titleBox {
-    width: 50%;
-    max-width: 535px;
-
     & > div + div {
         margin-top: 25px;
     }
@@ -70,6 +75,7 @@ $garyColor: #2d2d2d;
         background-color: $GreenColor;
     }
     .text {
+        line-height: 24px;
         @include text($weight: 400);
     }
 }
@@ -180,8 +186,15 @@ header {
         align-items: center;
         height: 100%;
     }
-    .title {
-        font-size: 54px;
+    .leftBox {
+        width: 50%;
+        max-width: 535px;
+        margin-bottom: 50px;
+    }
+    .titleBox {
+        .title {
+            font-size: 54px;
+        }
     }
     .rightBox {
         position: relative;
@@ -210,7 +223,7 @@ header {
         }
         .leftLeaf {
             position: absolute;
-            left: -35%;
+            left: -40%;
             top: 30%;
             z-index: -1;
             width: 450px;
@@ -257,50 +270,217 @@ header {
     }
 }
 
-// --------- About ---------
+// --------- Service ---------
+
+.serviceArea {
+    position: relative; //給裝飾物定位用
+    padding: 140px 0;
+    background-image: url(../img/ServiceArea.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .gridBox {
+        display: grid;
+        grid-template-rows: 1.3fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 35px;
+    }
+    .item {
+        position: relative;
+        z-index: 0;
+        a {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+        .Img {
+            width: 100%;
+            height: 100%;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .Txt {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            max-width: 190px;
+            margin-left: 30px;
+            margin-top: 40px;
+            .text {
+                @include text($color: $whiteColor, $size: 24px, $weight: 500);
+            }
+        }
+        .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            margin-top: 45px;
+            margin-right: 30px;
+            border-radius: 50%;
+            border: 1px solid $whiteColor;
+            .arrow {
+                width: 23px;
+                height: 5px;
+            }
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &1 {
+            grid-area: 1 / 1 / 3 / 3;
+            .Txt {
+                margin-left: 40px;
+                margin-top: 35px;
+                max-width: 550px;
+            }
+            .icon {
+                margin-top: 30px;
+                margin-right: 40px;
+            }
+        }
+
+        &2 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        &3 {
+            grid-area: 1 / 4 / 2 / 5;
+        }
+
+        &4 {
+            grid-area: 2 / 3 / 3 / 5;
+        }
+    }
+    .decoBox {
+        .decoLeft {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 20dvw;
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .decoRight {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20dvw;
+            img {
+                display: block;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
 
 // --------- Team ---------
 
 .teamArea {
+    position: relative; //給裝飾物定位用
     padding: 140px 0 110px;
+    background-image: url(../img/TeamAreaBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
     .wrap {
-        max-width: 1770px;
-        padding: 0 50px 0;
-        margin-right: 10px;
+        max-width: 1720px;
+        padding: 0 0 0 50px;
+        margin-right: 0;
         margin-left: auto;
     }
     .teamBox {
         display: flex;
         justify-content: space-between;
     }
-    .titleBox {
+
+    .leftBox {
+        width: 100%;
         max-width: 335px;
-    }
-    .rightBox {
-		width: 50%;
-        .teamItem {
-            position: relative;
-            width: 100%;
-            max-width: 420px;
-            padding: 0 25px;
+        .titleBox {
+            margin-bottom: 25px;
+            .text {
+                text-align: justify;
+                line-height: 30px;
+            }
         }
+        .actionBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn {
+                font-family: $font-en;
+            }
+            .arrowBox {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            .arrow {
+                width: 10px;
+                img {
+                    display: block;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .arrowSeparate {
+                display: inline-block;
+                width: 1px;
+                height: 25px;
+                background-color: rgba(44, 65, 9, 0.35);
+            }
+        }
+    }
+
+    .rightBox {
+        width: 100%;
+        max-width: 1215px;
+
+        .teamList {
+            .slick-list {
+                margin: 0 -25px;
+            }
+
+            .slick-slide {
+                padding: 0 25px;
+            }
+        }
+
+        .item {
+            position: relative;
+        }
+
         .linkWrap {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;
             z-index: 1;
         }
         .Img {
-            width: 370px;
-            height: 355px;
+            width: 100%;
             margin-bottom: 25px;
+
             img {
                 width: 100%;
                 object-fit: contain;
             }
         }
+
         .textBox {
             .top {
                 display: flex;
@@ -318,12 +498,142 @@ header {
                     @include text($color: $whiteColor);
                 }
                 .name {
-                    @include text($color: $garyColor, $size: 26px);
+                    @include text($color: $DarkGrayColor, $size: 26px);
                 }
             }
             .desc {
-                @include text($color: $garyColor);
+                @include text($color: $DarkGrayColor);
             }
+        }
+    }
+
+    .deco {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20vw;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+// --------- Footer ---------
+
+footer {
+    position: relative;
+    padding: 100px 0 45px;
+
+    .topBox {
+        display: flex;
+        justify-content: space-between;
+
+        // --------- left ---------
+
+        .left {
+            width: 260px;
+        }
+        .logo {
+            width: 185px;
+            height: 40px;
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .contactBox {
+            margin-bottom: 30px;
+            & > div + div {
+                margin-top: 15px;
+            }
+            @include text(
+                $color: $DarkGrayColor,
+                $size: 14px,
+                $weight: 400,
+                $family: $font-poppins
+            );
+        }
+        .iconBox {
+            display: flex;
+            gap: 15px;
+            .iconItem {
+                width: 37px;
+                height: 37px;
+                padding: 8px;
+                border: 1px solid $GreenColor;
+                border-radius: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        // --------- right ---------
+
+        .right {
+            width: 100%;
+            max-width: 990px;
+            .footerMenu {
+                display: flex;
+                justify-content: space-between;
+            }
+            a {
+                display: block;
+            }
+            .title {
+                padding-bottom: 10px;
+                @include text($color: $BlackColor, $size: 22px, $weight: 500);
+            }
+            .subMenu {
+                a {
+                    padding-top: 10px;
+                    margin-top: 10px;
+                    @include text($color: $BlackColor, $weight: 500);
+                }
+            }
+        }
+    }
+
+    .bottomBox {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        padding-top: 30px;
+        border-top: 1px solid $LightGrayColor;
+        @include text($size: 15px, $weight: 400);
+        .left {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+        .spearator {
+            width: 1px;
+            height: 15px;
+            background-color: $LightGrayColor;
+        }
+        a {
+            font: inherit;
+            text-decoration: underline;
+            text-underline-offset: 1px;
+            color: inherit;
+        }
+    }
+
+    .deco {
+        position: absolute;
+        top: -30%;
+        left: 0;
+        width: 17vw;
+        z-index: 1;
+        img {
+            width: 100%;
+            object-fit: contain;
         }
     }
 }

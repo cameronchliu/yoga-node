@@ -20,6 +20,15 @@ $BrownColor: #b4a885;
     font-size: $size;
 }
 
+@mixin tag($bgColor: $GreenColor, $boder: 50px) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgColor;
+    border-radius: $boder;
+    @include text($color: $whiteColor);
+}
+
 // --------- color class ---------
 .wood {
     background-color: burlywood;
@@ -574,6 +583,13 @@ header {
     }
 }
 
+// --------- news ---------
+
+.newsArea {
+    padding: 150px 0 140px;
+
+}
+
 // --------- team ---------
 
 .teamArea {
@@ -646,14 +662,9 @@ header {
                 gap: 10px;
                 margin-bottom: 15px;
                 .tag {
-                    display: inline-flex;
-                    justify-content: center;
-                    align-items: center;
                     width: 70px;
                     height: 30px;
-                    background-color: $GreenColor;
-                    border-radius: 50px;
-                    @include text($color: $whiteColor);
+                    @include tag;
                 }
                 .name {
                     @include text($color: $DarkGrayColor, $size: 26px);

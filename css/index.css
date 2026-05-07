@@ -161,7 +161,7 @@ figure {
   height: 45px;
   border-radius: 50%;
   border: 1px solid #fff;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .icon .arrow {
   width: 23px;
@@ -179,8 +179,11 @@ figure {
   justify-content: center;
   align-items: center;
   background-color: #2c4109;
-  color: #fff;
   border-radius: 50px;
+  font-family: "Cormorant Garamond";
+  font-weight: 200;
+  color: #fff;
+  font-size: 16px;
 }
 
 header {

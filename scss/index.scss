@@ -147,7 +147,7 @@ $BrownColor: #b4a885;
     height: 45px;
     border-radius: 50%;
     border: 1px solid $whiteColor;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
     .arrow {
         width: 23px;
         height: 5px;
@@ -164,8 +164,8 @@ $BrownColor: #b4a885;
     justify-content: center;
     align-items: center;
     background-color: $GreenColor;
-    color: $whiteColor;
     border-radius: 50px;
+    @include text($color: $whiteColor, $family: $font-en, $weight: 200);
 }
 // --------- header ---------
 

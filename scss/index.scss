@@ -9,7 +9,9 @@ $font-poppins: "Poppins";
 $GreenColor: #2c4109;
 $whiteColor: #fff;
 $LightGrayColor: #d9d9d9;
+$MidGrayColor: #666;
 $DarkGrayColor: #2d2d2d;
+$BlackGrayColor: #333;
 $BlackColor: #000;
 $BrownColor: #b4a885;
 
@@ -18,15 +20,6 @@ $BrownColor: #b4a885;
     font-weight: $weight;
     color: $color;
     font-size: $size;
-}
-
-@mixin tag($bgColor: $GreenColor, $boder: 50px) {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $bgColor;
-    border-radius: $boder;
-    @include text($color: $whiteColor);
 }
 
 // --------- color class ---------
@@ -145,6 +138,14 @@ $BrownColor: #b4a885;
     }
 }
 
+.tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $GreenColor;
+    color: $whiteColor;
+    border-radius: 50px;
+}
 // --------- header ---------
 
 header {
@@ -590,13 +591,87 @@ header {
     .topBox {
         display: flex;
         justify-content: center;
+        margin-bottom: 65px;
+        .titleBox {
+            width: 100%;
+            max-width: 670px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
-    .titleBox {
-        width: 100%;
-        max-width: 670px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    // -------- 兩個slick共用 --------
+    .item {
+        position: relative;
+    }
+    .linkWrap {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+    // ---------- left slick ----------
+    .left {
+        .Img {
+            width: 685px;
+            height: 350px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        .Txt {
+            // ------- top -------
+
+            .top {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 15px;
+            }
+            .date {
+                @include text(
+                    $color: $BlackGrayColor,
+                    $family: $font-poppins,
+                    $size: 14px,
+                    $weight: 400
+                );
+            }
+            .tag {
+                padding: 15px 15px;
+                height: 29px;
+                background-color: $BlackGrayColor;
+            }
+
+            // -------- center --------
+
+            .center {
+                margin-bottom: 10px;
+            }
+
+            .title {
+                margin-bottom: 10px;
+                @include text($color: $BlackColor, $size: 22px);
+            }
+            .desc {
+                @include text($color: $MidGrayColor);
+            }
+
+            // -------- btn --------
+
+            .btnBox {
+                width: fit-content;
+                position: relative;
+                z-index: 2;
+            }
+            .btn {
+                justify-content: flex-start;
+                background-color: transparent;
+                color: $GreenColor;
+                font-size: 16px;
+            }
+        }
     }
 }
 
@@ -674,7 +749,6 @@ header {
                 .tag {
                     width: 70px;
                     height: 30px;
-                    @include tag;
                 }
                 .name {
                     @include text($color: $DarkGrayColor, $size: 26px);

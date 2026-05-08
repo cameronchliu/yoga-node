@@ -135,16 +135,25 @@ figure {
 .arrowBox {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 .arrowBox .arrow {
-  width: 10px;
-}
-.arrowBox .arrow img {
   display: block;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 40px;
+  height: 18px;
+  padding: 0 15px;
+  background-color: #2c4109;
+  transition: background-color 0.3s ease-in-out;
+}
+.arrowBox .arrow:hover {
+  background-color: #b4a885;
+}
+.arrowBox .arrow.prevArrow {
+  -webkit-mask: url("../svg/prevArrow.svg") center/contain no-repeat;
+          mask: url("../svg/prevArrow.svg") center/contain no-repeat;
+}
+.arrowBox .arrow.nextArrow {
+  -webkit-mask: url("../svg/nextArrow.svg") center/contain no-repeat;
+          mask: url("../svg/nextArrow.svg") center/contain no-repeat;
 }
 .arrowBox .arrowSeparate {
   display: inline-block;

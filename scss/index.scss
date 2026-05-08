@@ -122,13 +122,22 @@ $BrownColor: #b4a885;
 .arrowBox {
     display: flex;
     align-items: center;
-    gap: 15px;
     .arrow {
-        width: 10px;
-        img {
-            display: block;
-            width: 100%;
-            object-fit: contain;
+        display: block;
+        width: 40px; //箭頭icob的10px_padding的15px
+        height: 18px;
+        padding: 0 15px;
+        background-color: $GreenColor;
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $BrownColor;
+        }
+        &.prevArrow {
+            mask: url("../svg/prevArrow.svg") center / contain no-repeat;
+        }
+        &.nextArrow {
+            mask: url("../svg/nextArrow.svg") center / contain no-repeat;
         }
     }
     .arrowSeparate {
@@ -174,11 +183,11 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-    
+
     width: 100%;
     height: 100px;
     padding-top: 20px;
-    
+
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
 
@@ -266,7 +275,6 @@ header {
             }
             &.language {
                 mask: url("../svg/language.svg") center / contain no-repeat;
-                
             }
             &.search {
                 mask: url("../svg/search.svg") center / contain no-repeat;

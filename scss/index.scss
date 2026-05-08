@@ -946,6 +946,12 @@ footer {
                 $weight: 400,
                 $family: $font-poppins
             );
+            div {
+                transition: color 0.3s ease-in-out;
+                &:hover {
+                    color: $BrownColor;
+                }
+            }
         }
         .iconBox {
             display: flex;

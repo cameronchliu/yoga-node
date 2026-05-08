@@ -914,6 +914,12 @@ footer .topBox .contactBox {
   color: #2d2d2d;
   font-size: 14px;
 }
+footer .topBox .contactBox div {
+  transition: color 0.3s ease-in-out;
+}
+footer .topBox .contactBox div:hover {
+  color: #b4a885;
+}
 footer .topBox .iconBox {
   display: flex;
   gap: 15px;

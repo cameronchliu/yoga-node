@@ -76,17 +76,42 @@ figure {
 .titleBox > div + div {
   margin-top: 25px;
 }
+@media (max-width: 1180px) {
+  .titleBox > div + div {
+    margin-top: 20px;
+  }
+}
 .titleBox .title {
   font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #2c4109;
   font-size: 45px;
 }
+@media (max-width: 1180px) {
+  .titleBox .title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .titleBox .title {
+    font-size: 28px;
+  }
+}
 .titleBox .subtitle {
   font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #2c4109;
   font-size: 24px;
+}
+@media (max-width: 1180px) {
+  .titleBox .subtitle {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .titleBox .subtitle {
+    font-size: 18px;
+  }
 }
 .titleBox .line {
   width: 35px;
@@ -99,6 +124,24 @@ figure {
   font-weight: 400;
   color: #2c4109;
   font-size: 16px;
+}
+@media (max-width: 1180px) {
+  .titleBox .text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .titleBox .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1180px) {
+  .titleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .actionBox {
@@ -121,10 +164,19 @@ figure {
   color: #fff;
   font-size: 14px;
 }
+@media (max-width: 1180px) {
+  .btnBox .btn {
+    font-size: 13px;
+  }
+}
 .btnBox .btn img {
   width: 30px;
-  height: 10px;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1180px) {
+  .btnBox .btn img {
+    width: 25px;
+  }
 }
 .btnBox .btn:hover {
   background-color: #b4a885;
@@ -458,6 +510,11 @@ header .funcBox .funcIcon.search {
     background-size: cover;
   }
 }
+@media (max-width: 1180px) {
+  .bannerArea {
+    padding-top: 110px;
+  }
+}
 .bannerArea .wrap {
   height: 100%;
 }
@@ -480,10 +537,21 @@ header .funcBox .funcIcon.search {
 @media (max-width: 1180px) {
   .bannerArea .leftBox {
     width: 100%;
+    max-width: 80%;
   }
 }
 .bannerArea .titleBox .title {
   font-size: 54px;
+}
+@media (max-width: 1180px) {
+  .bannerArea .titleBox .title {
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .bannerArea .titleBox .title {
+    font-size: 38px;
+  }
 }
 .bannerArea .titleBox .btn {
   font-family: "Lato";
@@ -520,6 +588,11 @@ header .funcBox .funcIcon.search {
     width: 415px;
   }
 }
+@media (max-width: 1180px) {
+  .bannerArea .rightBox .Img {
+    width: 40dvw;
+  }
+}
 .bannerArea .rightBox .Img img {
   width: 100%;
   -o-object-fit: contain;
@@ -541,6 +614,12 @@ header .funcBox .funcIcon.search {
   .bannerArea .rightBox .person {
     left: 20%;
     width: 270px;
+  }
+}
+@media (max-width: 1180px) {
+  .bannerArea .rightBox .person {
+    left: 5dvw;
+    width: 28dvw;
   }
 }
 .bannerArea .rightBox .person img {
@@ -568,6 +647,12 @@ header .funcBox .funcIcon.search {
     width: 350px;
   }
 }
+@media (max-width: 1180px) {
+  .bannerArea .rightBox .leftLeaf {
+    left: -25dvw;
+    width: 35dvw;
+  }
+}
 .bannerArea .rightBox .leftLeaf img {
   width: 100%;
   -o-object-fit: contain;
@@ -591,6 +676,18 @@ header .funcBox .funcIcon.search {
   .bannerArea .rightBox .rightLeaf {
     right: -10%;
     width: 180px;
+  }
+}
+@media (max-width: 1180px) {
+  .bannerArea .rightBox .rightLeaf {
+    right: -10dvw;
+    bottom: -5dvw;
+    width: 20dvw;
+  }
+}
+@media (max-width: 768px) {
+  .bannerArea .rightBox .rightLeaf {
+    bottom: -10dvw;
   }
 }
 .bannerArea .rightBox .rightLeaf img {

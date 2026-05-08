@@ -212,8 +212,8 @@ header {
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
 }
-header .scrolled {
-  background-color: #b4a885;
+header.scrolled {
+  background-color: #fff;
 }
 header .wrap {
   max-width: 100%;

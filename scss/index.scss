@@ -705,6 +705,13 @@ header {
     .leftBox {
         width: 100%;
         max-width: 685px;
+        .item {
+            &:hover .Img {
+                img {
+                    transform: scale(1.08);
+                }
+            }
+        }
         .Img {
             width: 685px;
             height: 350px;
@@ -713,6 +720,7 @@ header {
             img {
                 width: 100%;
                 object-fit: contain;
+                transition: transform 0.4s ease-in-out;
             }
         }
         .Txt {
@@ -831,6 +839,17 @@ header {
 
         .item {
             position: relative;
+            &:hover {
+                img {
+                    transform: scale(1.08);
+                }
+                .tag {
+                    background-color: $BrownColor;
+                }
+                .textBox .top .name {
+                    color: $BrownColor;
+                }
+            }
         }
 
         .linkWrap {
@@ -841,10 +860,12 @@ header {
         .Img {
             width: 100%;
             margin-bottom: 25px;
+            overflow: hidden;
 
             img {
                 width: 100%;
                 object-fit: contain;
+                transition: transform 0.4s ease-in-out;
             }
         }
 
@@ -857,8 +878,10 @@ header {
                 .tag {
                     width: 70px;
                     height: 30px;
+                    transition: background-color 0.3s ease-in-out;
                 }
                 .name {
+                    transition: color 0.3s ease-in-out;
                     @include text($color: $DarkGrayColor, $size: 26px);
                 }
             }

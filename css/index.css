@@ -226,6 +226,9 @@ header .menuBox {
 header .menuBox .menuItem {
   height: 100%;
 }
+header .menuBox .menuItem:hover a:not(.btn) {
+  color: #b4a885;
+}
 header .menuBox .menuItem a {
   display: flex;
   align-items: center;
@@ -264,7 +267,6 @@ header .funcBox a {
   height: 100%;
   padding: 0 10px;
 }
-
 .bannerArea {
   position: relative;
   z-index: 0;

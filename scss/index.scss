@@ -64,6 +64,13 @@ $BrownColor: #b4a885;
     max-width: 1515px;
     padding: 0 50px;
     margin: 0 auto;
+
+    @media (max-width: 480px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 320px) {
+        padding: 0 20px;
+    }
 }
 
 .titleBox {
@@ -71,6 +78,17 @@ $BrownColor: #b4a885;
         margin-top: 25px;
         @media (max-width: 1180px) {
             margin-top: 20px;
+        }
+        @media (max-width: 480px) {
+            margin-top: 15px;
+        }
+        &:has(.btn) {
+            @media (max-width: 480px) {
+                margin: 30px;
+            }
+            @media (max-width: 360px) {
+                margin: 20px;
+            }
         }
     }
 
@@ -83,6 +101,9 @@ $BrownColor: #b4a885;
         @media (max-width: 768px) {
             font-size: 28px;
         }
+        @media (max-width: 480px) {
+            font-size: 24px;
+        }
     }
     .subtitle {
         @include text($size: 24px);
@@ -92,6 +113,9 @@ $BrownColor: #b4a885;
         }
         @media (max-width: 768px) {
             font-size: 18px;
+        }
+        @media (max-width: 480px) {
+            font-size: 16px;
         }
     }
     .line {
@@ -107,7 +131,7 @@ $BrownColor: #b4a885;
             font-size: 15px;
         }
         @media (max-width: 768px) {
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 
@@ -140,6 +164,11 @@ $BrownColor: #b4a885;
         @media (max-width: 1180px) {
             font-size: 13px;
         }
+        @media (max-width: 480px) {
+            font-size: 12px;
+            width: 140px;
+            height: 40px;
+        }
 
         img {
             width: 30px;
@@ -147,6 +176,9 @@ $BrownColor: #b4a885;
 
             @media (max-width: 1180px) {
                 width: 25px;
+            }
+            @media (max-width: 480px) {
+                width: 20px;
             }
         }
         &:hover {
@@ -484,7 +516,7 @@ header {
         background-size: cover;
     }
     @media (max-width: 1180px) {
-        padding-top: 110px;
+        padding: 110px 0 100px;
     }
 
     .wrap {
@@ -509,6 +541,12 @@ header {
             width: 100%;
             max-width: 80%;
         }
+        @media (max-width: 768px) {
+            max-width: 90%;
+        }
+        @media (max-width: 480px) {
+            max-width: 100%;
+        }
     }
     .titleBox {
         .title {
@@ -518,6 +556,12 @@ header {
             }
             @media (max-width: 768px) {
                 font-size: 38px;
+            }
+            @media (max-width: 480px) {
+                font-size: 32px;
+            }
+            @media (max-width: 360px) {
+                font-size: 28px;
             }
         }
         .btn {
@@ -536,6 +580,15 @@ header {
         }
         @media (max-width: 1366px) {
             padding-right: 10px;
+        }
+        @media (max-width: 1180px) {
+            padding-right: 0;
+        }
+        @media (max-width: 768px) {
+            transform: scale(1.1);
+        }
+        @media (max-width: 480px) {
+            transform: scale(1.25);
         }
 
         .Img {
@@ -574,7 +627,11 @@ header {
             }
             @media (max-width: 1180px) {
                 left: 5dvw;
+                top: -3dvw;
                 width: 28dvw;
+            }
+            @media (max-width: 768px) {
+                top: -5dvw;
             }
 
             img {
@@ -600,6 +657,10 @@ header {
             @media (max-width: 1180px) {
                 left: -25dvw;
                 width: 35dvw;
+            }
+            @media (max-width: 480px) {
+                left: -15dvw;
+                width: 30dvw;
             }
 
             img {
@@ -630,6 +691,12 @@ header {
             }
             @media (max-width: 768px) {
                 bottom: -10dvw;
+            }
+            @media (max-width: 480px) {
+                bottom: -30dvw;
+            }
+            @media (max-width: 360px) {
+                bottom: -50dvw;
             }
 
             img {

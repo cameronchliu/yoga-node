@@ -72,6 +72,16 @@ figure {
   padding: 0 50px;
   margin: 0 auto;
 }
+@media (max-width: 480px) {
+  .wrap {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 320px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
 
 .titleBox > div + div {
   margin-top: 25px;
@@ -79,6 +89,21 @@ figure {
 @media (max-width: 1180px) {
   .titleBox > div + div {
     margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .titleBox > div + div {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .titleBox > div + div:has(.btn) {
+    margin: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .titleBox > div + div:has(.btn) {
+    margin: 20px;
   }
 }
 .titleBox .title {
@@ -97,6 +122,11 @@ figure {
     font-size: 28px;
   }
 }
+@media (max-width: 480px) {
+  .titleBox .title {
+    font-size: 24px;
+  }
+}
 .titleBox .subtitle {
   font-family: "Cormorant Garamond";
   font-weight: 700;
@@ -111,6 +141,11 @@ figure {
 @media (max-width: 768px) {
   .titleBox .subtitle {
     font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .titleBox .subtitle {
+    font-size: 16px;
   }
 }
 .titleBox .line {
@@ -132,7 +167,7 @@ figure {
 }
 @media (max-width: 768px) {
   .titleBox .text {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (max-width: 1180px) {
@@ -169,6 +204,13 @@ figure {
     font-size: 13px;
   }
 }
+@media (max-width: 480px) {
+  .btnBox .btn {
+    font-size: 12px;
+    width: 140px;
+    height: 40px;
+  }
+}
 .btnBox .btn img {
   width: 30px;
   transition: all 0.3s ease-in-out;
@@ -176,6 +218,11 @@ figure {
 @media (max-width: 1180px) {
   .btnBox .btn img {
     width: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .btnBox .btn img {
+    width: 20px;
   }
 }
 .btnBox .btn:hover {
@@ -512,7 +559,7 @@ header .funcBox .funcIcon.search {
 }
 @media (max-width: 1180px) {
   .bannerArea {
-    padding-top: 110px;
+    padding: 110px 0 100px;
   }
 }
 .bannerArea .wrap {
@@ -540,6 +587,16 @@ header .funcBox .funcIcon.search {
     max-width: 80%;
   }
 }
+@media (max-width: 768px) {
+  .bannerArea .leftBox {
+    max-width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .bannerArea .leftBox {
+    max-width: 100%;
+  }
+}
 .bannerArea .titleBox .title {
   font-size: 54px;
 }
@@ -551,6 +608,16 @@ header .funcBox .funcIcon.search {
 @media (max-width: 768px) {
   .bannerArea .titleBox .title {
     font-size: 38px;
+  }
+}
+@media (max-width: 480px) {
+  .bannerArea .titleBox .title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 360px) {
+  .bannerArea .titleBox .title {
+    font-size: 28px;
   }
 }
 .bannerArea .titleBox .btn {
@@ -571,6 +638,21 @@ header .funcBox .funcIcon.search {
 @media (max-width: 1366px) {
   .bannerArea .rightBox {
     padding-right: 10px;
+  }
+}
+@media (max-width: 1180px) {
+  .bannerArea .rightBox {
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .bannerArea .rightBox {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 480px) {
+  .bannerArea .rightBox {
+    transform: scale(1.25);
   }
 }
 .bannerArea .rightBox .Img {
@@ -619,7 +701,13 @@ header .funcBox .funcIcon.search {
 @media (max-width: 1180px) {
   .bannerArea .rightBox .person {
     left: 5dvw;
+    top: -3dvw;
     width: 28dvw;
+  }
+}
+@media (max-width: 768px) {
+  .bannerArea .rightBox .person {
+    top: -5dvw;
   }
 }
 .bannerArea .rightBox .person img {
@@ -651,6 +739,12 @@ header .funcBox .funcIcon.search {
   .bannerArea .rightBox .leftLeaf {
     left: -25dvw;
     width: 35dvw;
+  }
+}
+@media (max-width: 480px) {
+  .bannerArea .rightBox .leftLeaf {
+    left: -15dvw;
+    width: 30dvw;
   }
 }
 .bannerArea .rightBox .leftLeaf img {
@@ -688,6 +782,16 @@ header .funcBox .funcIcon.search {
 @media (max-width: 768px) {
   .bannerArea .rightBox .rightLeaf {
     bottom: -10dvw;
+  }
+}
+@media (max-width: 480px) {
+  .bannerArea .rightBox .rightLeaf {
+    bottom: -30dvw;
+  }
+}
+@media (max-width: 360px) {
+  .bannerArea .rightBox .rightLeaf {
+    bottom: -50dvw;
   }
 }
 .bannerArea .rightBox .rightLeaf img {

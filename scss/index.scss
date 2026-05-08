@@ -83,6 +83,9 @@ $BrownColor: #b4a885;
             margin-top: 15px;
         }
         &:has(.btn) {
+            @media (max-width: 768px) {
+                margin: 40px;
+            }
             @media (max-width: 480px) {
                 margin: 30px;
             }
@@ -281,7 +284,7 @@ header {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
-            transform: translateX(-50px);
+            transform: translateX(0);
         }
 
         .menuToggle:checked ~ .right,
@@ -306,6 +309,12 @@ header {
 
         @media (max-width: 1536px) {
             padding: 0 50px;
+        }
+        @media (max-width: 768px) {
+            padding: 0 30px;
+        }
+        @media (max-width: 480px) {
+            padding: 0 20px;
         }
     }
 
@@ -358,7 +367,8 @@ header {
             justify-content: center;
             position: absolute;
             top: 100%;
-            transform: translateX(-100px);
+            left: 0;
+            transform: translateX(-50px);
             transition:
                 opacity 0.3s ease-in-out,
                 transform 0.3s ease-in-out;
@@ -372,6 +382,9 @@ header {
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
+        }
+        @media (max-width: 768px) {
+            transform: translateX(-100px);
         }
     }
 

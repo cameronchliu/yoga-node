@@ -219,6 +219,19 @@ header {
     padding: 10px 0;
   }
 }
+@media (max-width: 1180px) {
+  header {
+    transition: none;
+  }
+  header .menuToggle:checked ~ .right {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  header .menuToggle:checked ~ .right, header:has(.menuToggle:checked) {
+    background-color: #fff;
+  }
+}
 header.scrolled {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -245,15 +258,61 @@ header .logo a {
     width: 160px;
   }
 }
+@media (max-width: 1180px) {
+  header .logo a {
+    width: 140px;
+  }
+}
 header .logo img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  vertical-align: middle;
+}
+header .hamburger {
+  display: none;
+}
+@media (max-width: 1180px) {
+  header .hamburger {
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+  }
+  header .hamburger > div + div {
+    margin-top: 8px;
+  }
+}
+header .burgerLine {
+  width: 30px;
+  height: 2px;
+  background-color: #2c4109;
 }
 header .right {
   height: 100%;
   display: flex;
   gap: 30px;
+}
+@media (max-width: 1180px) {
+  header .right {
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: -480%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+@media (max-width: 1180px) {
+  header nav {
+    width: 100%;
+    height: 100%;
+  }
 }
 header .menuBox {
   height: 100%;
@@ -266,11 +325,25 @@ header .menuBox {
     gap: 5px;
   }
 }
+@media (max-width: 1180px) {
+  header .menuBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0;
+  }
+}
 header .menuBox .menuItem {
   height: 100%;
 }
 header .menuBox .menuItem:hover a:not(.btn) {
   color: #b4a885;
+}
+@media (max-width: 1180px) {
+  header .menuBox .menuItem {
+    width: 100%;
+  }
 }
 header .menuBox .menuItem a {
   display: flex;
@@ -283,9 +356,21 @@ header .menuBox .menuItem a {
   font-size: 16px;
   transition: color 0.3s ease-in-out;
 }
+@media (max-width: 1180px) {
+  header .menuBox .menuItem a {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+}
 header .menuBox .menuItem.isBtn {
   display: flex;
   align-items: center;
+}
+@media (max-width: 1180px) {
+  header .menuBox .menuItem.isBtn {
+    justify-content: center;
+  }
 }
 header .menuBox .menuItem .btn {
   display: flex;
@@ -306,6 +391,11 @@ header .menuBox .menuItem .btn:hover {
     height: 45px;
   }
 }
+@media (max-width: 1180px) {
+  header .menuBox .menuItem .btn {
+    margin-bottom: 40px;
+  }
+}
 header .funcBox {
   display: flex;
   align-items: center;
@@ -314,6 +404,11 @@ header .funcBox {
 @media (max-width: 1536px) {
   header .funcBox {
     gap: 15px;
+  }
+}
+@media (max-width: 1180px) {
+  header .funcBox {
+    display: none;
   }
 }
 header .funcBox .funcIcon {

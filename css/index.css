@@ -445,6 +445,11 @@ header .funcBox .funcIcon.search {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media (max-width: 1536px) {
+  .bannerArea {
+    padding-bottom: 40px;
+  }
+}
 .bannerArea .wrap {
   height: 100%;
 }
@@ -472,9 +477,20 @@ header .funcBox .funcIcon.search {
   width: 50%;
   padding-right: 90px;
 }
+@media (max-width: 1536px) {
+  .bannerArea .rightBox {
+    padding-right: 60px;
+  }
+}
 .bannerArea .rightBox .Img {
   width: 525px;
   height: 755px;
+}
+@media (max-width: 1536px) {
+  .bannerArea .rightBox .Img {
+    width: 475px;
+    height: auto;
+  }
 }
 .bannerArea .rightBox .Img img {
   width: 100%;
@@ -486,7 +502,12 @@ header .funcBox .funcIcon.search {
   top: -1%;
   left: 6%;
   width: 330px;
-  height: 800px;
+}
+@media (max-width: 1536px) {
+  .bannerArea .rightBox .person {
+    left: 10%;
+    width: 300px;
+  }
 }
 .bannerArea .rightBox .person img {
   width: 100%;
@@ -501,6 +522,12 @@ header .funcBox .funcIcon.search {
   width: 450px;
   height: 350px;
 }
+@media (max-width: 1536px) {
+  .bannerArea .rightBox .leftLeaf {
+    left: -25%;
+    width: 400px;
+  }
+}
 .bannerArea .rightBox .leftLeaf img {
   width: 100%;
   -o-object-fit: contain;
@@ -513,6 +540,12 @@ header .funcBox .funcIcon.search {
   z-index: -1;
   width: 245px;
   height: 228px;
+}
+@media (max-width: 1536px) {
+  .bannerArea .rightBox .rightLeaf {
+    right: -5%;
+    width: 200px;
+  }
 }
 .bannerArea .rightBox .rightLeaf img {
   width: 100%;

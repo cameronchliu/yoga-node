@@ -196,12 +196,12 @@ header {
 
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
-    
+
     @media (max-width: 1536px) {
         height: 80px;
         padding: 10px 0;
     }
-    
+
     @media (max-width: 1180px) {
         transition: background-color 0.3s ease;
         .menuToggle:checked ~ .right {
@@ -432,6 +432,11 @@ header {
     background-image: url(../img/fullBg.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (max-width: 1536px) {
+        padding-bottom: 40px;
+    }
+
     .wrap {
         height: 100%;
     }
@@ -460,9 +465,20 @@ header {
         justify-content: flex-end;
         width: 50%;
         padding-right: 90px;
+
+        @media (max-width: 1536px) {
+            padding-right: 60px;
+        }
+
         .Img {
             width: 525px;
             height: 755px;
+
+            @media (max-width: 1536px) {
+                width: 475px;
+                height: auto;
+            }
+
             img {
                 width: 100%;
                 object-fit: contain;
@@ -473,7 +489,12 @@ header {
             top: -1%;
             left: 6%;
             width: 330px;
-            height: 800px;
+
+            @media (max-width: 1536px) {
+                left: 10%;
+                width: 300px;
+            }
+
             img {
                 width: 100%;
                 object-fit: contain;
@@ -486,6 +507,10 @@ header {
             z-index: -1;
             width: 450px;
             height: 350px;
+            @media (max-width: 1536px) {
+                left: -25%;
+                width: 400px;
+            }
             img {
                 width: 100%;
                 object-fit: contain;
@@ -498,6 +523,12 @@ header {
             z-index: -1;
             width: 245px;
             height: 228px;
+
+            @media (max-width: 1536px) {
+                right: -5%;
+                width: 200px;
+            }
+
             img {
                 width: 100%;
                 object-fit: contain;

@@ -174,10 +174,13 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-
+    
     width: 100%;
     height: 100px;
     padding-top: 20px;
+    
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
 
     .wrap {
         max-width: 100%;
@@ -223,6 +226,7 @@ header {
                 align-items: center;
                 height: 100%;
                 padding: 0 10px; //增加使用者體驗
+                transition: color 0.3s ease-in-out;
 
                 @include text;
             }
@@ -248,15 +252,24 @@ header {
     }
 
     .funcBox {
-        height: 100%;
         display: flex;
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            padding: 0 10px;
+        align-items: center;
+        gap: 20px;
+        .funcIcon {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: $GreenColor;
+            transition: background-color 0.3s ease-in-out;
             &:hover {
+                background-color: $BrownColor;
+            }
+            &.language {
+                mask: url("../svg/language.svg") center / contain no-repeat;
+                
+            }
+            &.search {
+                mask: url("../svg/search.svg") center / contain no-repeat;
             }
         }
     }

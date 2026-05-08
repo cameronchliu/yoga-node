@@ -204,10 +204,13 @@ header {
 
     @media (max-width: 1180px) {
         transition: background-color 0.3s ease;
+
         .menuToggle:checked ~ .right {
+            border-top: 1px solid $LightGrayColor;
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
+            transform: translateX(-50px);
         }
 
         .menuToggle:checked ~ .right,
@@ -283,15 +286,15 @@ header {
         @media (max-width: 1180px) {
             justify-content: center;
             position: absolute;
-            left: 50%;
-            bottom: -540%;
-            transform: translate(-50%, -10px);
+            top: 100%;
+            transform: translateX(-100px);
             transition:
                 opacity 0.3s ease-in-out,
                 transform 0.3s ease-in-out;
 
             width: 100%;
             height: fit-content;
+            padding-top: 50px;
 
             background-color: $whiteColor;
 
@@ -368,7 +371,7 @@ header {
                 height: 50px;
                 background-color: $GreenColor;
                 color: $whiteColor;
-                transition: all 0.3s ease-in-out;
+                transition: background-color 0.3s ease-in-out;
                 &:hover {
                     background-color: $BrownColor;
                 }
@@ -434,9 +437,9 @@ header {
     background-size: contain;
 
     @media (max-width: 1800px) {
-        background-size: 110%;;
+        background-size: 110%;
     }
-    
+
     @media (max-width: 1536px) {
         padding-bottom: 40px;
         background-size: cover;
@@ -450,11 +453,19 @@ header {
         justify-content: space-between;
         align-items: center;
         height: 100%;
+
+        @media (max-width: 1180px) {
+            flex-direction: column;
+        }
     }
     .leftBox {
         width: 50%;
         max-width: 535px;
         margin-bottom: 50px;
+
+        @media (max-width: 1180px) {
+            width: 100%;
+        }
     }
     .titleBox {
         .title {

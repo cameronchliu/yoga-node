@@ -224,9 +224,11 @@ header {
     transition: background-color 0.3s ease;
   }
   header .menuToggle:checked ~ .right {
+    border-top: 1px solid #d9d9d9;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transform: translateX(-50px);
   }
   header .menuToggle:checked ~ .right, header:has(.menuToggle:checked) {
     background-color: #fff;
@@ -296,13 +298,13 @@ header .right {
   header .right {
     justify-content: center;
     position: absolute;
-    left: 50%;
-    bottom: -540%;
-    transform: translate(-50%, -10px);
+    top: 100%;
+    transform: translateX(-100px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;
+    padding-top: 50px;
     background-color: #fff;
     opacity: 0;
     visibility: hidden;
@@ -381,7 +383,7 @@ header .menuBox .menuItem .btn {
   height: 50px;
   background-color: #2c4109;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 header .menuBox .menuItem .btn:hover {
   background-color: #b4a885;
@@ -465,10 +467,20 @@ header .funcBox .funcIcon.search {
   align-items: center;
   height: 100%;
 }
+@media (max-width: 1180px) {
+  .bannerArea .bannerBox {
+    flex-direction: column;
+  }
+}
 .bannerArea .leftBox {
   width: 50%;
   max-width: 535px;
   margin-bottom: 50px;
+}
+@media (max-width: 1180px) {
+  .bannerArea .leftBox {
+    width: 100%;
+  }
 }
 .bannerArea .titleBox .title {
   font-size: 54px;

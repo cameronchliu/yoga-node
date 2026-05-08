@@ -221,7 +221,7 @@ header {
 }
 @media (max-width: 1180px) {
   header {
-    transition: none;
+    transition: background-color 0.3s ease;
   }
   header .menuToggle:checked ~ .right {
     opacity: 1;
@@ -297,8 +297,9 @@ header .right {
     justify-content: center;
     position: absolute;
     left: 50%;
-    bottom: -480%;
-    transform: translateX(-50%);
+    bottom: -493%;
+    transform: translate(-50%, -10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 100%;
     height: -moz-fit-content;
     height: fit-content;

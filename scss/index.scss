@@ -196,19 +196,20 @@ header {
 
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
-
+    
     @media (max-width: 1536px) {
         height: 80px;
         padding: 10px 0;
     }
-
+    
     @media (max-width: 1180px) {
-        transition: none;
+        transition: background-color 0.3s ease;
         .menuToggle:checked ~ .right {
             opacity: 1;
             visibility: visible;
             pointer-events: auto;
         }
+
         .menuToggle:checked ~ .right,
         &:has(.menuToggle:checked) {
             background-color: $whiteColor;
@@ -228,6 +229,7 @@ header {
         max-width: 100%;
         height: 100%;
         padding: 0 70px;
+
         @media (max-width: 1536px) {
             padding: 0 50px;
         }
@@ -237,6 +239,7 @@ header {
         a {
             display: block;
             width: 180px;
+
             @media (max-width: 1536px) {
                 width: 160px;
             }
@@ -255,6 +258,7 @@ header {
 
     .hamburger {
         display: none;
+
         @media (max-width: 1180px) {
             display: block;
             padding: 20px;
@@ -280,11 +284,17 @@ header {
             justify-content: center;
             position: absolute;
             left: 50%;
-            bottom: -480%;
-            transform: translateX(-50%);
+            bottom: -493%;
+            transform: translate(-50%, -10px);
+            transition:
+                opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+
             width: 100%;
             height: fit-content;
+
             background-color: $whiteColor;
+
             opacity: 0;
             visibility: hidden;
             pointer-events: none;
@@ -340,9 +350,11 @@ header {
                     padding: 0;
                 }
             }
+
             &.isBtn {
                 display: flex;
                 align-items: center;
+
                 @media (max-width: 1180px) {
                     justify-content: center;
                 }
@@ -360,10 +372,12 @@ header {
                 &:hover {
                     background-color: $BrownColor;
                 }
+
                 @media (max-width: 1536px) {
                     width: 160px;
                     height: 45px;
                 }
+
                 @media (max-width: 1180px) {
                     margin-bottom: 40px;
                 }

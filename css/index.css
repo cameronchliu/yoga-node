@@ -212,6 +212,9 @@ header {
   background-color: transparent;
   transition: background-color 0.3s ease-in-out;
 }
+header .scrolled {
+  background-color: #b4a885;
+}
 header .wrap {
   max-width: 100%;
   height: 100%;
@@ -544,6 +547,9 @@ header .funcBox .funcIcon.search {
   position: relative;
   z-index: 0;
 }
+.serviceArea .item:hover .Img img {
+  transform: scale(1.05);
+}
 .serviceArea .item a {
   position: absolute;
   inset: 0;
@@ -552,6 +558,7 @@ header .funcBox .funcIcon.search {
 .serviceArea .item .Img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .serviceArea .item .Img img {
   display: block;
@@ -559,6 +566,7 @@ header .funcBox .funcIcon.search {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.4s ease-in-out;
 }
 .serviceArea .item .Txt {
   position: absolute;

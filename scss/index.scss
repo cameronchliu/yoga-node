@@ -124,14 +124,20 @@ $BrownColor: #b4a885;
     align-items: center;
     .arrow {
         display: block;
-        width: 40px; //箭頭icob的10px_padding的15px
+        width: 40px; // 箭頭 icon 10px + padding 15px * 2
         height: 18px;
         padding: 0 15px;
         background-color: $GreenColor;
-        transition: background-color 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             background-color: $BrownColor;
+            &.prevArrow {
+                transform: translateX(-3px);
+            }
+            &.nextArrow {
+                transform: translateX(3px);
+            }
         }
         &.prevArrow {
             mask: url("../svg/prevArrow.svg") center / contain no-repeat;

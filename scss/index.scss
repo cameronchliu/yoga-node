@@ -262,7 +262,7 @@ $BrownColor: #b4a885;
     border: 1px solid $whiteColor;
     transition: all 0.4s ease-in-out;
 
-    @media (max-width:1336px) {
+    @media (max-width:1366px) {
         width: 40px;
         height: 40px;
     }
@@ -271,7 +271,7 @@ $BrownColor: #b4a885;
         width: 23px;
         height: 5px;
 
-        @media (max-width:1336px) {
+        @media (max-width:1366px) {
             width: 18px;
             height: 4px;
         }

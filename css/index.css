@@ -283,7 +283,7 @@ figure {
   border: 1px solid #fff;
   transition: all 0.4s ease-in-out;
 }
-@media (max-width: 1336px) {
+@media (max-width: 1366px) {
   .icon {
     width: 40px;
     height: 40px;
@@ -293,7 +293,7 @@ figure {
   width: 23px;
   height: 5px;
 }
-@media (max-width: 1336px) {
+@media (max-width: 1366px) {
   .icon .arrow {
     width: 18px;
     height: 4px;

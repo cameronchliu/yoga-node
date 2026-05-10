@@ -754,6 +754,7 @@ header {
         margin-left: auto;
     }
     .aboutBox {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -827,6 +828,7 @@ header {
     .rightBox {
         width: 100%;
         max-width: 1040px;
+        padding-top: 80px;
         overflow: hidden;
 
         .Img {
@@ -842,9 +844,9 @@ header {
         }
     }
     .aboutList {
-        padding-top: 80px;
         .slick-list {
-            margin: 0 -22.5px;
+            width: calc(1040px - 325px);
+            margin-left:  -22.5px;
             overflow: visible;
         }
         .slick-slide {

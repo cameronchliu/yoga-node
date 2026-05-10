@@ -856,6 +856,7 @@ header .funcBox .funcIcon.search {
   margin-left: auto;
 }
 .aboutArea .aboutBox {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -931,6 +932,7 @@ header .funcBox .funcIcon.search {
 .aboutArea .rightBox {
   width: 100%;
   max-width: 1040px;
+  padding-top: 80px;
   overflow: hidden;
 }
 .aboutArea .rightBox .Img {
@@ -945,11 +947,9 @@ header .funcBox .funcIcon.search {
      object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
-.aboutArea .aboutList {
-  padding-top: 80px;
-}
 .aboutArea .aboutList .slick-list {
-  margin: 0 -22.5px;
+  width: 715px;
+  margin-left: -22.5px;
   overflow: visible;
 }
 .aboutArea .aboutList .slick-slide {
@@ -1478,4 +1478,4 @@ footer .deco img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
+}/*# sourceMappingURL=index.css.map */

@@ -267,11 +267,24 @@ $BrownColor: #b4a885;
         height: 40px;
     }
 
+    @media (max-width: 768px) {
+        width: 35px;
+        height: 35px;
+    }
+    @media (max-width: 575px) {
+        width: 32px;
+        height: 32px;
+    }
+
     .arrow {
         width: 23px;
         height: 5px;
 
         @media (max-width: 1366px) {
+            width: 20px;
+            height: 4px;
+        }
+        @media (max-width: 768px) {
             width: 18px;
             height: 4px;
         }
@@ -992,9 +1005,16 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media (max-width: 768px) {
+        padding: 80px 0;
+    }
+
     .wrap {
         @media (max-width: 1180px) {
             padding: 0 120px;
+        }
+        @media (max-width: 768px) {
+            padding: 0 60px;
         }
     }
 
@@ -1011,6 +1031,12 @@ header {
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
+        }
+        @media (max-width: 992px) {
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            gap: 30px;
         }
     }
 
@@ -1060,12 +1086,30 @@ header {
                 left: 2dvw;
                 top: 2dvw;
             }
+            @media (max-width: 1180px) {
+                max-width: 250px;
+            }
+            @media (max-width: 992px) {
+                max-width: 160px;
+            }
+            @media (max-width: 480px) {
+                max-width: 120px;
+            }
 
             .text {
                 @include text($color: $whiteColor, $size: 24px, $weight: 500);
 
                 @media (max-width: 1366px) {
                     font-size: 22px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 575px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 480px) {
+                    font-size: 14px;
                 }
             }
         }
@@ -1081,11 +1125,6 @@ header {
                 margin: 0;
                 right: 2dvw;
                 top: 2dvw;
-            }
-
-            .arrow {
-                width: 23px;
-                height: 5px;
             }
 
             img {
@@ -1112,6 +1151,10 @@ header {
                     left: 2dvw;
                     top: 2dvw;
                 }
+                @media (max-width: 1180px) {
+                    left: 4dvw;
+                    top: 4dvw;
+                }
             }
 
             .icon {
@@ -1123,21 +1166,28 @@ header {
                     right: 5%;
                     top: 5%;
                 }
+                @media (max-width: 768px) {
+                    top: 3%;
+                }
             }
         }
 
         &2 {
             grid-area: 1 / 3 / 2 / 4;
 
-            @media (max-width: 1366px) {
-                .Txt {
-                    max-width: 150px;
-                }
-            }
-
             @media (max-width: 1180px) {
                 grid-area: 3 / 1 / 4 / 2;
             }
+
+            .Txt {
+                @media (max-width: 1366px) {
+                    max-width: 160px;
+                }
+                @media (max-width: 991px) {
+                    max-width: 120px;
+                }
+            }
+
         }
 
         &3 {

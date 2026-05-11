@@ -289,11 +289,29 @@ figure {
     height: 40px;
   }
 }
+@media (max-width: 768px) {
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 575px) {
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
 .icon .arrow {
   width: 23px;
   height: 5px;
 }
 @media (max-width: 1366px) {
+  .icon .arrow {
+    width: 20px;
+    height: 4px;
+  }
+}
+@media (max-width: 768px) {
   .icon .arrow {
     width: 18px;
     height: 4px;
@@ -990,9 +1008,19 @@ header .funcBox .funcIcon.search {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 768px) {
+  .serviceArea {
+    padding: 80px 0;
+  }
+}
 @media (max-width: 1180px) {
   .serviceArea .wrap {
     padding: 0 120px;
+  }
+}
+@media (max-width: 768px) {
+  .serviceArea .wrap {
+    padding: 0 60px;
   }
 }
 .serviceArea .gridBox {
@@ -1011,6 +1039,16 @@ header .funcBox .funcIcon.search {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+  }
+}
+@media (max-width: 992px) {
+  .serviceArea .gridBox {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .serviceArea .gridBox {
+    gap: 30px;
   }
 }
 .serviceArea .item {
@@ -1054,6 +1092,21 @@ header .funcBox .funcIcon.search {
     top: 2dvw;
   }
 }
+@media (max-width: 1180px) {
+  .serviceArea .item .Txt {
+    max-width: 250px;
+  }
+}
+@media (max-width: 992px) {
+  .serviceArea .item .Txt {
+    max-width: 160px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceArea .item .Txt {
+    max-width: 120px;
+  }
+}
 .serviceArea .item .Txt .text {
   font-family: "Cormorant Garamond";
   font-weight: 500;
@@ -1063,6 +1116,21 @@ header .funcBox .funcIcon.search {
 @media (max-width: 1366px) {
   .serviceArea .item .Txt .text {
     font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .serviceArea .item .Txt .text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .serviceArea .item .Txt .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceArea .item .Txt .text {
+    font-size: 14px;
   }
 }
 .serviceArea .item .icon {
@@ -1078,10 +1146,6 @@ header .funcBox .funcIcon.search {
     right: 2dvw;
     top: 2dvw;
   }
-}
-.serviceArea .item .icon .arrow {
-  width: 23px;
-  height: 5px;
 }
 .serviceArea .item .icon img {
   display: block;
@@ -1109,6 +1173,12 @@ header .funcBox .funcIcon.search {
     top: 2dvw;
   }
 }
+@media (max-width: 1180px) {
+  .serviceArea .item1 .Txt {
+    left: 4dvw;
+    top: 4dvw;
+  }
+}
 .serviceArea .item1 .icon {
   margin-top: 30px;
   margin-right: 40px;
@@ -1120,17 +1190,27 @@ header .funcBox .funcIcon.search {
     top: 5%;
   }
 }
+@media (max-width: 768px) {
+  .serviceArea .item1 .icon {
+    top: 3%;
+  }
+}
 .serviceArea .item2 {
   grid-area: 1/3/2/4;
-}
-@media (max-width: 1366px) {
-  .serviceArea .item2 .Txt {
-    max-width: 150px;
-  }
 }
 @media (max-width: 1180px) {
   .serviceArea .item2 {
     grid-area: 3/1/4/2;
+  }
+}
+@media (max-width: 1366px) {
+  .serviceArea .item2 .Txt {
+    max-width: 160px;
+  }
+}
+@media (max-width: 991px) {
+  .serviceArea .item2 .Txt {
+    max-width: 120px;
   }
 }
 .serviceArea .item3 {

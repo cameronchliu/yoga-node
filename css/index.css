@@ -1325,10 +1325,17 @@ header .funcBox .funcIcon.search {
   display: flex;
   gap: 55px;
 }
+@media (max-width: 1536px) {
+  .newsArea .bottomBox {
+    justify-content: center;
+    gap: 35px;
+  }
+}
 .newsArea .item {
   position: relative;
 }
 .newsArea .item .title {
+  max-width: 500px;
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
   font-family: "Cormorant Garamond";
@@ -1363,6 +1370,11 @@ header .funcBox .funcIcon.search {
   width: 100%;
   max-width: 685px;
 }
+@media (max-width: 1536px) {
+  .newsArea .leftBox {
+    max-width: 620px;
+  }
+}
 .newsArea .leftBox .item:hover .Img img {
   transform: scale(1.08);
 }
@@ -1371,6 +1383,11 @@ header .funcBox .funcIcon.search {
   height: 350px;
   margin-bottom: 20px;
   overflow: hidden;
+}
+@media (max-width: 1536px) {
+  .newsArea .leftBox .Img {
+    width: 100%;
+  }
 }
 .newsArea .leftBox .Img img {
   width: 100%;
@@ -1402,6 +1419,11 @@ header .funcBox .funcIcon.search {
 .newsArea .rightBox {
   width: 100%;
   max-width: 675px;
+}
+@media (max-width: 1536px) {
+  .newsArea .rightBox {
+    max-width: 600px;
+  }
 }
 .newsArea .rightBox .newsRightList .slick-list {
   margin: -30px 0;
@@ -1754,6 +1776,11 @@ footer .topBox {
 }
 footer .topBox .left {
   width: 260px;
+}
+@media (max-width: 1180px) {
+  footer .topBox .left {
+    width: 100%;
+  }
 }
 footer .topBox .logo {
   width: 185px;

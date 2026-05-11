@@ -1291,6 +1291,11 @@ header {
     .bottomBox {
         display: flex;
         gap: 55px;
+        
+        @media (max-width: 1536px) {
+            justify-content: center;
+            gap: 35px;
+        }
     }
 
     // -------- 兩個slick共用 --------
@@ -1298,6 +1303,7 @@ header {
         position: relative;
 
         .title {
+            max-width: 500px;
             margin-bottom: 10px;
             transition: all 0.3s ease-in-out;
             @include text($color: $BlackColor, $size: 22px);
@@ -1338,6 +1344,10 @@ header {
         width: 100%;
         max-width: 685px;
 
+        @media (max-width: 1536px) {
+            max-width: 620px;
+        }
+
         .item {
             &:hover .Img {
                 img {
@@ -1351,6 +1361,10 @@ header {
             height: 350px;
             margin-bottom: 20px;
             overflow: hidden;
+
+            @media (max-width: 1536px) {
+                width: 100%;
+            }
 
             img {
                 width: 100%;
@@ -1391,6 +1405,10 @@ header {
     .rightBox {
         width: 100%;
         max-width: 675px;
+
+        @media (max-width: 1536px) {
+            max-width: 600px;
+        }
 
         .newsRightList {
             .slick-list {
@@ -1725,6 +1743,9 @@ footer {
 
         .left {
             width: 260px;
+            @media (max-width: 1180px) {
+                width: 100%;
+            }
         }
 
         .logo {

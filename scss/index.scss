@@ -1273,6 +1273,9 @@ header {
 
 .newsArea {
     padding: 150px 0 140px;
+    @media (max-width: 1536px) {
+        padding: 100px 0 100px;
+    }
 
     .topBox {
         display: flex;
@@ -1291,10 +1294,13 @@ header {
     .bottomBox {
         display: flex;
         gap: 55px;
-        
+
         @media (max-width: 1536px) {
             justify-content: center;
             gap: 35px;
+        }
+        @media (max-width: 1366px) {
+            gap: 25px;
         }
     }
 
@@ -1347,6 +1353,9 @@ header {
         @media (max-width: 1536px) {
             max-width: 620px;
         }
+        @media (max-width: 1366px) {
+            max-width: 560px;
+        }
 
         .item {
             &:hover .Img {
@@ -1364,6 +1373,10 @@ header {
 
             @media (max-width: 1536px) {
                 width: 100%;
+            }
+
+            @media (max-width: 1366px) {
+                height: 300px;
             }
 
             img {
@@ -1409,10 +1422,17 @@ header {
         @media (max-width: 1536px) {
             max-width: 600px;
         }
+        @media (max-width: 1366px) {
+            max-width: 550px;
+        }
 
         .newsRightList {
             .slick-list {
                 margin: -30px 0;
+
+                @media (max-width: 1366px) {
+                    margin: -15px 0;
+                }
             }
 
             .slick-dots {
@@ -1421,6 +1441,11 @@ header {
         }
 
         .newsRightItem {
+            .title {
+                @media (max-width: 1366px) {
+                    font-size: 20px;
+                }
+            }
             &:hover {
                 .tag {
                     background-color: $GreenColor;
@@ -1446,6 +1471,10 @@ header {
             align-items: center;
             border-bottom: 1px solid $WhiteGrayColor;
             padding: 25px 0;
+
+            @media (max-width: 1366px) {
+                padding: 15px 0;
+            }
         }
 
         .icon {

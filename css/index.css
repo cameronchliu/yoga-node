@@ -79,17 +79,17 @@ figure {
 }
 @media (max-width: 480px) {
   .wrap {
-    padding: 0 30px;
+    padding: 0 25px;
   }
 }
 @media (max-width: 360px) {
   .wrap {
-    padding: 0 25px;
+    padding: 0 20px;
   }
 }
 @media (max-width: 320px) {
   .wrap {
-    padding: 0 20px;
+    padding: 0 15px;
   }
 }
 
@@ -104,6 +104,11 @@ figure {
 @media (max-width: 480px) {
   .titleBox > div + div {
     margin-top: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .titleBox > div + div {
+    margin-top: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -1334,6 +1339,11 @@ header .funcBox .funcIcon.search {
     padding: 45px 0 80px;
   }
 }
+@media (max-width: 480px) {
+  .newsArea {
+    padding: 40px 0 70px;
+  }
+}
 @media (max-width: 1180px) {
   .newsArea .newsBox {
     max-width: 800px;
@@ -1363,6 +1373,11 @@ header .funcBox .funcIcon.search {
 @media (max-width: 768px) {
   .newsArea .topBox {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .newsArea .topBox {
+    margin-bottom: 25px;
   }
 }
 .newsArea .topBox .titleBox {
@@ -1399,6 +1414,11 @@ header .funcBox .funcIcon.search {
     gap: 30px;
   }
 }
+@media (max-width: 480px) {
+  .newsArea .bottomBox {
+    gap: 20px;
+  }
+}
 .newsArea .item {
   position: relative;
 }
@@ -1421,6 +1441,11 @@ header .funcBox .funcIcon.search {
     font-size: 18px;
   }
 }
+@media (max-width: 480px) {
+  .newsArea .item .title {
+    font-size: 17px;
+  }
+}
 .newsArea .linkWrap {
   position: absolute;
   inset: 0;
@@ -1437,11 +1462,21 @@ header .funcBox .funcIcon.search {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 480px) {
+  .newsArea .top {
+    gap: 10px;
+  }
+}
 .newsArea .date {
   font-family: "Poppins";
   font-weight: 400;
   color: #333;
   font-size: 14px;
+}
+@media (max-width: 480px) {
+  .newsArea .date {
+    font-size: 13px;
+  }
 }
 .newsArea .tag {
   padding: 15px 15px;
@@ -1454,6 +1489,13 @@ header .funcBox .funcIcon.search {
     padding: 13px 13px;
     height: 25px;
     font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .newsArea .tag {
+    padding: 10px 10px;
+    height: 22px;
+    font-size: 14px;
   }
 }
 .newsArea .leftBox {
@@ -1515,6 +1557,16 @@ header .funcBox .funcIcon.search {
     height: 250px;
   }
 }
+@media (max-width: 480px) {
+  .newsArea .leftBox .Img {
+    height: 180px;
+  }
+}
+@media (max-width: 360px) {
+  .newsArea .leftBox .Img {
+    height: 140px;
+  }
+}
 .newsArea .leftBox .Img img {
   width: 100%;
   -o-object-fit: contain;
@@ -1538,6 +1590,11 @@ header .funcBox .funcIcon.search {
 @media (max-width: 768px) {
   .newsArea .leftBox .Txt .desc {
     font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .newsArea .leftBox .Txt .desc {
+    font-size: 14px;
   }
 }
 .newsArea .leftBox .Txt .btnBox {
@@ -1592,6 +1649,11 @@ header .funcBox .funcIcon.search {
     font-size: 20px;
   }
 }
+@media (max-width: 480px) {
+  .newsArea .rightBox .newsRightItem .title {
+    max-width: 325px;
+  }
+}
 .newsArea .rightBox .newsRightItem:hover .tag {
   background-color: #2c4109;
 }
@@ -1626,9 +1688,23 @@ header .funcBox .funcIcon.search {
     padding: 10px 0;
   }
 }
-.newsArea .rightBox .item .title {
-  max-width: 100%;
-  font-size: 16px;
+@media (max-width: 480px) {
+  .newsArea .rightBox .item {
+    gap: 12px;
+    padding: 8px 0;
+  }
+}
+@media (max-width: 575px) {
+  .newsArea .rightBox .item .title {
+    max-width: 100%;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .newsArea .rightBox .item .title {
+    height: 30px;
+    font-size: 15px;
+  }
 }
 @media (max-width: 768px) {
   .newsArea .rightBox .left {

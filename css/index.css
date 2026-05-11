@@ -1575,16 +1575,17 @@ footer .topBox {
 @media (max-width: 1180px) {
   footer .topBox {
     flex-direction: column;
+    gap: 40px;
   }
 }
 @media (max-width: 768px) {
   footer .topBox {
-    gap: 70px;
+    gap: 30px;
   }
 }
 @media (max-width: 480px) {
   footer .topBox {
-    gap: 35px;
+    gap: 15px;
   }
 }
 @media (max-width: 360px) {

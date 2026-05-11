@@ -301,6 +301,12 @@ figure {
     height: 32px;
   }
 }
+@media (max-width: 480px) {
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+}
 .icon .arrow {
   width: 23px;
   height: 5px;
@@ -314,7 +320,12 @@ figure {
 @media (max-width: 768px) {
   .icon .arrow {
     width: 18px;
-    height: 4px;
+  }
+}
+@media (max-width: 768px) {
+  .icon .arrow {
+    width: 13px;
+    height: 3px;
   }
 }
 .icon img {
@@ -1013,6 +1024,16 @@ header .funcBox .funcIcon.search {
     padding: 80px 0;
   }
 }
+@media (max-width: 480px) {
+  .serviceArea {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 360px) {
+  .serviceArea {
+    padding: 40px 0;
+  }
+}
 @media (max-width: 1180px) {
   .serviceArea .wrap {
     padding: 0 120px;
@@ -1021,6 +1042,16 @@ header .funcBox .funcIcon.search {
 @media (max-width: 768px) {
   .serviceArea .wrap {
     padding: 0 60px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceArea .wrap {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 360px) {
+  .serviceArea .wrap {
+    padding: 0 20px;
   }
 }
 .serviceArea .gridBox {
@@ -1049,6 +1080,16 @@ header .funcBox .funcIcon.search {
 @media (max-width: 768px) {
   .serviceArea .gridBox {
     gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceArea .gridBox {
+    gap: 25px;
+  }
+}
+@media (max-width: 360px) {
+  .serviceArea .gridBox {
+    gap: 15px;
   }
 }
 .serviceArea .item {
@@ -1133,6 +1174,11 @@ header .funcBox .funcIcon.search {
     font-size: 14px;
   }
 }
+@media (max-width: 360px) {
+  .serviceArea .item .Txt .text {
+    font-size: 13px;
+  }
+}
 .serviceArea .item .icon {
   position: absolute;
   right: 0;
@@ -1211,6 +1257,11 @@ header .funcBox .funcIcon.search {
 @media (max-width: 991px) {
   .serviceArea .item2 .Txt {
     max-width: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceArea .item2 .Txt {
+    max-width: 80px;
   }
 }
 .serviceArea .item3 {

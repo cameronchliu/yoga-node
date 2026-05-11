@@ -275,6 +275,10 @@ $BrownColor: #b4a885;
         width: 32px;
         height: 32px;
     }
+    @media (max-width: 480px) {
+        width: 25px;
+        height: 25px;
+    }
 
     .arrow {
         width: 23px;
@@ -286,7 +290,10 @@ $BrownColor: #b4a885;
         }
         @media (max-width: 768px) {
             width: 18px;
-            height: 4px;
+        }
+        @media (max-width: 768px) {
+            width: 13px;
+            height: 3px;
         }
     }
 
@@ -1009,12 +1016,26 @@ header {
         padding: 80px 0;
     }
 
+    @media (max-width: 480px) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: 360px) {
+        padding: 40px 0;
+    }
+
     .wrap {
         @media (max-width: 1180px) {
             padding: 0 120px;
         }
         @media (max-width: 768px) {
             padding: 0 60px;
+        }
+        @media (max-width: 480px) {
+            padding: 0 30px;
+        }
+        @media (max-width: 360px) {
+            padding: 0 20px;
         }
     }
 
@@ -1037,6 +1058,12 @@ header {
         }
         @media (max-width: 768px) {
             gap: 30px;
+        }
+        @media (max-width: 480px) {
+            gap: 25px;
+        }
+        @media (max-width: 360px) {
+            gap: 15px;
         }
     }
 
@@ -1110,6 +1137,9 @@ header {
                 }
                 @media (max-width: 480px) {
                     font-size: 14px;
+                }
+                @media (max-width: 360px) {
+                    font-size: 13px;
                 }
             }
         }
@@ -1186,8 +1216,10 @@ header {
                 @media (max-width: 991px) {
                     max-width: 120px;
                 }
+                @media (max-width: 480px) {
+                    max-width: 80px;
+                }
             }
-
         }
 
         &3 {

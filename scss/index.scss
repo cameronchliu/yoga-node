@@ -65,6 +65,10 @@ $BrownColor: #b4a885;
     padding: 0 50px;
     margin: 0 auto;
 
+    @media (max-width: 575px) {
+        padding: 0 35px;
+    }
+
     @media (max-width: 480px) {
         padding: 0 30px;
     }
@@ -1283,6 +1287,9 @@ header {
     @media (max-width: 768px) {
         padding: 50px 0 100px;
     }
+    @media (max-width: 575px) {
+        padding: 45px 0 80px;
+    }
 
     .newsBox {
         @media (max-width: 1180px) {
@@ -1304,6 +1311,9 @@ header {
 
         @media (max-width: 1180px) {
             margin-bottom: 40px;
+        }
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
         }
 
         .titleBox {
@@ -1349,6 +1359,9 @@ header {
             @media (max-width: 768px) {
                 font-size: 20px;
             }
+            @media (max-width: 575px) {
+                font-size: 18px;
+            }
         }
     }
 
@@ -1363,6 +1376,10 @@ header {
         align-items: center;
         gap: 15px;
         margin-bottom: 15px;
+
+        @media (max-width: 575px) {
+            margin-bottom: 10px;
+        }
     }
 
     .date {
@@ -1379,6 +1396,12 @@ header {
         height: 29px;
         background-color: $BlackGrayColor;
         transition: all 0.3s ease-in-out;
+
+        @media (max-width: 575px) {
+            padding: 13px 13px;
+            height: 25px;
+            font-size: 15px;
+        }
     }
 
     // ---------- left slick ----------
@@ -1431,6 +1454,10 @@ header {
                 height: 300px;
             }
 
+            @media (max-width: 575px) {
+                height: 250px;
+            }
+
             img {
                 width: 100%;
                 object-fit: contain;
@@ -1443,6 +1470,10 @@ header {
 
             .center {
                 margin-bottom: 10px;
+
+                @media (max-width: 575px) {
+                    margin-bottom: 5px;
+                }
             }
 
             .desc {
@@ -1466,6 +1497,10 @@ header {
                 background-color: transparent;
                 color: $GreenColor;
                 font-size: 16px;
+
+                @media (max-width: 575px) {
+                    width: 140px;
+                }
             }
         }
     }
@@ -1537,10 +1572,13 @@ header {
             @media (max-width: 1366px) {
                 gap: 20px;
             }
+            @media (max-width: 575px) {
+                padding: 10px 0;
+            }
 
             .title {
                 max-width: 100%;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
 

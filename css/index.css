@@ -616,22 +616,13 @@ header .funcBox .funcIcon.search {
   padding: 80px 0;
   background-image: url(../img/fullBg.png);
   background-repeat: no-repeat;
-  background-size: contain;
-}
-@media (max-width: 1800px) {
-  .bannerArea {
-    background-size: 110%;
-  }
-}
-@media (max-width: 1536px) {
-  .bannerArea {
-    padding-bottom: 40px;
-    background-size: cover;
-  }
+  background-size: 1920px 814px;
+  background-position: center bottom 100px;
 }
 @media (max-width: 1180px) {
   .bannerArea {
-    padding: 110px 0 100px;
+    background-size: cover;
+    padding-top: 100px;
   }
 }
 .bannerArea .wrap {
@@ -1449,11 +1440,26 @@ header .funcBox .funcIcon.search {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+@media (max-width: 1180px) {
+  .teamArea {
+    padding: 80px 0 100px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea {
+    padding: 50px 0 60px;
+  }
+}
 .teamArea .wrap {
   max-width: 1720px;
-  padding: 0 0 0 50px;
   margin-right: 0;
   margin-left: auto;
+  padding-right: 0;
+}
+@media (max-width: 1180px) {
+  .teamArea .wrap {
+    padding: 0;
+  }
 }
 .teamArea .teamBox {
   display: flex;
@@ -1465,6 +1471,11 @@ header .funcBox .funcIcon.search {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .teamBox {
+    gap: 55px;
   }
 }
 .teamArea .leftBox {
@@ -1483,6 +1494,15 @@ header .funcBox .funcIcon.search {
   text-align: justify;
   line-height: 30px;
 }
+.teamArea .leftBox .titleBox .text {
+  text-align: justify;
+  line-height: 30px;
+}
+@media (max-width: 480px) {
+  .teamArea .leftBox .titleBox .text {
+    line-height: 24px;
+  }
+}
 @media (max-width: 1180px) {
   .teamArea .leftBox .arrowBox {
     display: none;
@@ -1492,6 +1512,31 @@ header .funcBox .funcIcon.search {
   width: 100%;
   max-width: 1215px;
   overflow: hidden;
+}
+@media (max-width: 1180px) {
+  .teamArea .rightBox {
+    padding: 0 150px;
+  }
+}
+@media (max-width: 996px) {
+  .teamArea .rightBox {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .teamArea .rightBox {
+    padding: 0 170px;
+  }
+}
+@media (max-width: 575px) {
+  .teamArea .rightBox {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox {
+    padding: 0 50px;
+  }
 }
 .teamArea .rightBox .teamList .slick-list {
   width: 845px;
@@ -1505,11 +1550,28 @@ header .funcBox .funcIcon.search {
 }
 @media (max-width: 1180px) {
   .teamArea .rightBox .teamList .slick-list {
-    width: 80%;
+    padding: 0;
+    width: 100%;
+    margin: 0;
   }
 }
 .teamArea .rightBox .teamList .slick-slide {
   padding: 0 25px;
+}
+@media (max-width: 1180px) {
+  .teamArea .rightBox .teamList .slick-slide {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .teamArea .rightBox .teamList .slick-slide {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .teamList .slick-slide {
+    padding: 0 10px;
+  }
 }
 .teamArea .rightBox .item {
   position: relative;
@@ -1533,6 +1595,11 @@ header .funcBox .funcIcon.search {
   margin-bottom: 25px;
   overflow: hidden;
 }
+@media (max-width: 996px) {
+  .teamArea .rightBox .Img {
+    margin-bottom: 15px;
+  }
+}
 .teamArea .rightBox .Img img {
   width: 100%;
   -o-object-fit: contain;
@@ -1545,10 +1612,41 @@ header .funcBox .funcIcon.search {
   gap: 10px;
   margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+  .teamArea .rightBox .textBox .top {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .textBox .top {
+    margin-bottom: 5px;
+  }
+}
 .teamArea .rightBox .textBox .top .tag {
   width: 70px;
   height: 30px;
   transition: background-color 0.3s ease-in-out;
+}
+@media (max-width: 996px) {
+  .teamArea .rightBox .textBox .top .tag {
+    width: 65px;
+    height: 28px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .textBox .top .tag {
+    width: 60px;
+    height: 25px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .teamArea .rightBox .textBox .top .tag {
+    width: 55px;
+    height: 22px;
+    font-size: 13px;
+  }
 }
 .teamArea .rightBox .textBox .top .name {
   transition: color 0.3s ease-in-out;
@@ -1557,11 +1655,36 @@ header .funcBox .funcIcon.search {
   color: #2d2d2d;
   font-size: 26px;
 }
+@media (max-width: 996px) {
+  .teamArea .rightBox .textBox .top .name {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .textBox .top .name {
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .textBox .top .name {
+    font-size: 18px;
+  }
+}
 .teamArea .rightBox .textBox .desc {
   font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #2d2d2d;
   font-size: 16px;
+}
+@media (max-width: 996px) {
+  .teamArea .rightBox .textBox .desc {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .textBox .desc {
+    font-size: 13px;
+  }
 }
 .teamArea .deco {
   position: absolute;

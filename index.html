@@ -833,13 +833,27 @@
                 autoplaySpeed: 4500,
                 speed: 600,
                 arrows: true,
-                prevArrow: $('.teamArea .prevArrow'),
-                nextArrow: $('.teamArea .nextArrow'),
-                // responsive: [
-                //     {
-                //         breakpoint: 
-                //     }
-                // ]
+                prevArrow: $('.teamArea .leftBox .prevArrow'),
+                nextArrow: $('.teamArea .leftBox .nextArrow'),
+                responsive: [
+                    {
+                        breakpoint: 1181,
+                        settings: {
+                            slidesToShow: 3,
+                            // prevArrow: '<div class="arrowBox"><a class="arrow prevArrow2"></a></div>',
+                            // nextArrow: '<div class="arrowBox"><a class="arrow nextArrow2"></a></div>',
+                        },
+                        breakpoint: 993,
+                        settings: {
+                            slidesToShow: 2,
+                        },
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+
+                ]
             });
         });
     </script>

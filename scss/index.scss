@@ -594,19 +594,12 @@ header {
     padding: 80px 0;
     background-image: url(../img/fullBg.png);
     background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (max-width: 1800px) {
-        background-size: 110%;
-    }
-
-    @media (max-width: 1536px) {
-        padding-bottom: 40px;
-        background-size: cover;
-    }
+    background-size: 1920px 814px;
+    background-position: center bottom 100px;
 
     @media (max-width: 1180px) {
-        padding: 110px 0 100px;
+        background-size: cover;
+        padding-top: 100px;
     }
 
     .wrap {
@@ -1453,11 +1446,22 @@ header {
     background-repeat: no-repeat;
     overflow: hidden;
 
+    @media (max-width: 1180px) {
+        padding: 80px 0 100px;
+    }
+    @media (max-width: 480px) {
+        padding: 50px 0 60px;
+    }
+
     .wrap {
         max-width: 1720px;
-        padding: 0 0 0 50px;
         margin-right: 0;
         margin-left: auto;
+        padding-right: 0;
+
+        @media (max-width: 1180px) {
+            padding: 0;
+        }
     }
 
     .teamBox {
@@ -1469,6 +1473,9 @@ header {
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+        }
+        @media (max-width: 480px) {
+            gap: 55px;
         }
     }
 
@@ -1487,6 +1494,13 @@ header {
                 text-align: justify;
                 line-height: 30px;
             }
+            .text {
+                text-align: justify;
+                line-height: 30px;
+                @media (max-width: 480px) {
+                    line-height: 24px;
+                }
+            }
         }
 
         .arrowBox {
@@ -1501,6 +1515,22 @@ header {
         max-width: 1215px;
         overflow: hidden;
 
+        @media (max-width: 1180px) {
+            padding: 0 150px;
+        }
+        @media (max-width: 996px) {
+            padding: 0 100px;
+        }
+        @media (max-width: 768px) {
+            padding: 0 170px;
+        }
+        @media (max-width: 575px) {
+            padding: 0 100px;
+        }
+        @media (max-width: 480px) {
+            padding: 0 50px;
+        }
+
         .teamList {
             .slick-list {
                 width: calc(795px + 25px * 2);
@@ -1512,12 +1542,23 @@ header {
                 }
 
                 @media (max-width: 1180px) {
-                    width: 80%;
+                    padding: 0;
+                    width: 100%;
+                    margin: 0;
                 }
             }
 
             .slick-slide {
                 padding: 0 25px;
+                @media (max-width: 1180px) {
+                    padding: 0 20px;
+                }
+                @media (max-width: 768px) {
+                    padding: 0 15px;
+                }
+                @media (max-width: 480px) {
+                    padding: 0 10px;
+                }
             }
         }
 
@@ -1550,6 +1591,10 @@ header {
             margin-bottom: 25px;
             overflow: hidden;
 
+            @media (max-width: 996px) {
+                margin-bottom: 15px;
+            }
+
             img {
                 width: 100%;
                 object-fit: contain;
@@ -1564,20 +1609,61 @@ header {
                 gap: 10px;
                 margin-bottom: 15px;
 
+                @media (max-width: 480px) {
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width: 480px) {
+                    margin-bottom: 5px;
+                }
+
                 .tag {
                     width: 70px;
                     height: 30px;
                     transition: background-color 0.3s ease-in-out;
+
+                    @media (max-width: 996px) {
+                        width: 65px;
+                        height: 28px;
+                        font-size: 15px;
+                    }
+                    @media (max-width: 480px) {
+                        width: 60px;
+                        height: 25px;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 360px) {
+                        width: 55px;
+                        height: 22px;
+                        font-size: 13px;
+                    }
                 }
 
                 .name {
                     transition: color 0.3s ease-in-out;
                     @include text($color: $DarkGrayColor, $size: 26px);
+
+                    @media (max-width: 996px) {
+                        font-size: 24px;
+                    }
+                    @media (max-width: 480px) {
+                        font-size: 22px;
+                    }
+                    @media (max-width: 480px) {
+                        font-size: 18px;
+                    }
                 }
             }
 
             .desc {
                 @include text($color: $DarkGrayColor);
+
+                @media (max-width: 996px) {
+                    font-size: 15px;
+                }
+                @media (max-width: 480px) {
+                    font-size: 13px;
+                }
             }
         }
     }

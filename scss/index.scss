@@ -69,6 +69,10 @@ $BrownColor: #b4a885;
         padding: 0 30px;
     }
 
+    @media (max-width: 360px) {
+        padding: 0 25px;
+    }
+
     @media (max-width: 320px) {
         padding: 0 20px;
     }
@@ -1565,9 +1569,38 @@ footer {
     position: relative;
     padding: 100px 0 45px;
 
+    @media (max-width: 768px) {
+        padding: 80px 0 40px;
+    }
+    @media (max-width: 480px) {
+        padding: 60px 0 35px;
+    }
+    @media (max-width: 360px) {
+        padding: 40px 0 30px;
+    }
+
     .topBox {
         display: flex;
-        justify-content: space-between;
+        gap: 160px;
+
+        @media (max-width: 1536px) {
+            gap: 130px;
+        }
+        @media (max-width: 1366px) {
+            gap: 90px;
+        }
+        @media (max-width: 1180px) {
+            flex-direction: column;
+        }
+        @media (max-width: 768px) {
+            gap: 70px;
+        }
+        @media (max-width: 480px) {
+            gap: 35px;
+        }
+        @media (max-width: 360px) {
+            gap: 0;
+        }
 
         // --------- left ---------
 
@@ -1579,6 +1612,15 @@ footer {
             width: 185px;
             height: 40px;
             margin-bottom: 30px;
+
+            @media (max-width: 768px) {
+                width: 170px;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 480px) {
+                width: 150px;
+                margin-bottom: 0;
+            }
 
             img {
                 width: 100%;
@@ -1599,6 +1641,13 @@ footer {
                 $weight: 400,
                 $family: $font-poppins
             );
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+            @media (max-width: 480px) {
+                margin-bottom: 20px;
+            }
 
             div {
                 transition: color 0.3s ease-in-out;
@@ -1631,6 +1680,12 @@ footer {
                         background-color: $BrownColor;
                     }
                 }
+
+                @media (max-width: 480px) {
+                    width: 35px;
+                    height: 35px;
+                    padding: 3px;
+                }
             }
 
             .socialIcon {
@@ -1639,6 +1694,11 @@ footer {
                 height: 20px;
                 background-color: $GreenColor;
                 transition: background-color 0.3s ease-in-out;
+
+                @media (max-width: 480px) {
+                    width: 18px;
+                    height: 18px;
+                }
 
                 &.igIcon {
                     mask: url("../svg/ig.svg") center / contain no-repeat;
@@ -1662,7 +1722,55 @@ footer {
 
             .footerMenu {
                 display: flex;
-                justify-content: space-between;
+                gap: 90px;
+
+                & > li {
+                    @media (max-width: 1180px) {
+                        margin-top: 50px;
+                    }
+                    @media (max-width: 768px) {
+                        margin-top: 40px;
+                    }
+                    @media (max-width: 480px) {
+                        margin-top: 35px;
+                    }
+                    @media (max-width: 360px) {
+                        margin-top: 30px;
+                    }
+                }
+
+                @media (max-width: 1536px) {
+                    gap: 75px;
+                }
+                @media (max-width: 1366px) {
+                    gap: 55px;
+                }
+                @media (max-width: 1180px) {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 0;
+                }
+                @media (max-width: 768px) {
+                    margin-bottom: 25px;
+                }
+                @media (max-width: 480px) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .menuItem {
+                @media (max-width: 1180px) {
+                    width: calc(100% / 3);
+                }
+                @media (max-width: 768px) {
+                    width: calc(100% / 2 - 20px);
+                }
+                @media (max-width: 480px) {
+                    width: calc(100% / 2 - 10px);
+                }
+                @media (max-width: 360px) {
+                    width: 100%;
+                }
             }
 
             a {
@@ -1673,6 +1781,14 @@ footer {
                 padding-bottom: 10px;
                 transition: color 0.3s ease-in-out;
                 @include text($color: $BlackColor, $size: 22px, $weight: 500);
+
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 480px) {
+                    padding-bottom: 5px;
+                    font-size: 18px;
+                }
 
                 &:hover {
                     color: $BrownColor;
@@ -1689,6 +1805,14 @@ footer {
                     margin-top: 10px;
                     transition: color 0.3s ease-in-out;
                     @include text($color: $BlackColor, $weight: 500);
+                    @media (max-width: 768px) {
+                        margin-top: 5px;
+                        font-size: 15px;
+                    }
+                    @media (max-width: 480px) {
+                        padding-top: 5px;
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -1702,11 +1826,34 @@ footer {
         border-top: 1px solid $LightGrayColor;
         @include text($size: 15px, $weight: 400);
 
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 25px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+            gap: 0;
+            padding-top: 15px;
+            margin-top: 10px;
+        }
+
         .left {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 25px;
+
+            @media (max-width: 768px) {
+                justify-content: flex-start;
+                gap: 15px;
+            }
+
+            @media (max-width: 480px) {
+                justify-content: flex-start;
+                gap: 10px;
+            }
         }
 
         a {
@@ -1715,12 +1862,21 @@ footer {
             &:hover {
                 color: $BrownColor;
             }
+
+            @media (max-width: 480px) {
+                font-size: 14px;
+            }
         }
 
         .spearator {
             width: 1px;
             height: 15px;
             background-color: $LightGrayColor;
+
+            @media (max-width: 480px) {
+                width: 1px;
+                height: 10px;
+            }
         }
 
         .copyright {
@@ -1734,13 +1890,17 @@ footer {
                 &:hover {
                     color: $BrownColor;
                 }
+
+                @media (max-width: 480px) {
+                    font-size: 13px;
+                }
             }
         }
     }
 
     .deco {
         position: absolute;
-        top: -30%;
+        top: -140px;
         left: 0;
         width: 17vw;
         z-index: 1;

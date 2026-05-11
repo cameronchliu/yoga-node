@@ -552,7 +552,7 @@
                     </div>
                 </div>
             </div>
-            <div class="teamArea" style="overflow: hidden;">
+            <div class="teamArea">
                 <div class="wrap">
                     <div class="teamBox">
                         <div class="leftBox">
@@ -795,11 +795,6 @@
                 arrows: true,
                 prevArrow: $('.aboutArea .prevArrow'),
                 nextArrow: $('.aboutArea .nextArrow'),
-                // responsive: [
-                //     {
-                //         breakpoint:
-                //     }
-                // ]
             });
 
             // ------ news ------
@@ -831,7 +826,7 @@
             // ------ team ------
 
             $('.teamList').slick({
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 infinite: true,
                 autoplay: true,
@@ -840,6 +835,11 @@
                 arrows: true,
                 prevArrow: $('.teamArea .prevArrow'),
                 nextArrow: $('.teamArea .nextArrow'),
+                // responsive: [
+                //     {
+                //         breakpoint: 
+                //     }
+                // ]
             });
         });
     </script>

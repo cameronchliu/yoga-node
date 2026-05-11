@@ -168,6 +168,10 @@ $BrownColor: #b4a885;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1180px) {
+        justify-content: center;
+    }
 }
 
 .btnBox {
@@ -1459,11 +1463,22 @@ header {
     .teamBox {
         display: flex;
         justify-content: space-between;
+        gap: 80px;
+
+        @media (max-width: 1180px) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
 
     .leftBox {
         width: 100%;
         max-width: 335px;
+
+        @media (max-width: 1180px) {
+            max-width: 70%;
+        }
 
         .titleBox {
             margin-bottom: 25px;
@@ -1473,15 +1488,32 @@ header {
                 line-height: 30px;
             }
         }
+
+        .arrowBox {
+            @media (max-width: 1180px) {
+                display: none;
+            }
+        }
     }
 
     .rightBox {
         width: 100%;
         max-width: 1215px;
+        overflow: hidden;
 
         .teamList {
             .slick-list {
+                width: calc(795px + 25px * 2);
                 margin: 0 -25px;
+                overflow: visible;
+
+                @media (max-width: 1366px) {
+                    width: 700px;
+                }
+
+                @media (max-width: 1180px) {
+                    width: 80%;
+                }
             }
 
             .slick-slide {

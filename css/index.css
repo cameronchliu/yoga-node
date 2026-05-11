@@ -194,6 +194,11 @@ figure {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1180px) {
+  .actionBox {
+    justify-content: center;
+  }
+}
 
 .btnBox .btn {
   display: flex;
@@ -1453,10 +1458,23 @@ header .funcBox .funcIcon.search {
 .teamArea .teamBox {
   display: flex;
   justify-content: space-between;
+  gap: 80px;
+}
+@media (max-width: 1180px) {
+  .teamArea .teamBox {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .teamArea .leftBox {
   width: 100%;
   max-width: 335px;
+}
+@media (max-width: 1180px) {
+  .teamArea .leftBox {
+    max-width: 70%;
+  }
 }
 .teamArea .leftBox .titleBox {
   margin-bottom: 25px;
@@ -1465,12 +1483,30 @@ header .funcBox .funcIcon.search {
   text-align: justify;
   line-height: 30px;
 }
+@media (max-width: 1180px) {
+  .teamArea .leftBox .arrowBox {
+    display: none;
+  }
+}
 .teamArea .rightBox {
   width: 100%;
   max-width: 1215px;
+  overflow: hidden;
 }
 .teamArea .rightBox .teamList .slick-list {
+  width: 845px;
   margin: 0 -25px;
+  overflow: visible;
+}
+@media (max-width: 1366px) {
+  .teamArea .rightBox .teamList .slick-list {
+    width: 700px;
+  }
+}
+@media (max-width: 1180px) {
+  .teamArea .rightBox .teamList .slick-list {
+    width: 80%;
+  }
 }
 .teamArea .rightBox .teamList .slick-slide {
   padding: 0 25px;

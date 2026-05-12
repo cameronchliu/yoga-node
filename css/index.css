@@ -1800,18 +1800,6 @@ header .menuToggle:checked ~ .menuMask {
     top: 2dvw;
   }
 }
-@media (max-width: 1180px) {
-  .serviceArea .item1 .Txt {
-    left: 4vw;
-    top: 4vw;
-  }
-}
-@media (max-width: 1180px) {
-  .serviceArea .item1 .Txt {
-    left: 4dvw;
-    top: 4dvw;
-  }
-}
 .serviceArea .item1 .icon {
   margin-top: 30px;
   margin-right: 40px;

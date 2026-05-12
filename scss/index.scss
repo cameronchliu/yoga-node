@@ -65,6 +65,10 @@ $BrownColor: #b4a885;
     padding: 0 50px;
     margin: 0 auto;
 
+    @media (max-width: 992px) {
+        padding: 0 40px;
+    }
+
     @media (max-width: 575px) {
         padding: 0 35px;
     }
@@ -896,6 +900,9 @@ header {
         @media (max-width: 1180px) {
             padding: 0 50px;
         }
+        @media (max-width: 768px) {
+            padding: 0;
+        }
     }
 
     .aboutBox {
@@ -926,6 +933,10 @@ header {
 
         & > div + div {
             margin-top: 40px;
+
+            @media (max-width: 768px) {
+                margin-top: 20px;
+            }
         }
 
         @media (max-width: 1536px) {
@@ -943,6 +954,9 @@ header {
             flex-direction: column;
             align-items: center;
         }
+        @media (max-width: 768px) {
+            padding: 0 40px;
+        }
     }
 
     .titleBox {
@@ -953,6 +967,11 @@ header {
         }
         @media (max-width: 1180px) {
             max-width: 100%;
+        }
+        .actionBox {
+            @media (max-width: 768px) {
+                margin: 20px;
+            }
         }
     }
 
@@ -1005,15 +1024,22 @@ header {
             @include text($size: 24px);
 
             @media (max-width: 1366px) {
-                font-size: 22x;
+                font-size: 22px;
             }
             @media (max-width: 1180px) {
                 text-align: center;
+            }
+            @media (max-width: 768px) {
+                font-size: 20px;
             }
         }
 
         .text {
             @include text($color: $DarkGrayColor, $weight: 400);
+
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
         }
     }
 
@@ -1044,6 +1070,9 @@ header {
             @media (max-width: 1536px) {
                 font-size: 52px;
             }
+            @media (max-width: 768x) {
+                font-size: 44px;
+            }
         }
 
         .plus {
@@ -1059,6 +1088,10 @@ header {
             @media (max-width: 1366px) {
                 font-size: 32px;
             }
+            @media (max-width: 768x) {
+                font-size: 28px;
+                right: -20px;
+            }
         }
 
         .Txt {
@@ -1071,6 +1104,9 @@ header {
             }
             @media (max-width: 1366px) {
                 font-size: 18px;
+            }
+            @media (max-width: 768x) {
+                font-size: 16px;
             }
         }
     }
@@ -1094,6 +1130,11 @@ header {
         @media (max-width: 1180px) {
             max-width: 950px;
             padding-top: 70px;
+        }
+        @media (max-width: 768px) {
+            padding-top: 0;
+            width: 100%;
+            padding: 0 50px;
         }
 
         .item {
@@ -1152,6 +1193,10 @@ header {
             @media (max-width: 1440px) {
                 margin: 0 -15px;
             }
+            @media (max-width: 768px) {
+                margin: 0 -10px;
+                width: 670px;
+            }
         }
 
         .slick-slide {
@@ -1166,6 +1211,9 @@ header {
             @media (max-width: 1440px) {
                 padding: 0 15px;
             }
+            @media (max-width: 768px) {
+                padding: 0 10px;
+            }
         }
 
         .slick-center {
@@ -1177,6 +1225,9 @@ header {
                 }
                 @media (max-width: 1180px) {
                     transform: translateY(-15%);
+                }
+                @media (max-width: 768px) {
+                    transform: none;
                 }
             }
         }

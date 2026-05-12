@@ -912,6 +912,11 @@ header .funcBox .funcIcon.search {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1536px) {
+  .aboutArea .aboutBox {
+    gap: 40px;
+  }
+}
 .aboutArea .leftBox {
   width: 100%;
   max-width: 600px;
@@ -919,9 +924,19 @@ header .funcBox .funcIcon.search {
 .aboutArea .leftBox > div + div {
   margin-top: 40px;
 }
+@media (max-width: 1536px) {
+  .aboutArea .leftBox {
+    max-width: 500px;
+  }
+}
 .aboutArea .titleBox {
   width: 100%;
   max-width: 500px;
+}
+@media (max-width: 1536px) {
+  .aboutArea .titleBox {
+    max-width: 460px;
+  }
 }
 .aboutArea .featureBox {
   display: flex;
@@ -961,6 +976,11 @@ header .funcBox .funcIcon.search {
   gap: 70px;
   color: #b4a885;
 }
+@media (max-width: 1536px) {
+  .aboutArea .numberBox {
+    gap: 45px;
+  }
+}
 .aboutArea .numberBox .number {
   position: relative;
   width: -moz-fit-content;
@@ -969,6 +989,11 @@ header .funcBox .funcIcon.search {
   font-size: 60px;
   font-weight: 400;
 }
+@media (max-width: 1536px) {
+  .aboutArea .numberBox .number {
+    font-size: 52px;
+  }
+}
 .aboutArea .numberBox .plus {
   display: block;
   position: absolute;
@@ -976,16 +1001,32 @@ header .funcBox .funcIcon.search {
   top: 0;
   font-size: 40px;
 }
+@media (max-width: 1536px) {
+  .aboutArea .numberBox .plus {
+    font-size: 36px;
+  }
+}
 .aboutArea .numberBox .Txt {
   font-family: "Cormorant Garamond";
   font-size: 22px;
   font-weight: 700;
+}
+@media (max-width: 1536px) {
+  .aboutArea .numberBox .Txt {
+    font-size: 20px;
+  }
 }
 .aboutArea .rightBox {
   width: 100%;
   max-width: 1040px;
   padding-top: 80px;
   overflow: hidden;
+}
+@media (max-width: 1536px) {
+  .aboutArea .rightBox {
+    max-width: 100%;
+    padding-top: 70px;
+  }
 }
 .aboutArea .rightBox .item {
   position: relative;
@@ -1004,6 +1045,12 @@ header .funcBox .funcIcon.search {
   max-width: 325px;
   height: 500px;
   overflow: hidden;
+}
+@media (max-width: 1536px) {
+  .aboutArea .rightBox .Img {
+    max-width: 285px;
+    height: 440px;
+  }
 }
 .aboutArea .rightBox .Img img {
   display: block;
@@ -2365,4 +2412,4 @@ footer .deco img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}/*# sourceMappingURL=index.css.map */
+}

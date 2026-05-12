@@ -83,7 +83,7 @@ $BrownColor: #b4a885;
 }
 
 .titleBox {
-    &>div+div {
+    & > div + div {
         margin-top: 25px;
 
         @media (max-width: 1180px) {
@@ -356,7 +356,7 @@ header {
     @media (max-width: 1180px) {
         transition: background-color 0.3s ease;
 
-        .menuToggle:checked~.right {
+        .menuToggle:checked ~ .right {
             border-top: 1px solid $LightGrayColor;
             opacity: 1;
             visibility: visible;
@@ -364,7 +364,7 @@ header {
             transform: translateX(0);
         }
 
-        .menuToggle:checked~.right,
+        .menuToggle:checked ~ .right,
         &:has(.menuToggle:checked) {
             background-color: $whiteColor;
         }
@@ -428,7 +428,7 @@ header {
             padding: 20px;
             cursor: pointer;
 
-            &>div+div {
+            & > div + div {
                 margin-top: 8px;
             }
         }
@@ -871,12 +871,19 @@ header {
         padding-right: 0;
         margin-right: 0;
         margin-left: auto;
+
+        @media (max-width: 1536px) {
+            // max-width: 1360px;
+        }
     }
 
     .aboutBox {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        @media (max-width: 1536px) {
+            gap: 40px;
+        }
     }
 
     // ----------- left ------------
@@ -885,14 +892,21 @@ header {
         width: 100%;
         max-width: 600px;
 
-        &>div+div {
+        & > div + div {
             margin-top: 40px;
+        }
+
+        @media (max-width: 1536px) {
+            max-width: 500px;
         }
     }
 
     .titleBox {
         width: 100%;
         max-width: 500px;
+        @media (max-width: 1536px) {
+            max-width: 460px;
+        }
     }
 
     .featureBox {
@@ -905,7 +919,7 @@ header {
             width: 65px;
             height: 60px;
 
-            &+div {
+            & + div {
                 margin-top: 10px;
             }
 
@@ -932,12 +946,20 @@ header {
         gap: 70px;
         color: $BrownColor;
 
+        @media (max-width: 1536px) {
+            gap: 45px;
+        }
+
         .number {
             position: relative;
             width: fit-content;
             font-family: $font-poppins;
             font-size: 60px;
             font-weight: 400;
+
+            @media (max-width: 1536px) {
+                font-size: 52px;
+            }
         }
 
         .plus {
@@ -946,12 +968,20 @@ header {
             right: -25px;
             top: 0;
             font-size: 40px;
+
+            @media (max-width: 1536px) {
+                font-size: 36px;
+            }
         }
 
         .Txt {
             font-family: $font-en;
             font-size: 22px;
             font-weight: 700;
+
+            @media (max-width: 1536px) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -962,6 +992,11 @@ header {
         max-width: 1040px;
         padding-top: 80px;
         overflow: hidden;
+
+        @media (max-width: 1536px) {
+            max-width: 100%;
+            padding-top: 70px;
+        }
 
         .item {
             position: relative;
@@ -985,6 +1020,11 @@ header {
             max-width: 325px;
             height: 500px;
             overflow: hidden;
+
+            @media (max-width: 1536px) {
+                max-width: 285px;
+                height: 440px;
+            }
 
             img {
                 display: block;
@@ -1442,10 +1482,12 @@ header {
     }
 
     .date {
-        @include text($color: $BlackGrayColor,
+        @include text(
+            $color: $BlackGrayColor,
             $family: $font-poppins,
             $size: 14px,
-            $weight: 400);
+            $weight: 400
+        );
 
         @media (max-width: 480px) {
             font-size: 13px;
@@ -1618,7 +1660,6 @@ header {
         }
 
         .newsRightItem {
-
             .title {
                 @media (max-width: 1366px) {
                     font-size: 20px;
@@ -1689,7 +1730,6 @@ header {
             @media (max-width: 768px) {
                 flex: 1;
             }
-
         }
 
         .right {
@@ -2044,14 +2084,16 @@ footer {
         .contactBox {
             margin-bottom: 30px;
 
-            &>div+div {
+            & > div + div {
                 margin-top: 15px;
             }
 
-            @include text($color: $DarkGrayColor,
+            @include text(
+                $color: $DarkGrayColor,
                 $size: 14px,
                 $weight: 400,
-                $family: $font-poppins );
+                $family: $font-poppins
+            );
 
             @media (max-width: 768px) {
                 font-size: 13px;
@@ -2136,7 +2178,7 @@ footer {
                 display: flex;
                 gap: 90px;
 
-                &>li {
+                & > li {
                     @media (max-width: 1180px) {
                         margin-top: 50px;
                     }

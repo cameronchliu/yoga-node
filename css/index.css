@@ -619,6 +619,24 @@ header .funcBox .funcIcon.search {
   -webkit-mask: url("../svg/search.svg") center/contain no-repeat;
           mask: url("../svg/search.svg") center/contain no-repeat;
 }
+header .menuMask {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #666;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+header .menuToggle:checked ~ .menuMask {
+  opacity: 0.8;
+  visibility: visible;
+  pointer-events: auto;
+}
 
 .bannerArea {
   position: relative;

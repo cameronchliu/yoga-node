@@ -596,6 +596,27 @@ header {
             }
         }
     }
+
+    .menuMask {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: $MidGrayColor;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .menuToggle:checked ~ .menuMask {
+        opacity: 0.8;
+        visibility: visible;
+        pointer-events: auto;
+    }
 }
 
 // --------- banner ---------

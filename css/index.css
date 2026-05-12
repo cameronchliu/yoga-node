@@ -977,6 +977,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 40px;
   }
 }
+@media (max-width: 360px) {
+  .aboutArea .aboutBox {
+    gap: 35px;
+  }
+}
 .aboutArea .leftBox {
   width: 100%;
   max-width: 600px;
@@ -1027,6 +1032,11 @@ header .menuToggle:checked ~ .menuMask {
     padding: 0 20px;
   }
 }
+@media (max-width: 360px) {
+  .aboutArea .leftBox {
+    padding: 0 15px;
+  }
+}
 .aboutArea .titleBox {
   width: 100%;
   max-width: 500px;
@@ -1049,6 +1059,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 480px) {
   .aboutArea .titleBox .actionBox {
     margin: 15px 0 0;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .titleBox .actionBox {
+    margin: 10px 0 0;
   }
 }
 @media (max-width: 1180px) {
@@ -1086,6 +1101,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 20px;
   }
 }
+@media (max-width: 360px) {
+  .aboutArea .featureBox {
+    gap: 18px;
+  }
+}
 @media (max-width: 1180px) {
   .aboutArea .featureBox .featureItem {
     display: flex;
@@ -1101,6 +1121,12 @@ header .menuToggle:checked ~ .menuMask {
   .aboutArea .featureBox .Img {
     width: 55px;
     height: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .aboutArea .featureBox .Img {
+    width: 50px;
+    height: 45px;
   }
 }
 .aboutArea .featureBox .Img + div {
@@ -1144,6 +1170,11 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 17px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .featureBox .title {
+    font-size: 16px;
+  }
+}
 .aboutArea .featureBox .text {
   font-family: "Cormorant Garamond";
   font-weight: 400;
@@ -1163,6 +1194,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 480px) {
   .aboutArea .featureBox .text {
     font-size: 13px;
+  }
+}
+@media (max-width: 360px) {
+  .aboutArea .featureBox .text {
+    font-size: 12px;
   }
 }
 .aboutArea .numberBox {
@@ -1197,6 +1233,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 20px;
   }
 }
+@media (max-width: 360px) {
+  .aboutArea .numberBox {
+    gap: 16px;
+  }
+}
 .aboutArea .numberBox .number {
   position: relative;
   width: -moz-fit-content;
@@ -1223,6 +1264,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 480px) {
   .aboutArea .numberBox .number {
     font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .numberBox .number {
+    font-size: 32px;
   }
 }
 .aboutArea .numberBox .plus {
@@ -1254,6 +1300,12 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 24px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .numberBox .plus {
+    right: -14px;
+    font-size: 20px;
+  }
+}
 .aboutArea .numberBox .Txt {
   font-family: "Cormorant Garamond";
   font-size: 22px;
@@ -1277,6 +1329,16 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 480px) {
   .aboutArea .numberBox .Txt {
     font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .numberBox .Txt {
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .aboutArea .numberBox .Txt {
+    font-size: 14px;
   }
 }
 .aboutArea .rightBox {
@@ -1385,6 +1447,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 480px) {
   .aboutArea .aboutList .slick-list {
     width: 50%;
+  }
+}
+@media (max-width: 360px) {
+  .aboutArea .aboutList .slick-list {
+    width: 60%;
   }
 }
 .aboutArea .aboutList .slick-slide {

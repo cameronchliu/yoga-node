@@ -929,6 +929,9 @@ header {
         @media (max-width: 480px) {
             gap: 40px;
         }
+        @media (max-width: 360px) {
+            gap: 35px;
+        }
     }
 
     // ----------- left ------------
@@ -969,6 +972,9 @@ header {
         @media (max-width: 480px) {
             padding: 0 20px;
         }
+        @media (max-width: 360px) {
+            padding: 0 15px;
+        }
     }
 
     .titleBox {
@@ -986,6 +992,9 @@ header {
             }
             @media (max-width: 480px) {
                 margin: 15px 0 0;
+            }
+            @media (max-width: 480px) {
+                margin: 10px 0 0;
             }
         }
     }
@@ -1018,6 +1027,9 @@ header {
         @media (max-width: 480px) {
             gap: 20px;
         }
+        @media (max-width: 360px) {
+            gap: 18px;
+        }
 
         .featureItem {
             @media (max-width: 1180px) {
@@ -1034,6 +1046,10 @@ header {
             @media (max-width: 480px) {
                 width: 55px;
                 height: 50px;
+            }
+            @media (max-width: 360px) {
+                width: 50px;
+                height: 45px;
             }
 
             & + div {
@@ -1066,6 +1082,9 @@ header {
             @media (max-width: 480px) {
                 font-size: 17px;
             }
+            @media (max-width: 480px) {
+                font-size: 16px;
+            }
         }
 
         .text {
@@ -1079,6 +1098,9 @@ header {
             }
             @media (max-width: 480px) {
                 font-size: 13px;
+            }
+            @media (max-width: 360px) {
+                font-size: 12px;
             }
         }
     }
@@ -1105,6 +1127,9 @@ header {
         @media (max-width: 480px) {
             gap: 20px;
         }
+        @media (max-width: 360px) {
+            gap: 16px;
+        }
 
         .number {
             position: relative;
@@ -1124,6 +1149,9 @@ header {
             }
             @media (max-width: 480px) {
                 font-size: 36px;
+            }
+            @media (max-width: 480px) {
+                font-size: 32px;
             }
         }
 
@@ -1148,6 +1176,10 @@ header {
                 right: -16px;
                 font-size: 24px;
             }
+            @media (max-width: 480px) {
+                right: -14px;
+                font-size: 20px;
+            }
         }
 
         .Txt {
@@ -1166,6 +1198,12 @@ header {
             }
             @media (max-width: 480px) {
                 font-size: 15px;
+            }
+            @media (max-width: 480px) {
+                font-size: 15px;
+            }
+            @media (max-width: 360px) {
+                font-size: 14px;
             }
         }
     }
@@ -1265,6 +1303,9 @@ header {
             }
             @media (max-width: 480px) {
                 width: 50%;
+            }
+            @media (max-width: 360px) {
+                width: 60%;
             }
         }
 

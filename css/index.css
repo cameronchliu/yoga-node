@@ -365,8 +365,6 @@ figure {
 .icon img {
   display: block;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .tag {
@@ -486,8 +484,6 @@ header .logo a {
 }
 header .logo img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
   vertical-align: middle;
 }
 header .hamburger {
@@ -849,8 +845,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .bannerArea .rightBox .Img img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .bannerArea .rightBox .person {
   position: absolute;
@@ -884,8 +878,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .bannerArea .rightBox .person img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .bannerArea .rightBox .leftLeaf {
   position: absolute;
@@ -921,8 +913,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .bannerArea .rightBox .leftLeaf img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .bannerArea .rightBox .rightLeaf {
   position: absolute;
@@ -968,8 +958,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .bannerArea .rightBox .rightLeaf img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .bannerArea .bgLeft {
   position: absolute;
@@ -980,8 +968,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .bannerArea .bgLeft img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .bannerArea .bgRight {
   position: absolute;
@@ -992,8 +978,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .bannerArea .bgRight img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .aboutArea {
@@ -1223,8 +1207,6 @@ header .menuToggle:checked ~ .menuMask {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .aboutArea .featureBox .title {
   font-family: "Cormorant Garamond";
@@ -1497,8 +1479,6 @@ header .menuToggle:checked ~ .menuMask {
 .aboutArea .rightBox .Img img {
   display: block;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
 .aboutArea .rightBox .arrowBox {
@@ -1695,8 +1675,6 @@ header .menuToggle:checked ~ .menuMask {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   transition: transform 0.4s ease-in-out;
 }
 .serviceArea .item .Txt {
@@ -1778,8 +1756,6 @@ header .menuToggle:checked ~ .menuMask {
 .serviceArea .item .icon img {
   display: block;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .serviceArea .item1 {
   grid-area: 1/1/3/3;
@@ -1871,8 +1847,6 @@ header .menuToggle:checked ~ .menuMask {
 .serviceArea .decoBox .decoLeft img {
   display: block;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 .serviceArea .decoBox .decoRight {
   position: absolute;
@@ -1883,8 +1857,6 @@ header .menuToggle:checked ~ .menuMask {
 .serviceArea .decoBox .decoRight img {
   display: block;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .newsArea {
@@ -2140,8 +2112,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .newsArea .leftBox .Img img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
   transition: transform 0.4s ease-in-out;
 }
 .newsArea .leftBox .Txt .center {
@@ -2459,8 +2429,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .teamArea .rightBox .Img img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
   transition: transform 0.4s ease-in-out;
 }
 .teamArea .rightBox .textBox .top {
@@ -2561,8 +2529,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .teamArea .deco img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 footer {
@@ -2646,8 +2612,6 @@ footer .topBox .logo {
 }
 footer .topBox .logo img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 footer .topBox .contactBox {
   margin-bottom: 30px;
@@ -2980,6 +2944,4 @@ footer .deco {
 }
 footer .deco img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }

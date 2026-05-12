@@ -104,7 +104,7 @@ $BrownColor: #b4a885;
     }
 
     .title {
-        margin-top: 25px;
+        // margin-top: 25px;
         @include text($size: 45px);
 
         @media (max-width: 1180px) {
@@ -209,8 +209,8 @@ $BrownColor: #b4a885;
 .btnBox {
     margin-top: 25px;
 
-    @media (max-width: 480px) {
-        margin-top: 0;
+    @media (max-width: 768px) {
+        margin: 10px;
     }
 
     .btn {
@@ -713,6 +713,9 @@ header {
         background-size: cover;
         padding-top: 100px;
     }
+    @media (max-width: 575px) {
+        padding-bottom: 50px;
+    }
 
     .bannerBox {
         display: flex;
@@ -736,10 +739,6 @@ header {
         }
 
         @media (max-width: 768px) {
-            max-width: 90%;
-        }
-
-        @media (max-width: 480px) {
             max-width: 100%;
         }
     }
@@ -974,10 +973,15 @@ header {
     @media (max-width: 1180px) {
         padding: 50px 0 130px;
     }
-    @media (max-width: 575px) {
+    @media (max-width: 768px) {
         padding: 30px 0 70px;
     }
-
+    @media (max-width: 575px) {
+        padding: 30px 0 50px;
+    }
+    @media (max-width: 480px) {
+        padding: 0 0 20px;
+    }
     .wrap {
         max-width: calc(1665px + 50px);
         padding-right: 0;
@@ -1037,6 +1041,9 @@ header {
             @media (max-width: 768px) {
                 margin-top: 20px;
             }
+            @media (max-width: 480px) {
+                margin-top: 10px;
+            }
         }
 
         @media (max-width: 1536px) {
@@ -1053,12 +1060,6 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-        @media (max-width: 768px) {
-            padding: 0 40px;
-        }
-        @media (max-width: 575px) {
-            padding: 0 25px;
         }
         @media (max-width: 480px) {
             padding: 0 20px;
@@ -1082,6 +1083,11 @@ header {
         }
         @media (max-width: 1180px) {
             max-width: 100%;
+        }
+
+        .btn {
+            margin: 0;
+            margin-top: 10px;
         }
     }
 
@@ -1361,6 +1367,9 @@ header {
             @media (max-width: 1180px) {
                 display: flex;
                 justify-content: center;
+                padding-top: 40px;
+            }
+            @media (max-width: 480px) {
                 padding-top: 20px;
             }
         }
@@ -1455,7 +1464,7 @@ header {
 
     .serviceBox {
         @media (max-width: 1180px) {
-            max-width: 650px;
+            max-width: 700px;
             margin: 0 auto;
         }
     }
@@ -1471,7 +1480,7 @@ header {
         }
 
         @media (max-width: 1180px) {
-            grid-template-rows: 1fr 0.7fr 1fr 1fr;
+            grid-template-rows: 1fr 0.7fr 1fr 0.5fr;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
@@ -1505,11 +1514,13 @@ header {
 
         .Img {
             width: 100%;
+            height: 100%;
             overflow: hidden; // 讓圖片有放大效果時，不會超出Img
 
             img {
                 display: block;
                 width: 100%;
+                height: 100%;
                 transition: transform 0.4s ease-in-out;
             }
         }
@@ -1592,9 +1603,6 @@ header {
         &1 {
             grid-area: 1 / 1 / 3 / 3;
 
-            // @media (max-width: 1180px) {
-            //     // grid-area:1 / 1 / 3 / 3 ;
-            // }
             @media (max-width: 1180px) {
                 grid-area: 1 / 1 / 3 / 3;
             }
@@ -1644,9 +1652,6 @@ header {
         &2 {
             grid-area: 1 / 3 / 2 / 4;
 
-            // @media (max-width: 1180px) {
-            //     grid-area: 1 / 3 / 3 / 4;
-            // }
             @media (max-width: 1180px) {
                 grid-area: 3 / 1 / 4 / 2;
             }
@@ -1669,10 +1674,6 @@ header {
         &3 {
             grid-area: 1 / 4 / 2 / 5;
 
-            // @media (max-width: 1180px) {
-            //     grid-area: 1 / 4 / 3 / 5;
-            // }
-
             @media (max-width: 1180px) {
                 grid-area: 3 / 2 / 4 / 3;
             }
@@ -1681,9 +1682,6 @@ header {
         &4 {
             grid-area: 2 / 3 / 3 / 5;
 
-            // @media (max-width: 1180px) {
-            //     grid-area: 3 / 1 / 4 / 5;
-            // }
             @media (max-width: 1180px) {
                 grid-area: 4 / 1 / 5 / 3;
             }
@@ -1733,15 +1731,15 @@ header {
     }
 
     @media (max-width: 768px) {
-        padding: 50px 0 100px;
+        padding: 50px 0 70px;
     }
 
     @media (max-width: 575px) {
-        padding: 45px 0 80px;
+        padding: 45px 0 55px;
     }
 
     @media (max-width: 480px) {
-        padding: 40px 0 70px;
+        padding: 30px 0 40px;
     }
 
     .newsBox {
@@ -2135,9 +2133,11 @@ header {
     @media (max-width: 1180px) {
         padding: 80px 0 100px;
     }
-
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         padding: 50px 0 60px;
+    }
+    @media (max-width: 480px) {
+        padding: 30px 0 50px;
     }
 
     .wrap {
@@ -2172,7 +2172,7 @@ header {
         max-width: 335px;
 
         @media (max-width: 1180px) {
-            max-width: 100%;
+            max-width: 700px;
             padding: 0 50px;
         }
 
@@ -2206,7 +2206,7 @@ header {
             @media (max-width: 480px) {
                 margin-bottom: 15px;
             }
-            
+
             .text {
                 text-align: justify;
                 line-height: 30px;
@@ -2429,11 +2429,11 @@ footer {
     }
 
     @media (max-width: 480px) {
-        padding: 60px 0 35px;
+        padding: 50px 0 35px;
     }
 
     @media (max-width: 360px) {
-        padding: 40px 0 30px;
+        padding: 30px 0 30px;
     }
 
     .topBox {

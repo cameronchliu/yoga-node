@@ -117,7 +117,6 @@ figure {
   }
 }
 .titleBox .title {
-  margin-top: 25px;
   font-family: "Cormorant Garamond";
   font-weight: 700;
   color: #2c4109;
@@ -249,9 +248,9 @@ figure {
 .btnBox {
   margin-top: 25px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .btnBox {
-    margin-top: 0;
+    margin: 10px;
   }
 }
 .btnBox .btn {
@@ -752,6 +751,11 @@ header .menuToggle:checked ~ .menuMask {
     padding-top: 100px;
   }
 }
+@media (max-width: 575px) {
+  .bannerArea {
+    padding-bottom: 50px;
+  }
+}
 .bannerArea .bannerBox {
   display: flex;
   justify-content: space-between;
@@ -775,11 +779,6 @@ header .menuToggle:checked ~ .menuMask {
   }
 }
 @media (max-width: 768px) {
-  .bannerArea .leftBox {
-    max-width: 90%;
-  }
-}
-@media (max-width: 480px) {
   .bannerArea .leftBox {
     max-width: 100%;
   }
@@ -1023,9 +1022,19 @@ header .menuToggle:checked ~ .menuMask {
     padding: 50px 0 130px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .aboutArea {
     padding: 30px 0 70px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea {
+    padding: 30px 0 50px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea {
+    padding: 0 0 20px;
   }
 }
 .aboutArea .wrap {
@@ -1104,6 +1113,11 @@ header .menuToggle:checked ~ .menuMask {
     margin-top: 20px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .leftBox > div + div {
+    margin-top: 10px;
+  }
+}
 @media (max-width: 1536px) {
   .aboutArea .leftBox {
     max-width: 500px;
@@ -1125,16 +1139,6 @@ header .menuToggle:checked ~ .menuMask {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  .aboutArea .leftBox {
-    padding: 0 40px;
-  }
-}
-@media (max-width: 575px) {
-  .aboutArea .leftBox {
-    padding: 0 25px;
   }
 }
 @media (max-width: 480px) {
@@ -1165,6 +1169,10 @@ header .menuToggle:checked ~ .menuMask {
   .aboutArea .titleBox {
     max-width: 100%;
   }
+}
+.aboutArea .titleBox .btn {
+  margin: 0;
+  margin-top: 10px;
 }
 .aboutArea .featureBox {
   display: flex;
@@ -1514,6 +1522,11 @@ header .menuToggle:checked ~ .menuMask {
   .aboutArea .rightBox .arrowBox {
     display: flex;
     justify-content: center;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .rightBox .arrowBox {
     padding-top: 20px;
   }
 }
@@ -1626,7 +1639,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .serviceArea .serviceBox {
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
   }
 }
@@ -1643,7 +1656,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .serviceArea .gridBox {
-    grid-template-rows: 1fr 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr 1fr 0.5fr;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
   }
@@ -1672,11 +1685,13 @@ header .menuToggle:checked ~ .menuMask {
 }
 .serviceArea .item .Img {
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .serviceArea .item .Img img {
   display: block;
   width: 100%;
+  height: 100%;
   transition: transform 0.4s ease-in-out;
 }
 .serviceArea .item .Txt {
@@ -1890,17 +1905,17 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 768px) {
   .newsArea {
-    padding: 50px 0 100px;
+    padding: 50px 0 70px;
   }
 }
 @media (max-width: 575px) {
   .newsArea {
-    padding: 45px 0 80px;
+    padding: 45px 0 55px;
   }
 }
 @media (max-width: 480px) {
   .newsArea {
-    padding: 40px 0 70px;
+    padding: 30px 0 40px;
   }
 }
 @media (max-width: 1180px) {
@@ -2260,9 +2275,14 @@ header .menuToggle:checked ~ .menuMask {
     padding: 80px 0 100px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .teamArea {
     padding: 50px 0 60px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea {
+    padding: 30px 0 50px;
   }
 }
 .teamArea .wrap {
@@ -2299,7 +2319,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .teamArea .leftBox {
-    max-width: 100%;
+    max-width: 700px;
     padding: 0 50px;
   }
 }
@@ -2563,12 +2583,12 @@ footer {
 }
 @media (max-width: 480px) {
   footer {
-    padding: 60px 0 35px;
+    padding: 50px 0 35px;
   }
 }
 @media (max-width: 360px) {
   footer {
-    padding: 40px 0 30px;
+    padding: 30px 0 30px;
   }
 }
 footer .topBox {

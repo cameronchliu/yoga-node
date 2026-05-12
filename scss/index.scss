@@ -2021,6 +2021,10 @@ header {
             max-width: 100%;
         }
 
+        @media (max-width: 768px) {
+            display: none;
+        }
+
         .newsRightList {
             .slick-list {
                 margin: -30px 0;
@@ -2041,9 +2045,9 @@ header {
                     font-size: 20px;
                 }
 
-                @media (max-width: 480px) {
-                    max-width: 325px;
-                }
+                // @media (max-width: 480px) {
+                //     max-width: 325px;
+                // }
             }
 
             &:hover {
@@ -2080,33 +2084,33 @@ header {
                 gap: 20px;
             }
 
-            @media (max-width: 575px) {
-                padding: 10px 0;
-            }
+            // @media (max-width: 575px) {
+            //     padding: 10px 0;
+            // }
 
-            @media (max-width: 480px) {
-                gap: 12px;
-                padding: 8px 0;
-            }
+            // @media (max-width: 480px) {
+            //     gap: 12px;
+            //     padding: 8px 0;
+            // }
 
-            .title {
-                @media (max-width: 575px) {
-                    max-width: 100%;
-                    font-size: 16px;
-                }
+            // .title {
+            //     @media (max-width: 575px) {
+            //         max-width: 100%;
+            //         font-size: 16px;
+            //     }
 
-                @media (max-width: 480px) {
-                    height: 30px;
-                    font-size: 15px;
-                }
-            }
+            //     @media (max-width: 480px) {
+            //         height: 30px;
+            //         font-size: 15px;
+            //     }
+            // }
         }
 
-        .left {
-            @media (max-width: 768px) {
-                flex: 1;
-            }
-        }
+        // .left {
+        //     @media (max-width: 768px) {
+        //         flex: 1;
+        //     }
+        // }
 
         .right {
             flex-shrink: 0;

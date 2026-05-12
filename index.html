@@ -854,7 +854,15 @@
                 arrows: false,
                 dots: false,
                 fade: true,
-                asNavFor: '.newsRightList'
+                asNavFor: '.newsRightList',
+                responsive: [
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            dots: true,
+                        }
+                    },
+                ]
             });
             $('.newsRightList').slick({
                 vertical: true,

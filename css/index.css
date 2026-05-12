@@ -77,24 +77,29 @@ figure {
     padding: 0 40px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .wrap {
-    padding: 0 35px;
+    padding: 0 30px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .wrap {
     padding: 0 25px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
   .wrap {
     padding: 0 20px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   .wrap {
     padding: 0 15px;
+  }
+}
+@media (max-width: 320px) {
+  .wrap {
+    padding: 0 10px;
   }
 }
 
@@ -2639,17 +2644,17 @@ footer .topBox .right .footerMenu {
 }
 @media (max-width: 768px) {
   footer .topBox .right .footerMenu > li {
-    margin-top: 40px;
+    margin-top: 25px;
   }
 }
 @media (max-width: 480px) {
   footer .topBox .right .footerMenu > li {
-    margin-top: 35px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 360px) {
   footer .topBox .right .footerMenu > li {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 1536px) {
@@ -2686,17 +2691,24 @@ footer .topBox .right .footerMenu {
 }
 @media (max-width: 768px) {
   footer .topBox .right .menuItem {
-    width: calc(50% - 20px);
-  }
-}
-@media (max-width: 480px) {
-  footer .topBox .right .menuItem {
-    width: calc(50% - 10px);
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 @media (max-width: 360px) {
   footer .topBox .right .menuItem {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  footer .topBox .right .menuItem.isOpen .title::after {
+    content: "-";
+  }
+}
+@media (max-width: 768px) {
+  footer .topBox .right .menuItem.isOpen .subMenu {
+    max-height: 300px;
+    padding-bottom: 15px;
   }
 }
 footer .topBox .right a {
@@ -2712,6 +2724,8 @@ footer .topBox .right .title {
 }
 @media (max-width: 768px) {
   footer .topBox .right .title {
+    position: relative;
+    padding: 15px 0;
     font-size: 20px;
   }
 }
@@ -2724,8 +2738,24 @@ footer .topBox .right .title {
 footer .topBox .right .title:hover {
   color: #b4a885;
 }
+@media (max-width: 768px) {
+  footer .topBox .right .title::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 footer .topBox .right .subMenu .subMenuItem:hover a {
   color: #b4a885;
+}
+@media (max-width: 768px) {
+  footer .topBox .right .subMenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
 }
 footer .topBox .right .subMenu a {
   padding-top: 10px;

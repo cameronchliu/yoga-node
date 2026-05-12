@@ -885,6 +885,17 @@
                 ]
             });
         });
+
+        // ------ footer ------
+
+        $('.footerMenu .title').on('click', function (e) {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+
+                $(this).closest('.menuItem').toggleClass('isOpen');
+            }
+        });
+
     </script>
 </body>
 

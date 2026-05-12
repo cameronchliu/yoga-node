@@ -69,20 +69,24 @@ $BrownColor: #b4a885;
         padding: 0 40px;
     }
 
-    @media (max-width: 575px) {
-        padding: 0 35px;
+    @media (max-width: 768px) {
+        padding: 0 30px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 575px) {
         padding: 0 25px;
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 480px) {
         padding: 0 20px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 360px) {
         padding: 0 15px;
+    }
+
+    @media (max-width: 320px) {
+        padding: 0 10px;
     }
 }
 
@@ -2495,15 +2499,15 @@ footer {
                     }
 
                     @media (max-width: 768px) {
-                        margin-top: 40px;
+                        margin-top: 25px;
                     }
 
                     @media (max-width: 480px) {
-                        margin-top: 35px;
+                        margin-top: 15px;
                     }
 
                     @media (max-width: 360px) {
-                        margin-top: 30px;
+                        margin-top: 10px;
                     }
                 }
 
@@ -2536,15 +2540,27 @@ footer {
                 }
 
                 @media (max-width: 768px) {
-                    width: calc(100% / 2 - 20px);
-                }
-
-                @media (max-width: 480px) {
-                    width: calc(100% / 2 - 10px);
+                    width: 100%;
+                    border-bottom: 1px solid $LightGrayColor;
                 }
 
                 @media (max-width: 360px) {
                     width: 100%;
+                }
+
+                &.isOpen {
+                    .title::after {
+                        @media (max-width: 768px) {
+                            content: "-";
+                        }
+                    }
+
+                    .subMenu {
+                        @media (max-width: 768px) {
+                            max-height: 300px;
+                            padding-bottom: 15px;
+                        }
+                    }
                 }
             }
 
@@ -2558,6 +2574,8 @@ footer {
                 @include text($color: $BlackColor, $size: 22px, $weight: 500);
 
                 @media (max-width: 768px) {
+                    position: relative;
+                    padding: 15px 0;
                     font-size: 20px;
                 }
 
@@ -2569,11 +2587,28 @@ footer {
                 &:hover {
                     color: $BrownColor;
                 }
+
+                &::after {
+                    @media (max-width: 768px) {
+                        content: "+";
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
             }
 
             .subMenu {
+
                 .subMenuItem:hover a {
                     color: $BrownColor;
+                }
+
+                @media (max-width: 768px) {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-in-out;
                 }
 
                 a {

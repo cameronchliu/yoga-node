@@ -1491,7 +1491,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 575px) {
   .aboutArea .rightBox {
-    padding: 0 50px;
     max-width: 100%;
   }
 }
@@ -1563,10 +1562,9 @@ header .menuToggle:checked ~ .menuMask {
     margin: 0 -15px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .aboutArea .aboutList .slick-list {
-    margin: 0 auto;
-    max-width: 50%;
+    margin: 0 -10px;
   }
 }
 .aboutArea .aboutList .slick-slide {
@@ -1590,6 +1588,21 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .aboutList .slick-slide {
     padding: 0 10px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .aboutList .slick-slide {
+    width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .aboutList .slick-slide {
+    width: 240px;
+  }
+}
+@media (max-width: 320px) {
+  .aboutArea .aboutList .slick-slide {
+    width: 200px;
   }
 }
 .aboutArea .aboutList .slick-center .item {
@@ -2388,46 +2401,30 @@ header .menuToggle:checked ~ .menuMask {
   max-width: 1215px;
   overflow: hidden;
 }
+@media (max-width: 1366px) {
+  .teamArea .rightBox {
+    max-width: 1000px;
+    padding-right: 100px;
+  }
+}
 @media (max-width: 1180px) {
   .teamArea .rightBox {
-    padding: 0 150px;
+    max-width: 100%;
+    padding: 0 30px;
   }
 }
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .teamArea .rightBox {
-    padding: 0 100px;
-  }
-}
-@media (max-width: 768px) {
-  .teamArea .rightBox {
-    padding: 0 170px;
-  }
-}
-@media (max-width: 575px) {
-  .teamArea .rightBox {
-    padding: 0 100px;
-  }
-}
-@media (max-width: 480px) {
-  .teamArea .rightBox {
-    padding: 0 50px;
+    padding: 0;
   }
 }
 .teamArea .rightBox .teamList .slick-list {
-  width: 845px;
   margin: 0 -25px;
   overflow: visible;
 }
-@media (max-width: 1366px) {
-  .teamArea .rightBox .teamList .slick-list {
-    width: 700px;
-  }
-}
 @media (max-width: 1180px) {
   .teamArea .rightBox .teamList .slick-list {
-    padding: 0;
-    width: 100%;
-    margin: 0;
+    margin: 0 -20px;
   }
 }
 .teamArea .rightBox .teamList .slick-slide {
@@ -2440,12 +2437,17 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 768px) {
   .teamArea .rightBox .teamList .slick-slide {
-    padding: 0 15px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 575px) {
+  .teamArea .rightBox .teamList .slick-slide {
+    width: 300px;
   }
 }
 @media (max-width: 480px) {
   .teamArea .rightBox .teamList .slick-slide {
-    padding: 0 10px;
+    width: 250px;
   }
 }
 .teamArea .rightBox .item {

@@ -1331,7 +1331,6 @@ header {
             max-width: 700px;
         }
         @media (max-width: 575px) {
-            padding: 0 50px;
             max-width: 100%;
         }
         @media (max-width: 480px) {
@@ -1390,8 +1389,6 @@ header {
 
     .aboutList {
         .slick-list {
-            // width: calc(1040px - 325px);
-            // width: 100%;
             overflow: visible;
 
             @media (max-width: 1667px) {
@@ -1403,9 +1400,8 @@ header {
             @media (max-width: 1440px) {
                 margin: 0 -15px;
             }
-            @media (max-width: 480px) {
-                margin: 0 auto;
-                max-width: 50%;
+            @media (max-width: 768px) {
+                margin: 0 -10px;
             }
         }
 
@@ -1423,6 +1419,15 @@ header {
             }
             @media (max-width: 768px) {
                 padding: 0 10px;
+            }
+            @media (max-width: 575px) {
+                width: 280px;
+            }
+            @media (max-width: 480px) {
+                width: 240px;
+            }
+            @media (max-width: 320px) {
+                width: 200px;
             }
         }
 
@@ -2227,7 +2232,6 @@ header {
             @media (max-width: 1180px) {
                 display: none;
             }
-
         }
     }
 
@@ -2236,40 +2240,27 @@ header {
         max-width: 1215px;
         overflow: hidden;
 
+        @media (max-width: 1366px) {
+            max-width: 1000px;
+            padding-right: 100px;
+        }
+
         @media (max-width: 1180px) {
-            padding: 0 150px;
+            max-width: 100%;
+            padding: 0 30px;
         }
 
-        @media (max-width: 996px) {
-            padding: 0 100px;
-        }
-
-        @media (max-width: 768px) {
-            padding: 0 170px;
-        }
-
-        @media (max-width: 575px) {
-            padding: 0 100px;
-        }
-
-        @media (max-width: 480px) {
-            padding: 0 50px;
+        @media (max-width: 992px) {
+            padding: 0;
         }
 
         .teamList {
             .slick-list {
-                width: calc(795px + 25px * 2);
                 margin: 0 -25px;
                 overflow: visible;
 
-                @media (max-width: 1366px) {
-                    width: 700px;
-                }
-
                 @media (max-width: 1180px) {
-                    padding: 0;
-                    width: 100%;
-                    margin: 0;
+                    margin: 0 -20px;
                 }
             }
 
@@ -2281,11 +2272,15 @@ header {
                 }
 
                 @media (max-width: 768px) {
-                    padding: 0 15px;
+                    padding: 0 10px;
+                }
+
+                @media (max-width: 575px) {
+                    width: 300px;
                 }
 
                 @media (max-width: 480px) {
-                    padding: 0 10px;
+                    width: 250px;
                 }
             }
         }

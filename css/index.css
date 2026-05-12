@@ -1274,7 +1274,7 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .aboutList .slick-list {
     margin: 0 -10px;
-    width: 670px;
+    width: 100%;
   }
 }
 .aboutArea .aboutList .slick-slide {

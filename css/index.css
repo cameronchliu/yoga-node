@@ -925,6 +925,11 @@ header .menuToggle:checked ~ .menuMask {
   margin-right: 0;
   margin-left: auto;
 }
+@media (max-width: 1180px) {
+  .aboutArea .wrap {
+    padding: 0 50px;
+  }
+}
 .aboutArea .aboutBox {
   width: 100%;
   display: flex;
@@ -943,6 +948,13 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1280px) {
   .aboutArea .aboutBox {
     gap: 25px;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .aboutBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
   }
 }
 .aboutArea .leftBox {
@@ -967,6 +979,14 @@ header .menuToggle:checked ~ .menuMask {
     max-width: 430px;
   }
 }
+@media (max-width: 1180px) {
+  .aboutArea .leftBox {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .aboutArea .titleBox {
   width: 100%;
   max-width: 500px;
@@ -974,6 +994,16 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1536px) {
   .aboutArea .titleBox {
     max-width: 460px;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .titleBox {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .arrowBox {
+    display: none;
   }
 }
 .aboutArea .featureBox {
@@ -985,6 +1015,20 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1366px) {
   .aboutArea .featureBox {
     max-width: 430px;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .featureBox {
+    max-width: 100%;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .featureBox .featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .aboutArea .featureBox .Img {
@@ -1012,6 +1056,11 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 22x;
   }
 }
+@media (max-width: 1180px) {
+  .aboutArea .featureBox .title {
+    text-align: center;
+  }
+}
 .aboutArea .featureBox .text {
   font-family: "Cormorant Garamond";
   font-weight: 400;
@@ -1032,6 +1081,12 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1366px) {
   .aboutArea .numberBox {
     gap: 35px;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .numberBox {
+    justify-content: center;
+    gap: 50px;
   }
 }
 .aboutArea .numberBox .number {
@@ -1059,7 +1114,7 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 36px;
   }
 }
-@media (max-width: 1536px) {
+@media (max-width: 1366px) {
   .aboutArea .numberBox .plus {
     font-size: 32px;
   }
@@ -1095,6 +1150,12 @@ header .menuToggle:checked ~ .menuMask {
   .aboutArea .rightBox {
     max-width: 720px;
     padding-top: 0;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .rightBox {
+    max-width: 950px;
+    padding-top: 70px;
   }
 }
 .aboutArea .rightBox .item {
@@ -1176,6 +1237,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1440px) {
   .aboutArea .aboutList .slick-center .item {
     transform: none;
+  }
+}
+@media (max-width: 1180px) {
+  .aboutArea .aboutList .slick-center .item {
+    transform: translateY(-15%);
   }
 }
 

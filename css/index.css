@@ -967,9 +967,14 @@ header .menuToggle:checked ~ .menuMask {
     gap: 60px;
   }
 }
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   .aboutArea .aboutBox {
     gap: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .aboutBox {
+    gap: 40px;
   }
 }
 .aboutArea .leftBox {
@@ -1017,6 +1022,11 @@ header .menuToggle:checked ~ .menuMask {
     padding: 0 25px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .leftBox {
+    padding: 0 20px;
+  }
+}
 .aboutArea .titleBox {
   width: 100%;
   max-width: 500px;
@@ -1034,6 +1044,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .titleBox .actionBox {
     margin: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .titleBox .actionBox {
+    margin: 15px 0 0;
   }
 }
 @media (max-width: 1180px) {
@@ -1066,6 +1081,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 25px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .featureBox {
+    gap: 20px;
+  }
+}
 @media (max-width: 1180px) {
   .aboutArea .featureBox .featureItem {
     display: flex;
@@ -1076,6 +1096,12 @@ header .menuToggle:checked ~ .menuMask {
 .aboutArea .featureBox .Img {
   width: 65px;
   height: 60px;
+}
+@media (max-width: 480px) {
+  .aboutArea .featureBox .Img {
+    width: 55px;
+    height: 50px;
+  }
 }
 .aboutArea .featureBox .Img + div {
   margin-top: 10px;
@@ -1113,6 +1139,11 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 18px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .featureBox .title {
+    font-size: 17px;
+  }
+}
 .aboutArea .featureBox .text {
   font-family: "Cormorant Garamond";
   font-weight: 400;
@@ -1127,6 +1158,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 575px) {
   .aboutArea .featureBox .text {
     font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .featureBox .text {
+    font-size: 13px;
   }
 }
 .aboutArea .numberBox {
@@ -1156,6 +1192,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 25px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .numberBox {
+    gap: 20px;
+  }
+}
 .aboutArea .numberBox .number {
   position: relative;
   width: -moz-fit-content;
@@ -1179,6 +1220,11 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 40px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .numberBox .number {
+    font-size: 36px;
+  }
+}
 .aboutArea .numberBox .plus {
   display: block;
   position: absolute;
@@ -1198,14 +1244,14 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 768px) {
   .aboutArea .numberBox .plus {
-    font-size: 28px;
     right: -20px;
+    font-size: 28px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 480px) {
   .aboutArea .numberBox .plus {
-    font-size: 26px;
-    right: -18px;
+    right: -16px;
+    font-size: 24px;
   }
 }
 .aboutArea .numberBox .Txt {
@@ -1226,6 +1272,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .numberBox .Txt {
     font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .numberBox .Txt {
+    font-size: 15px;
   }
 }
 .aboutArea .rightBox {
@@ -1331,6 +1382,11 @@ header .menuToggle:checked ~ .menuMask {
     width: 50%;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .aboutList .slick-list {
+    width: 50%;
+  }
+}
 .aboutArea .aboutList .slick-slide {
   padding: 0 22.5px;
 }
@@ -1352,6 +1408,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .aboutList .slick-slide {
     padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .aboutList .slick-slide {
+    padding: 0 5px;
   }
 }
 .aboutArea .aboutList .slick-center .item {

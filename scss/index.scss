@@ -923,8 +923,11 @@ header {
             align-items: center;
             gap: 60px;
         }
-        @media (max-width: 574px) {
+        @media (max-width: 575px) {
             gap: 50px;
+        }
+        @media (max-width: 480px) {
+            gap: 40px;
         }
     }
 
@@ -963,6 +966,9 @@ header {
         @media (max-width: 575px) {
             padding: 0 25px;
         }
+        @media (max-width: 480px) {
+            padding: 0 20px;
+        }
     }
 
     .titleBox {
@@ -977,6 +983,9 @@ header {
         .actionBox {
             @media (max-width: 768px) {
                 margin: 20px;
+            }
+            @media (max-width: 480px) {
+                margin: 15px 0 0;
             }
         }
     }
@@ -1006,6 +1015,9 @@ header {
             align-items: center;
             gap: 25px;
         }
+        @media (max-width: 480px) {
+            gap: 20px;
+        }
 
         .featureItem {
             @media (max-width: 1180px) {
@@ -1018,6 +1030,11 @@ header {
         .Img {
             width: 65px;
             height: 60px;
+
+            @media (max-width: 480px) {
+                width: 55px;
+                height: 50px;
+            }
 
             & + div {
                 margin-top: 10px;
@@ -1046,6 +1063,9 @@ header {
             @media (max-width: 575px) {
                 font-size: 18px;
             }
+            @media (max-width: 480px) {
+                font-size: 17px;
+            }
         }
 
         .text {
@@ -1056,6 +1076,9 @@ header {
             }
             @media (max-width: 575px) {
                 font-size: 14px;
+            }
+            @media (max-width: 480px) {
+                font-size: 13px;
             }
         }
     }
@@ -1079,6 +1102,9 @@ header {
         @media (max-width: 575px) {
             gap: 25px;
         }
+        @media (max-width: 480px) {
+            gap: 20px;
+        }
 
         .number {
             position: relative;
@@ -1096,6 +1122,9 @@ header {
             @media (max-width: 575px) {
                 font-size: 40px;
             }
+            @media (max-width: 480px) {
+                font-size: 36px;
+            }
         }
 
         .plus {
@@ -1112,12 +1141,12 @@ header {
                 font-size: 32px;
             }
             @media (max-width: 768px) {
-                font-size: 28px;
                 right: -20px;
+                font-size: 28px;
             }
-            @media (max-width: 575px) {
-                font-size: 26px;
-                right: -18px;
+            @media (max-width: 480px) {
+                right: -16px;
+                font-size: 24px;
             }
         }
 
@@ -1134,6 +1163,9 @@ header {
             }
             @media (max-width: 768px) {
                 font-size: 16px;
+            }
+            @media (max-width: 480px) {
+                font-size: 15px;
             }
         }
     }
@@ -1231,6 +1263,9 @@ header {
                 margin: auto;
                 width: 50%;
             }
+            @media (max-width: 480px) {
+                width: 50%;
+            }
         }
 
         .slick-slide {
@@ -1247,6 +1282,9 @@ header {
             }
             @media (max-width: 768px) {
                 padding: 0 10px;
+            }
+            @media (max-width: 480px) {
+                padding: 0 5px;
             }
         }
 

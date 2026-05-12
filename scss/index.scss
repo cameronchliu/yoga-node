@@ -376,6 +376,20 @@ header {
         &:has(.menuToggle:checked) {
             background-color: $whiteColor;
         }
+
+        .menuToggle:checked + .hamburger {
+            .burgerLine {
+                &:nth-child(1) {
+                    transform: translateY(10px) rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: translateY(-10px) rotate(-45deg);
+                }
+            }
+        }
     }
 
     &.scrolled {
@@ -446,6 +460,15 @@ header {
         width: 30px;
         height: 2px;
         background-color: $GreenColor;
+
+        transition:
+            transform 0.3s ease-in-out,
+            opacity 0.3s ease-in-out;
+
+        @media (max-width: 768px) {
+            width: 25px;
+            height: 2px;
+        }
     }
 
     .right {
@@ -2600,7 +2623,6 @@ footer {
             }
 
             .subMenu {
-
                 .subMenuItem:hover a {
                     color: $BrownColor;
                 }
@@ -2717,6 +2739,14 @@ footer {
         left: 0;
         width: 17vw;
         z-index: 1;
+
+        @media (max-width: 1366px) {
+            top: -100px;
+        }
+
+        @media (max-width: 1180px) {
+            display: none;
+        }
 
         img {
             width: 100%;

@@ -161,6 +161,7 @@ $BrownColor: #b4a885;
     .text {
         margin-top: 25px;
         line-height: 24px;
+
         @include text($weight: 400);
 
         @media (max-width: 1180px) {
@@ -205,6 +206,8 @@ $BrownColor: #b4a885;
 }
 
 .btnBox {
+    margin-top: 25px;
+
     .btn {
         display: flex;
         justify-content: center;
@@ -993,6 +996,9 @@ header {
             padding: 0 50px;
         }
         @media (max-width: 768px) {
+            padding: 0 30px;
+        }
+        @media (max-width: 575px) {
             padding: 0;
         }
     }
@@ -1309,24 +1315,27 @@ header {
         overflow: hidden;
 
         @media (max-width: 1536px) {
-            max-width: 100%;
             padding-top: 70px;
+            max-width: 100%;
         }
         @media (max-width: 1440px) {
-            max-width: 720px;
             padding-top: 0;
+            max-width: 720px;
         }
         @media (max-width: 1180px) {
-            max-width: 950px;
             padding-top: 70px;
+            max-width: 950px;
         }
         @media (max-width: 768px) {
             padding-top: 0;
-            width: 100%;
-            padding: 0 50px;
+            max-width: 700px;
         }
         @media (max-width: 575px) {
-            padding: 0px;
+            padding: 0 50px;
+            max-width: 100%;
+        }
+        @media (max-width: 480px) {
+            padding: 0;
         }
 
         .item {
@@ -1394,19 +1403,9 @@ header {
             @media (max-width: 1440px) {
                 margin: 0 -15px;
             }
-            @media (max-width: 768px) {
-                margin: 0 -10px;
-                width: 100%;
-            }
-            @media (max-width: 575px) {
-                margin: auto;
-                width: 50%;
-            }
             @media (max-width: 480px) {
-                width: 50%;
-            }
-            @media (max-width: 360px) {
-                width: 60%;
+                margin: 0 auto;
+                max-width: 50%;
             }
         }
 
@@ -1424,9 +1423,6 @@ header {
             }
             @media (max-width: 768px) {
                 padding: 0 10px;
-            }
-            @media (max-width: 480px) {
-                padding: 0 5px;
             }
         }
 
@@ -2223,10 +2219,15 @@ header {
             }
         }
 
+        .btnBox {
+            margin: 0;
+        }
+
         .arrowBox {
             @media (max-width: 1180px) {
                 display: none;
             }
+
         }
     }
 

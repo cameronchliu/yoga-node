@@ -245,6 +245,9 @@ figure {
   }
 }
 
+.btnBox {
+  margin-top: 25px;
+}
 .btnBox .btn {
   display: flex;
   justify-content: center;
@@ -1048,6 +1051,11 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 768px) {
   .aboutArea .wrap {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .wrap {
     padding: 0;
   }
 }
@@ -1459,32 +1467,37 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1536px) {
   .aboutArea .rightBox {
-    max-width: 100%;
     padding-top: 70px;
+    max-width: 100%;
   }
 }
 @media (max-width: 1440px) {
   .aboutArea .rightBox {
-    max-width: 720px;
     padding-top: 0;
+    max-width: 720px;
   }
 }
 @media (max-width: 1180px) {
   .aboutArea .rightBox {
-    max-width: 950px;
     padding-top: 70px;
+    max-width: 950px;
   }
 }
 @media (max-width: 768px) {
   .aboutArea .rightBox {
     padding-top: 0;
-    width: 100%;
-    padding: 0 50px;
+    max-width: 700px;
   }
 }
 @media (max-width: 575px) {
   .aboutArea .rightBox {
-    padding: 0px;
+    padding: 0 50px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .aboutArea .rightBox {
+    padding: 0;
   }
 }
 .aboutArea .rightBox .item {
@@ -1550,26 +1563,10 @@ header .menuToggle:checked ~ .menuMask {
     margin: 0 -15px;
   }
 }
-@media (max-width: 768px) {
-  .aboutArea .aboutList .slick-list {
-    margin: 0 -10px;
-    width: 100%;
-  }
-}
-@media (max-width: 575px) {
-  .aboutArea .aboutList .slick-list {
-    margin: auto;
-    width: 50%;
-  }
-}
 @media (max-width: 480px) {
   .aboutArea .aboutList .slick-list {
-    width: 50%;
-  }
-}
-@media (max-width: 360px) {
-  .aboutArea .aboutList .slick-list {
-    width: 60%;
+    margin: 0 auto;
+    max-width: 50%;
   }
 }
 .aboutArea .aboutList .slick-slide {
@@ -1593,11 +1590,6 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .aboutList .slick-slide {
     padding: 0 10px;
-  }
-}
-@media (max-width: 480px) {
-  .aboutArea .aboutList .slick-slide {
-    padding: 0 5px;
   }
 }
 .aboutArea .aboutList .slick-center .item {
@@ -2382,6 +2374,9 @@ header .menuToggle:checked ~ .menuMask {
   .teamArea .leftBox .titleBox .text {
     line-height: 24px;
   }
+}
+.teamArea .leftBox .btnBox {
+  margin: 0;
 }
 @media (max-width: 1180px) {
   .teamArea .leftBox .arrowBox {

@@ -217,6 +217,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="arrowBox">
+                                <span class="arrowSeparate"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -807,6 +810,9 @@
                         breakpoint: 1181,
                         settings: {
                             slidesToShow: 3,
+                            appendArrows: $('.aboutArea .arrowBox'),
+                            prevArrow: '<a href="#" class="arrow prevArrow"></a>',
+                            nextArrow: '<a href="#" class="arrow nextArrow"></a>',
                         },
                     },
                     {
@@ -869,8 +875,6 @@
                         breakpoint: 1181,
                         settings: {
                             slidesToShow: 3,
-                            // prevArrow: '<div class="arrowBox"><a class="arrow prevArrow2"></a></div>',
-                            // nextArrow: '<div class="arrowBox"><a class="arrow nextArrow2"></a></div>',
                         },
                         breakpoint: 993,
                         settings: {

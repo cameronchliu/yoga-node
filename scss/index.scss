@@ -1049,6 +1049,12 @@ header {
         @media (max-width: 360px) {
             padding: 0 15px;
         }
+
+        .arrowBox {
+            @media (max-width: 1180px) {
+                display: none;
+            }
+        }
     }
 
     .titleBox {
@@ -1070,12 +1076,6 @@ header {
             @media (max-width: 480px) {
                 margin: 10px 0 0;
             }
-        }
-    }
-
-    .arrowBox {
-        @media (max-width: 1180px) {
-            display: none;
         }
     }
 
@@ -1348,6 +1348,16 @@ header {
                 width: 100%;
                 object-fit: contain;
                 transition: transform 0.3s ease-in-out;
+            }
+        }
+
+        .arrowBox {
+            display: none;
+
+            @media (max-width: 1180px) {
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
             }
         }
     }

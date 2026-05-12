@@ -1124,6 +1124,11 @@ header .menuToggle:checked ~ .menuMask {
     padding: 0 15px;
   }
 }
+@media (max-width: 1180px) {
+  .aboutArea .leftBox .arrowBox {
+    display: none;
+  }
+}
 .aboutArea .titleBox {
   width: 100%;
   max-width: 500px;
@@ -1151,11 +1156,6 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 480px) {
   .aboutArea .titleBox .actionBox {
     margin: 10px 0 0;
-  }
-}
-@media (max-width: 1180px) {
-  .aboutArea .arrowBox {
-    display: none;
   }
 }
 .aboutArea .featureBox {
@@ -1500,6 +1500,16 @@ header .menuToggle:checked ~ .menuMask {
   -o-object-fit: contain;
      object-fit: contain;
   transition: transform 0.3s ease-in-out;
+}
+.aboutArea .rightBox .arrowBox {
+  display: none;
+}
+@media (max-width: 1180px) {
+  .aboutArea .rightBox .arrowBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
 }
 .aboutArea .aboutList .slick-list {
   overflow: visible;

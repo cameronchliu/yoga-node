@@ -952,7 +952,8 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1440px) {
   .aboutArea .aboutBox {
-    gap: 30px;
+    justify-content: center;
+    gap: 60px;
   }
 }
 @media (max-width: 1280px) {

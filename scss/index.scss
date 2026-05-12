@@ -913,7 +913,8 @@ header {
             gap: 40px;
         }
         @media (max-width: 1440px) {
-            gap: 30px;
+            justify-content: center;
+            gap: 60px;
         }
         @media (max-width: 1280px) {
             gap: 25px;

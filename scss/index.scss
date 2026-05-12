@@ -188,14 +188,9 @@ $BrownColor: #b4a885;
 
     .btn {
         @media (max-width: 768px) {
-            margin: 40px;
+            margin: 10px;
         }
-
         @media (max-width: 480px) {
-            margin: 30px;
-        }
-
-        @media (max-width: 360px) {
             margin: 20px;
         }
     }
@@ -213,6 +208,10 @@ $BrownColor: #b4a885;
 
 .btnBox {
     margin-top: 25px;
+
+    @media (max-width: 480px) {
+        margin-top: 0;
+    }
 
     .btn {
         display: flex;
@@ -972,7 +971,7 @@ header {
     padding: 90px 0 150px;
     overflow: hidden;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1180px) {
         padding: 50px 0 130px;
     }
     @media (max-width: 575px) {
@@ -1084,17 +1083,6 @@ header {
         @media (max-width: 1180px) {
             max-width: 100%;
         }
-        .actionBox {
-            @media (max-width: 768px) {
-                margin: 20px;
-            }
-            @media (max-width: 480px) {
-                margin: 15px 0 0;
-            }
-            @media (max-width: 480px) {
-                margin: 10px 0 0;
-            }
-        }
     }
 
     .featureBox {
@@ -1112,8 +1100,6 @@ header {
             gap: 40px;
         }
         @media (max-width: 575px) {
-            flex-direction: column;
-            align-items: center;
             gap: 25px;
         }
         @media (max-width: 480px) {
@@ -2183,6 +2169,7 @@ header {
 
         @media (max-width: 1180px) {
             max-width: 100%;
+            padding: 0 50px;
         }
 
         @media (max-width: 992px) {
@@ -2212,6 +2199,10 @@ header {
         .titleBox {
             margin-bottom: 25px;
 
+            @media (max-width: 480px) {
+                margin-bottom: 15px;
+            }
+            
             .text {
                 text-align: justify;
                 line-height: 30px;
@@ -2424,6 +2415,10 @@ header {
 footer {
     position: relative;
     padding: 100px 0 45px;
+
+    @media (max-width: 1180px) {
+        padding: 70px 0 45px;
+    }
 
     @media (max-width: 768px) {
         padding: 80px 0 40px;

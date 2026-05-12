@@ -226,15 +226,10 @@ figure {
 }
 @media (max-width: 768px) {
   .titleBox .btn {
-    margin: 40px;
+    margin: 10px;
   }
 }
 @media (max-width: 480px) {
-  .titleBox .btn {
-    margin: 30px;
-  }
-}
-@media (max-width: 360px) {
   .titleBox .btn {
     margin: 20px;
   }
@@ -253,6 +248,11 @@ figure {
 
 .btnBox {
   margin-top: 25px;
+}
+@media (max-width: 480px) {
+  .btnBox {
+    margin-top: 0;
+  }
 }
 .btnBox .btn {
   display: flex;
@@ -1018,7 +1018,7 @@ header .menuToggle:checked ~ .menuMask {
   padding: 90px 0 150px;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
   .aboutArea {
     padding: 50px 0 130px;
   }
@@ -1166,21 +1166,6 @@ header .menuToggle:checked ~ .menuMask {
     max-width: 100%;
   }
 }
-@media (max-width: 768px) {
-  .aboutArea .titleBox .actionBox {
-    margin: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .aboutArea .titleBox .actionBox {
-    margin: 15px 0 0;
-  }
-}
-@media (max-width: 480px) {
-  .aboutArea .titleBox .actionBox {
-    margin: 10px 0 0;
-  }
-}
 .aboutArea .featureBox {
   display: flex;
   justify-content: space-between;
@@ -1201,8 +1186,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 575px) {
   .aboutArea .featureBox {
-    flex-direction: column;
-    align-items: center;
     gap: 25px;
   }
 }
@@ -2345,6 +2328,7 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1180px) {
   .teamArea .leftBox {
     max-width: 100%;
+    padding: 0 50px;
   }
 }
 @media (max-width: 992px) {
@@ -2379,6 +2363,11 @@ header .menuToggle:checked ~ .menuMask {
 }
 .teamArea .leftBox .titleBox {
   margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+  .teamArea .leftBox .titleBox {
+    margin-bottom: 15px;
+  }
 }
 .teamArea .leftBox .titleBox .text {
   text-align: justify;
@@ -2589,6 +2578,11 @@ header .menuToggle:checked ~ .menuMask {
 footer {
   position: relative;
   padding: 100px 0 45px;
+}
+@media (max-width: 1180px) {
+  footer {
+    padding: 70px 0 45px;
+  }
 }
 @media (max-width: 768px) {
   footer {

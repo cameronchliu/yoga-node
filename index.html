@@ -826,9 +826,8 @@
 
             // ------ news ------
 
-            const $newsLeftList = $('.newsLeftList');
-            const $newsRightList = $('.newsRightList');
-            $newsLeftList.slick({
+
+            $('.newsLeftList').slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 infinite: true,
@@ -836,17 +835,20 @@
                 arrows: false,
                 dots: false,
                 fade: true,
-                asNavFor: $newsRightList
+                asNavFor: '.newsRightList'
             });
-            $newsRightList.slick({
+            $('.newsRightList').slick({
                 vertical: true,
+                verticalSwiping: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 speed: 600,
                 arrows: false,
+                swipe: true,
+                draggable: true,
                 dots: true,
-                asNavFor: $newsLeftList
+                asNavFor: '.newsLeftList'
             });
 
 

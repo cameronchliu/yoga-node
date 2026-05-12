@@ -411,11 +411,28 @@ header {
   header .menuToggle:checked + .hamburger .burgerLine:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
   }
+}
+@media (max-width: 1180px) and (max-width: 575px) {
+  header .menuToggle:checked + .hamburger .burgerLine:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+@media (max-width: 1180px) {
   header .menuToggle:checked + .hamburger .burgerLine:nth-child(2) {
     opacity: 0;
   }
   header .menuToggle:checked + .hamburger .burgerLine:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+  }
+}
+@media (max-width: 1180px) and (max-width: 575px) {
+  header .menuToggle:checked + .hamburger .burgerLine:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@media (max-width: 575px) {
+  header {
+    height: 70px;
   }
 }
 header.scrolled {
@@ -459,6 +476,11 @@ header .logo a {
     width: 140px;
   }
 }
+@media (max-width: 575px) {
+  header .logo a {
+    width: 120px;
+  }
+}
 header .logo img {
   width: 100%;
   -o-object-fit: contain;
@@ -478,6 +500,11 @@ header .hamburger {
     margin-top: 8px;
   }
 }
+@media (max-width: 1180px) and (max-width: 575px) {
+  header .hamburger > div + div {
+    margin-top: 6px;
+  }
+}
 header .burgerLine {
   width: 30px;
   height: 2px;
@@ -488,6 +515,11 @@ header .burgerLine {
   header .burgerLine {
     width: 25px;
     height: 2px;
+  }
+}
+@media (max-width: 575px) {
+  header .burgerLine {
+    width: 24px;
   }
 }
 header .right {
@@ -516,6 +548,11 @@ header .right {
 @media (max-width: 768px) {
   header .right {
     transform: translateX(-100px);
+  }
+}
+@media (max-width: 575px) {
+  header .right {
+    padding-top: 25px;
   }
 }
 @media (max-width: 1180px) {
@@ -573,6 +610,12 @@ header .menuBox .menuItem a {
     padding: 15px 0;
   }
 }
+@media (max-width: 575px) {
+  header .menuBox .menuItem a {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+}
 header .menuBox .menuItem.isBtn {
   display: flex;
   align-items: center;
@@ -604,6 +647,13 @@ header .menuBox .menuItem .btn:hover {
 @media (max-width: 1180px) {
   header .menuBox .menuItem .btn {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  header .menuBox .menuItem .btn {
+    width: 145px;
+    height: 40px;
+    margin-bottom: 25px;
   }
 }
 header .funcBox {
@@ -657,6 +707,11 @@ header .menuMask {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+}
+@media (max-width: 575px) {
+  header .menuMask {
+    top: 70px;
+  }
 }
 header .menuToggle:checked ~ .menuMask {
   opacity: 0.8;

@@ -866,6 +866,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .bannerArea .rightBox .Img {
+    width: 40vw;
     width: 40dvw;
   }
 }
@@ -892,6 +893,9 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .bannerArea .rightBox .person {
+    left: 5vw;
+    top: -3vw;
+    width: 28vw;
     left: 5dvw;
     top: -3dvw;
     width: 28dvw;
@@ -899,6 +903,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 768px) {
   .bannerArea .rightBox .person {
+    top: -5vw;
     top: -5dvw;
   }
 }
@@ -927,12 +932,16 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .bannerArea .rightBox .leftLeaf {
+    left: -25vw;
+    width: 35vw;
     left: -25dvw;
     width: 35dvw;
   }
 }
 @media (max-width: 480px) {
   .bannerArea .rightBox .leftLeaf {
+    left: -15vw;
+    width: 30vw;
     left: -15dvw;
     width: 30dvw;
   }
@@ -962,6 +971,9 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .bannerArea .rightBox .rightLeaf {
+    right: -10vw;
+    bottom: -5vw;
+    width: 20vw;
     right: -10dvw;
     bottom: -5dvw;
     width: 20dvw;
@@ -969,16 +981,19 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 768px) {
   .bannerArea .rightBox .rightLeaf {
+    bottom: -10vw;
     bottom: -10dvw;
   }
 }
 @media (max-width: 480px) {
   .bannerArea .rightBox .rightLeaf {
+    bottom: -30vw;
     bottom: -30dvw;
   }
 }
 @media (max-width: 360px) {
   .bannerArea .rightBox .rightLeaf {
+    bottom: -50vw;
     bottom: -50dvw;
   }
 }
@@ -1715,6 +1730,8 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1536px) {
   .serviceArea .item .Txt {
     margin: 0;
+    left: 2vw;
+    top: 2vw;
     left: 2dvw;
     top: 2dvw;
   }
@@ -1777,6 +1794,8 @@ header .menuToggle:checked ~ .menuMask {
     margin: 0;
     right: 2dvw;
     top: 2dvw;
+    right: 2vw;
+    top: 2vw;
   }
 }
 .serviceArea .item .icon img {
@@ -1799,8 +1818,16 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1536px) {
   .serviceArea .item1 .Txt {
     margin: 0;
+    left: 2vw;
+    top: 2vw;
     left: 2dvw;
     top: 2dvw;
+  }
+}
+@media (max-width: 1180px) {
+  .serviceArea .item1 .Txt {
+    left: 4vw;
+    top: 4vw;
   }
 }
 @media (max-width: 1180px) {
@@ -1868,6 +1895,7 @@ header .menuToggle:checked ~ .menuMask {
   position: absolute;
   left: 0;
   bottom: 0;
+  width: 20vw;
   width: 20dvw;
 }
 .serviceArea .decoBox .decoLeft img {
@@ -1878,6 +1906,7 @@ header .menuToggle:checked ~ .menuMask {
   position: absolute;
   right: 0;
   top: 0;
+  width: 20vw;
   width: 20dvw;
 }
 .serviceArea .decoBox .decoRight img {

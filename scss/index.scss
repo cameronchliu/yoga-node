@@ -816,6 +816,7 @@ header {
             }
 
             @media (max-width: 1180px) {
+                width: 40vw;
                 width: 40dvw;
             }
 
@@ -841,12 +842,16 @@ header {
             }
 
             @media (max-width: 1180px) {
+                left: 5vw;
+                top: -3vw;
+                width: 28vw;
                 left: 5dvw;
                 top: -3dvw;
                 width: 28dvw;
             }
 
             @media (max-width: 768px) {
+                top: -5vw;
                 top: -5dvw;
             }
 
@@ -874,11 +879,15 @@ header {
             }
 
             @media (max-width: 1180px) {
+                left: -25vw;
+                width: 35vw;
                 left: -25dvw;
                 width: 35dvw;
             }
 
             @media (max-width: 480px) {
+                left: -15vw;
+                width: 30vw;
                 left: -15dvw;
                 width: 30dvw;
             }
@@ -907,20 +916,26 @@ header {
             }
 
             @media (max-width: 1180px) {
+                right: -10vw;
+                bottom: -5vw;
+                width: 20vw;
                 right: -10dvw;
                 bottom: -5dvw;
                 width: 20dvw;
             }
 
             @media (max-width: 768px) {
+                bottom: -10vw;
                 bottom: -10dvw;
             }
 
             @media (max-width: 480px) {
+                bottom: -30vw;
                 bottom: -30dvw;
             }
 
             @media (max-width: 360px) {
+                bottom: -50vw;
                 bottom: -50dvw;
             }
 
@@ -1552,6 +1567,8 @@ header {
 
             @media (max-width: 1536px) {
                 margin: 0;
+                left: 2vw;
+                top: 2vw;
                 left: 2dvw;
                 top: 2dvw;
             }
@@ -1604,6 +1621,8 @@ header {
                 margin: 0;
                 right: 2dvw;
                 top: 2dvw;
+                right: 2vw;
+                top: 2vw;
             }
 
             img {
@@ -1632,10 +1651,16 @@ header {
 
                 @media (max-width: 1536px) {
                     margin: 0;
+                    left: 2vw;
+                    top: 2vw;
                     left: 2dvw;
                     top: 2dvw;
                 }
 
+                @media (max-width: 1180px) {
+                    left: 4vw;
+                    top: 4vw;
+                }
                 @media (max-width: 1180px) {
                     left: 4dvw;
                     top: 4dvw;
@@ -1712,6 +1737,7 @@ header {
             position: absolute;
             left: 0;
             bottom: 0;
+            width: 20vw;
             width: 20dvw;
 
             img {
@@ -1724,6 +1750,7 @@ header {
             position: absolute;
             right: 0;
             top: 0;
+            width: 20vw;
             width: 20dvw;
 
             img {

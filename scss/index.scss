@@ -90,41 +90,20 @@ $BrownColor: #b4a885;
 }
 
 .titleBox {
-    & > div + div {
-        margin-top: 25px;
-
-        @media (max-width: 1180px) {
-            margin-top: 20px;
-        }
-
-        @media (max-width: 480px) {
-            margin-top: 15px;
-        }
-
-        @media (max-width: 360px) {
-            margin-top: 10px;
-        }
-
-        &:has(.btn) {
-            @media (max-width: 768px) {
-                margin: 40px;
-            }
-
-            @media (max-width: 480px) {
-                margin: 30px;
-            }
-
-            @media (max-width: 360px) {
-                margin: 20px;
-            }
-        }
+    @media (max-width: 1180px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .title {
+        margin-top: 25px;
         @include text($size: 45px);
 
         @media (max-width: 1180px) {
             font-size: 36px;
+            margin-top: 20px;
         }
 
         @media (max-width: 768px) {
@@ -132,14 +111,20 @@ $BrownColor: #b4a885;
         }
 
         @media (max-width: 480px) {
+            margin-top: 15px;
             font-size: 24px;
+        }
+        @media (max-width: 360px) {
+            margin-top: 10px;
         }
     }
 
     .subtitle {
+        margin-top: 25px;
         @include text($size: 24px);
 
         @media (max-width: 1180px) {
+            margin-top: 20px;
             font-size: 22px;
         }
 
@@ -148,34 +133,64 @@ $BrownColor: #b4a885;
         }
 
         @media (max-width: 480px) {
+            margin-top: 15px;
             font-size: 16px;
+        }
+        @media (max-width: 360px) {
+            margin-top: 10px;
         }
     }
 
     .line {
         width: 35px;
         height: 2px;
+        margin-top: 25px;
         background-color: $GreenColor;
+
+        @media (max-width: 1180px) {
+            margin-top: 20px;
+        }
+        @media (max-width: 480px) {
+            margin-top: 15px;
+        }
+        @media (max-width: 360px) {
+            margin-top: 10px;
+        }
     }
 
     .text {
+        margin-top: 25px;
         line-height: 24px;
         @include text($weight: 400);
 
         @media (max-width: 1180px) {
+            margin-top: 20px;
             font-size: 15px;
         }
 
         @media (max-width: 768px) {
             font-size: 13px;
         }
+        @media (max-width: 480px) {
+            margin-top: 15px;
+        }
+        @media (max-width: 360px) {
+            margin-top: 10px;
+        }
     }
 
-    @media (max-width: 1180px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .btn {
+        @media (max-width: 768px) {
+            margin: 40px;
+        }
+
+        @media (max-width: 480px) {
+            margin: 30px;
+        }
+
+        @media (max-width: 360px) {
+            margin: 20px;
+        }
     }
 }
 
@@ -2798,4 +2813,3 @@ footer {
         }
     }
 }
-

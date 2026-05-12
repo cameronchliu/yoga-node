@@ -967,6 +967,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 60px;
   }
 }
+@media (max-width: 574px) {
+  .aboutArea .aboutBox {
+    gap: 50px;
+  }
+}
 .aboutArea .leftBox {
   width: 100%;
   max-width: 600px;
@@ -1005,6 +1010,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .leftBox {
     padding: 0 40px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .leftBox {
+    padding: 0 25px;
   }
 }
 .aboutArea .titleBox {
@@ -1049,6 +1059,13 @@ header .menuToggle:checked ~ .menuMask {
     gap: 40px;
   }
 }
+@media (max-width: 575px) {
+  .aboutArea .featureBox {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
 @media (max-width: 1180px) {
   .aboutArea .featureBox .featureItem {
     display: flex;
@@ -1091,6 +1108,11 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 20px;
   }
 }
+@media (max-width: 575px) {
+  .aboutArea .featureBox .title {
+    font-size: 18px;
+  }
+}
 .aboutArea .featureBox .text {
   font-family: "Cormorant Garamond";
   font-weight: 400;
@@ -1100,6 +1122,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 768px) {
   .aboutArea .featureBox .text {
     font-size: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .featureBox .text {
+    font-size: 14px;
   }
 }
 .aboutArea .numberBox {
@@ -1124,6 +1151,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 50px;
   }
 }
+@media (max-width: 575px) {
+  .aboutArea .numberBox {
+    gap: 25px;
+  }
+}
 .aboutArea .numberBox .number {
   position: relative;
   width: -moz-fit-content;
@@ -1137,9 +1169,14 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 52px;
   }
 }
-@media (max-width: 768x) {
+@media (max-width: 768px) {
   .aboutArea .numberBox .number {
     font-size: 44px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .numberBox .number {
+    font-size: 40px;
   }
 }
 .aboutArea .numberBox .plus {
@@ -1159,10 +1196,16 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 32px;
   }
 }
-@media (max-width: 768x) {
+@media (max-width: 768px) {
   .aboutArea .numberBox .plus {
     font-size: 28px;
     right: -20px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .numberBox .plus {
+    font-size: 26px;
+    right: -18px;
   }
 }
 .aboutArea .numberBox .Txt {
@@ -1180,7 +1223,7 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 18px;
   }
 }
-@media (max-width: 768x) {
+@media (max-width: 768px) {
   .aboutArea .numberBox .Txt {
     font-size: 16px;
   }
@@ -1214,6 +1257,11 @@ header .menuToggle:checked ~ .menuMask {
     padding-top: 0;
     width: 100%;
     padding: 0 50px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .rightBox {
+    padding: 0px;
   }
 }
 .aboutArea .rightBox .item {
@@ -1275,6 +1323,12 @@ header .menuToggle:checked ~ .menuMask {
   .aboutArea .aboutList .slick-list {
     margin: 0 -10px;
     width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .aboutList .slick-list {
+    margin: auto;
+    width: 50%;
   }
 }
 .aboutArea .aboutList .slick-slide {

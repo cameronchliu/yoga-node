@@ -923,6 +923,9 @@ header {
             align-items: center;
             gap: 60px;
         }
+        @media (max-width: 574px) {
+            gap: 50px;
+        }
     }
 
     // ----------- left ------------
@@ -956,6 +959,9 @@ header {
         }
         @media (max-width: 768px) {
             padding: 0 40px;
+        }
+        @media (max-width: 575px) {
+            padding: 0 25px;
         }
     }
 
@@ -995,6 +1001,11 @@ header {
             justify-content: center;
             gap: 40px;
         }
+        @media (max-width: 575px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
 
         .featureItem {
             @media (max-width: 1180px) {
@@ -1032,6 +1043,9 @@ header {
             @media (max-width: 768px) {
                 font-size: 20px;
             }
+            @media (max-width: 575px) {
+                font-size: 18px;
+            }
         }
 
         .text {
@@ -1039,6 +1053,9 @@ header {
 
             @media (max-width: 768px) {
                 font-size: 15px;
+            }
+            @media (max-width: 575px) {
+                font-size: 14px;
             }
         }
     }
@@ -1059,6 +1076,9 @@ header {
             justify-content: center;
             gap: 50px;
         }
+        @media (max-width: 575px) {
+            gap: 25px;
+        }
 
         .number {
             position: relative;
@@ -1070,8 +1090,11 @@ header {
             @media (max-width: 1536px) {
                 font-size: 52px;
             }
-            @media (max-width: 768x) {
+            @media (max-width: 768px) {
                 font-size: 44px;
+            }
+            @media (max-width: 575px) {
+                font-size: 40px;
             }
         }
 
@@ -1088,9 +1111,13 @@ header {
             @media (max-width: 1366px) {
                 font-size: 32px;
             }
-            @media (max-width: 768x) {
+            @media (max-width: 768px) {
                 font-size: 28px;
                 right: -20px;
+            }
+            @media (max-width: 575px) {
+                font-size: 26px;
+                right: -18px;
             }
         }
 
@@ -1105,7 +1132,7 @@ header {
             @media (max-width: 1366px) {
                 font-size: 18px;
             }
-            @media (max-width: 768x) {
+            @media (max-width: 768px) {
                 font-size: 16px;
             }
         }
@@ -1135,6 +1162,9 @@ header {
             padding-top: 0;
             width: 100%;
             padding: 0 50px;
+        }
+        @media (max-width: 575px) {
+            padding: 0px;
         }
 
         .item {
@@ -1196,6 +1226,10 @@ header {
             @media (max-width: 768px) {
                 margin: 0 -10px;
                 width: 100%;
+            }
+            @media (max-width: 575px) {
+                margin: auto;
+                width: 50%;
             }
         }
 

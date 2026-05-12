@@ -64,6 +64,12 @@ $BrownColor: #b4a885;
     padding: 0 50px;
     margin: 0 auto;
 
+    padding: 0 70px;
+
+    @media (max-width: 1536px) {
+        padding: 0 50px;
+    }
+
     @media (max-width: 992px) {
         padding: 0 40px;
     }
@@ -432,19 +438,6 @@ header {
         justify-content: space-between;
 
         max-width: 100%;
-        padding: 0 70px;
-
-        @media (max-width: 1536px) {
-            padding: 0 50px;
-        }
-
-        @media (max-width: 768px) {
-            padding: 0 30px;
-        }
-
-        @media (max-width: 480px) {
-            padding: 0 20px;
-        }
     }
 
     .logo {
@@ -993,7 +986,7 @@ header {
         margin-left: auto;
 
         @media (max-width: 1180px) {
-            padding: 0 50px;
+            padding: 0 40px;
         }
         @media (max-width: 768px) {
             padding: 0 30px;
@@ -1472,20 +1465,6 @@ header {
     }
     @media (max-width: 360px) {
         padding: 40px 0;
-    }
-
-    .wrap {
-        @media (max-width: 768px) {
-            padding: 0 40px;
-        }
-
-        @media (max-width: 480px) {
-            padding: 0 30px;
-        }
-
-        @media (max-width: 360px) {
-            padding: 0 20px;
-        }
     }
 
     .serviceBox {
@@ -2203,7 +2182,31 @@ header {
         max-width: 335px;
 
         @media (max-width: 1180px) {
-            max-width: 70%;
+            max-width: 100%;
+        }
+
+        @media (max-width: 992px) {
+            padding: 0 40px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 0 30px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 0 25px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 0 20px;
+        }
+
+        @media (max-width: 360px) {
+            padding: 0 15px;
+        }
+
+        @media (max-width: 320px) {
+            padding: 0 10px;
         }
 
         .titleBox {

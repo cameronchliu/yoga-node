@@ -70,6 +70,12 @@ figure {
   max-width: 1515px;
   padding: 0 50px;
   margin: 0 auto;
+  padding: 0 70px;
+}
+@media (max-width: 1536px) {
+  .wrap {
+    padding: 0 50px;
+  }
 }
 @media (max-width: 992px) {
   .wrap {
@@ -475,22 +481,6 @@ header .wrap {
   align-items: center;
   justify-content: space-between;
   max-width: 100%;
-  padding: 0 70px;
-}
-@media (max-width: 1536px) {
-  header .wrap {
-    padding: 0 50px;
-  }
-}
-@media (max-width: 768px) {
-  header .wrap {
-    padding: 0 30px;
-  }
-}
-@media (max-width: 480px) {
-  header .wrap {
-    padding: 0 20px;
-  }
 }
 header .logo a {
   display: block;
@@ -1046,7 +1036,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .aboutArea .wrap {
-    padding: 0 50px;
+    padding: 0 40px;
   }
 }
 @media (max-width: 768px) {
@@ -1649,21 +1639,6 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 360px) {
   .serviceArea {
     padding: 40px 0;
-  }
-}
-@media (max-width: 768px) {
-  .serviceArea .wrap {
-    padding: 0 40px;
-  }
-}
-@media (max-width: 480px) {
-  .serviceArea .wrap {
-    padding: 0 30px;
-  }
-}
-@media (max-width: 360px) {
-  .serviceArea .wrap {
-    padding: 0 20px;
   }
 }
 @media (max-width: 1180px) {
@@ -2369,7 +2344,37 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .teamArea .leftBox {
-    max-width: 70%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .teamArea .leftBox {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .teamArea .leftBox {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 575px) {
+  .teamArea .leftBox {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .leftBox {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 360px) {
+  .teamArea .leftBox {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 320px) {
+  .teamArea .leftBox {
+    padding: 0 10px;
   }
 }
 .teamArea .leftBox .titleBox {

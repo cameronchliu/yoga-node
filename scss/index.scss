@@ -475,7 +475,7 @@ header {
 
         @media (max-width: 1180px) {
             display: block;
-            padding: 20px;
+            padding: 20px 0 20px 20px;
             cursor: pointer;
 
             & > div + div {
@@ -486,6 +486,7 @@ header {
                 }
             }
         }
+        
     }
 
     .burgerLine {

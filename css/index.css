@@ -518,7 +518,7 @@ header .hamburger {
 @media (max-width: 1180px) {
   header .hamburger {
     display: block;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
     cursor: pointer;
   }
   header .hamburger > div + div {

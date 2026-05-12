@@ -486,7 +486,6 @@ header {
                 }
             }
         }
-        
     }
 
     .burgerLine {
@@ -2659,7 +2658,7 @@ footer {
 
                     .subMenu {
                         @media (max-width: 768px) {
-                            max-height: 300px;
+                            max-height: 180px;
                             padding-bottom: 15px;
                         }
                     }
@@ -2708,8 +2707,11 @@ footer {
 
                 @media (max-width: 768px) {
                     max-height: 0;
+                    padding-bottom: 0;
                     overflow: hidden;
-                    transition: max-height 0.3s ease-in-out;
+                    transition:
+                        max-height 0.3s ease-in-out,
+                        padding-bottom 0.3s ease-in-out;
                 }
 
                 a {

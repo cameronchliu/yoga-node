@@ -351,10 +351,15 @@ figure {
     width: 18px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 575px) {
+  .icon .arrow {
+    width: 15px;
+    height: 3px;
+  }
+}
+@media (max-width: 480px) {
   .icon .arrow {
     width: 13px;
-    height: 3px;
   }
 }
 .icon img {

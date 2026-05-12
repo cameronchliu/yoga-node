@@ -318,9 +318,12 @@ $BrownColor: #b4a885;
             width: 18px;
         }
 
-        @media (max-width: 768px) {
-            width: 13px;
+        @media (max-width: 575px) {
+            width: 15px;
             height: 3px;
+        }
+        @media (max-width: 480px) {
+            width: 13px;
         }
     }
 

@@ -218,7 +218,9 @@
                                 </div>
                             </div>
                             <div class="arrowBox">
+                                <a href="#" class="arrow prevArrow"></a>
                                 <span class="arrowSeparate"></span>
+                                <a href="#" class="arrow nextArrow"></a>
                             </div>
                         </div>
                     </div>
@@ -656,6 +658,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="arrowBox">
+                                <a href="#" class="arrow prevArrow"></a>
+                                <span class="arrowSeparate"></span>
+                                <a href="#" class="arrow nextArrow"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -797,8 +804,8 @@
                 autoplaySpeed: 4500,
                 speed: 600,
                 arrows: true,
-                prevArrow: $('.aboutArea .prevArrow'),
-                nextArrow: $('.aboutArea .nextArrow'),
+                prevArrow: $('.aboutArea .leftBox .prevArrow'),
+                nextArrow: $('.aboutArea .leftBox .nextArrow'),
                 responsive: [
                     {
                         breakpoint: 1441,
@@ -810,21 +817,24 @@
                         breakpoint: 1181,
                         settings: {
                             slidesToShow: 3,
-                            appendArrows: $('.aboutArea .arrowBox'),
-                            prevArrow: '<a href="#" class="arrow prevArrow"></a>',
-                            nextArrow: '<a href="#" class="arrow nextArrow"></a>',
+                            prevArrow: $('.aboutArea .rightBox .prevArrow'),
+                            nextArrow: $('.aboutArea .rightBox .nextArrow'),
                         },
                     },
                     {
                         breakpoint: 769,
                         settings: {
                             slidesToShow: 2,
+                            prevArrow: $('.aboutArea .rightBox .prevArrow'),
+                            nextArrow: $('.aboutArea .rightBox .nextArrow'),
                         },
                     },
                     {
                         breakpoint: 576,
                         settings: {
                             slidesToShow: 1,
+                            prevArrow: $('.aboutArea .rightBox .prevArrow'),
+                            nextArrow: $('.aboutArea .rightBox .nextArrow'),
                         },
                     }
                 ]
@@ -852,7 +862,6 @@
                 speed: 600,
                 arrows: false,
                 swipe: true,
-                draggable: true,
                 dots: true,
                 asNavFor: '.newsLeftList'
             });
@@ -875,17 +884,26 @@
                         breakpoint: 1181,
                         settings: {
                             slidesToShow: 3,
-                        },
+                            prevArrow: $('.teamArea .rightBox .prevArrow'),
+                            nextArrow: $('.teamArea .rightBox .nextArrow'),
+                        }
+                    },
+                    {
                         breakpoint: 993,
                         settings: {
                             slidesToShow: 2,
-                        },
+                            prevArrow: $('.teamArea .rightBox .prevArrow'),
+                            nextArrow: $('.teamArea .rightBox .nextArrow'),
+                        }
+                    },
+                    {
                         breakpoint: 769,
                         settings: {
                             slidesToShow: 1,
+                            prevArrow: $('.teamArea .rightBox .prevArrow'),
+                            nextArrow: $('.teamArea .rightBox .nextArrow'),
                         }
                     }
-
                 ]
             });
         });

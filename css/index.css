@@ -2543,6 +2543,16 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 13px;
   }
 }
+.teamArea .rightBox .arrowBox {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media (max-width: 1180px) {
+  .teamArea .rightBox .arrowBox {
+    display: flex;
+  }
+}
 .teamArea .deco {
   position: absolute;
   top: 0;

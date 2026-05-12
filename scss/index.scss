@@ -2382,6 +2382,15 @@ header {
                 }
             }
         }
+
+        .arrowBox {
+            display: none;
+            justify-content: center;
+            margin-top: 30px;
+            @media (max-width: 1180px) {
+                display: flex;
+            }
+        }
     }
 
     .deco {

@@ -1143,29 +1143,26 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .serviceArea .gridBox {
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
   }
 }
 @media (max-width: 992px) {
   .serviceArea .gridBox {
-    gap: 40px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
   }
 }
 @media (max-width: 768px) {
   .serviceArea .gridBox {
-    gap: 30px;
+    gap: 10px;
   }
 }
 @media (max-width: 480px) {
   .serviceArea .gridBox {
-    gap: 25px;
-  }
-}
-@media (max-width: 360px) {
-  .serviceArea .gridBox {
-    gap: 15px;
+    gap: 5px;
   }
 }
 .serviceArea .item {
@@ -1278,7 +1275,7 @@ header .menuToggle:checked ~ .menuMask {
 .serviceArea .item1 {
   grid-area: 1/1/3/3;
 }
-@media (max-width: 1180px) {
+@media (max-width: 992px) {
   .serviceArea .item1 {
     grid-area: 1/1/3/3;
   }
@@ -1322,6 +1319,11 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .serviceArea .item2 {
+    grid-area: 1/3/3/4;
+  }
+}
+@media (max-width: 992px) {
+  .serviceArea .item2 {
     grid-area: 3/1/4/2;
   }
 }
@@ -1345,6 +1347,11 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 1180px) {
   .serviceArea .item3 {
+    grid-area: 1/4/3/5;
+  }
+}
+@media (max-width: 992px) {
+  .serviceArea .item3 {
     grid-area: 3/2/4/3;
   }
 }
@@ -1352,6 +1359,11 @@ header .menuToggle:checked ~ .menuMask {
   grid-area: 2/3/3/5;
 }
 @media (max-width: 1180px) {
+  .serviceArea .item4 {
+    grid-area: 3/1/4/5;
+  }
+}
+@media (max-width: 992px) {
   .serviceArea .item4 {
     grid-area: 4/1/5/3;
   }

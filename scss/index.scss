@@ -2099,8 +2099,12 @@ header {
             align-items: center;
         }
 
-        @media (max-width: 480px) {
-            gap: 55px;
+        @media (max-width: 575px) {
+            gap: 40px;
+        }
+
+        @media (max-width: 490px) {
+            gap: 30px;
         }
     }
 

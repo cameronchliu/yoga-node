@@ -2267,9 +2267,14 @@ header .menuToggle:checked ~ .menuMask {
     align-items: center;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .teamArea .teamBox {
-    gap: 55px;
+    gap: 40px;
+  }
+}
+@media (max-width: 490px) {
+  .teamArea .teamBox {
+    gap: 30px;
   }
 }
 .teamArea .leftBox {

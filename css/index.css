@@ -1312,6 +1312,11 @@ header .menuToggle:checked ~ .menuMask {
     gap: 16px;
   }
 }
+@media (max-width: 480px) {
+  .aboutArea .numberBox .numberItem {
+    max-width: 80px;
+  }
+}
 .aboutArea .numberBox .number {
   position: relative;
   width: -moz-fit-content;
@@ -1850,6 +1855,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 
 .newsArea {
+  position: relative;
   padding: 150px 0 140px;
 }
 @media (max-width: 1536px) {
@@ -2215,6 +2221,29 @@ header .menuToggle:checked ~ .menuMask {
 }
 .newsArea .rightBox .item .icon {
   border: 1px solid #2c4109;
+}
+.newsArea .decoLeft {
+  position: absolute;
+  top: -7.5%;
+  left: -20px;
+  z-index: -1;
+  width: 40vw;
+  width: 40dvw;
+}
+.newsArea .decoLeft img {
+  display: block;
+  width: 100%;
+}
+.newsArea .decoRight {
+  position: absolute;
+  bottom: -20%;
+  right: 0;
+  z-index: -1;
+  width: 30dvw;
+}
+.newsArea .decoRight img {
+  display: block;
+  width: 100%;
 }
 
 .teamArea {

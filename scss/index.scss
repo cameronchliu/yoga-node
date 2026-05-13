@@ -1194,6 +1194,12 @@ header {
             gap: 16px;
         }
 
+        .numberItem {
+            @media (max-width: 480px) {
+                max-width: 80px;
+            }
+        }
+
         .number {
             position: relative;
             width: fit-content;
@@ -1689,6 +1695,7 @@ header {
 // --------- news ---------
 
 .newsArea {
+    position: relative;
     padding: 150px 0 140px;
 
     @media (max-width: 1536px) {
@@ -2055,6 +2062,33 @@ header {
             .icon {
                 border: 1px solid $GreenColor;
             }
+        }
+    }
+
+    .decoLeft {
+        position: absolute;
+        top: -7.5%;
+        left: -20px;
+        z-index: -1;
+        width: 40vw;
+        width: 40dvw;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .decoRight {
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        z-index: -1;
+        width: 30dvw;
+
+        img {
+            display: block;
+            width: 100%;
         }
     }
 }

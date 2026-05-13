@@ -33,44 +33,11 @@ figure {
   padding: 0;
 }
 
-.wood {
-  background-color: burlywood;
-}
-
-.blue {
-  background-color: skyblue;
-}
-
-.red {
-  background-color: rgb(189, 73, 73);
-}
-
-.pink {
-  background-color: pink;
-}
-
-.green {
-  background-color: green;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.gray {
-  background-color: gray;
-}
-
-.orange {
-  background-color: orangered;
-}
-
 .wrap {
   width: 100%;
   max-width: 1515px;
   padding: 0 50px;
   margin: 0 auto;
-  padding: 0 70px;
 }
 @media (max-width: 1536px) {
   .wrap {
@@ -750,6 +717,7 @@ header .menuToggle:checked ~ .menuMask {
   background-repeat: no-repeat;
   background-size: 1920px 814px;
   background-position: center bottom 100px;
+  overflow: hidden;
 }
 @media (max-width: 1180px) {
   .bannerArea {
@@ -760,6 +728,11 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 575px) {
   .bannerArea {
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .bannerArea {
+    padding-top: 70px;
   }
 }
 .bannerArea .bannerBox {
@@ -1273,6 +1246,7 @@ header .menuToggle:checked ~ .menuMask {
   }
 }
 .aboutArea .featureBox .text {
+  text-align: center;
   font-family: "Cormorant Garamond";
   font-weight: 400;
   color: #2d2d2d;
@@ -1397,7 +1371,7 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 24px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .aboutArea .numberBox .plus {
     right: -14px;
     font-size: 20px;
@@ -1423,9 +1397,9 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 16px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 575px) {
   .aboutArea .numberBox .Txt {
-    font-size: 15px;
+    max-width: 130px;
   }
 }
 @media (max-width: 480px) {
@@ -2230,17 +2204,13 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1366px) {
   .newsArea .rightBox .item {
     padding: 15px 0;
-  }
-}
-@media (max-width: 1366px) {
-  .newsArea .rightBox .item {
     gap: 20px;
   }
 }
-.newsArea .rightBox .right {
+.newsArea .rightBox .item .right {
   flex-shrink: 0;
 }
-.newsArea .rightBox .icon {
+.newsArea .rightBox .item .icon {
   border: 1px solid #2c4109;
 }
 
@@ -2275,7 +2245,12 @@ header .menuToggle:checked ~ .menuMask {
     padding-right: 0;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+  .teamArea .wrap {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
   .teamArea .wrap {
     padding: 0;
   }
@@ -2349,10 +2324,6 @@ header .menuToggle:checked ~ .menuMask {
   text-align: justify;
   line-height: 30px;
 }
-.teamArea .leftBox .titleBox .text {
-  text-align: justify;
-  line-height: 30px;
-}
 @media (max-width: 480px) {
   .teamArea .leftBox .titleBox .text {
     line-height: 24px;
@@ -2374,7 +2345,6 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1366px) {
   .teamArea .rightBox {
     max-width: 1000px;
-    padding-right: 100px;
   }
 }
 @media (max-width: 1180px) {
@@ -2468,7 +2438,7 @@ header .menuToggle:checked ~ .menuMask {
     margin-bottom: 10px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .teamArea .rightBox .textBox .top {
     margin-bottom: 5px;
   }
@@ -2516,7 +2486,7 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 22px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .teamArea .rightBox .textBox .top .name {
     font-size: 18px;
   }
@@ -2931,13 +2901,13 @@ footer .bottomBox a:hover {
     font-size: 14px;
   }
 }
-footer .bottomBox .spearator {
+footer .bottomBox .separator {
   width: 1px;
   height: 15px;
   background-color: #d9d9d9;
 }
 @media (max-width: 480px) {
-  footer .bottomBox .spearator {
+  footer .bottomBox .separator {
     width: 1px;
     height: 10px;
   }

@@ -23,39 +23,6 @@ $BrownColor: #b4a885;
     font-size: $size;
 }
 
-// --------- color class ---------
-.wood {
-    background-color: burlywood;
-}
-
-.blue {
-    background-color: skyblue;
-}
-
-.red {
-    background-color: rgb(189, 73, 73);
-}
-
-.pink {
-    background-color: pink;
-}
-
-.green {
-    background-color: green;
-}
-
-.yellow {
-    background-color: yellow;
-}
-
-.gray {
-    background-color: gray;
-}
-
-.orange {
-    background-color: orangered;
-}
-
 // --------- global style --------
 
 .wrap {
@@ -63,8 +30,6 @@ $BrownColor: #b4a885;
     max-width: 1515px;
     padding: 0 50px;
     margin: 0 auto;
-
-    padding: 0 70px;
 
     @media (max-width: 1536px) {
         padding: 0 40px;
@@ -713,6 +678,7 @@ header {
     background-repeat: no-repeat;
     background-size: 1920px 814px;
     background-position: center bottom 100px;
+    overflow: hidden;
 
     @media (max-width: 1180px) {
         background-size: cover;
@@ -720,6 +686,9 @@ header {
     }
     @media (max-width: 575px) {
         padding-bottom: 50px;
+    }
+    @media (max-width: 480px) {
+        padding-top: 70px;
     }
 
     .bannerBox {
@@ -1172,6 +1141,8 @@ header {
         }
 
         .text {
+            text-align: center;
+
             @include text($color: $DarkGrayColor, $weight: 400);
 
             @media (max-width: 768px) {
@@ -1260,7 +1231,7 @@ header {
                 right: -16px;
                 font-size: 24px;
             }
-            @media (max-width: 480px) {
+            @media (max-width: 360px) {
                 right: -14px;
                 font-size: 20px;
             }
@@ -1280,8 +1251,8 @@ header {
             @media (max-width: 768px) {
                 font-size: 16px;
             }
-            @media (max-width: 480px) {
-                font-size: 15px;
+            @media (max-width: 575px) {
+                max-width: 130px;
             }
             @media (max-width: 480px) {
                 font-size: 15px;
@@ -2066,46 +2037,16 @@ header {
 
             @media (max-width: 1366px) {
                 padding: 15px 0;
-            }
-
-            @media (max-width: 1366px) {
                 gap: 20px;
             }
 
-            // @media (max-width: 575px) {
-            //     padding: 10px 0;
-            // }
+            .right {
+                flex-shrink: 0;
+            }
 
-            // @media (max-width: 480px) {
-            //     gap: 12px;
-            //     padding: 8px 0;
-            // }
-
-            // .title {
-            //     @media (max-width: 575px) {
-            //         max-width: 100%;
-            //         font-size: 16px;
-            //     }
-
-            //     @media (max-width: 480px) {
-            //         height: 30px;
-            //         font-size: 15px;
-            //     }
-            // }
-        }
-
-        // .left {
-        //     @media (max-width: 768px) {
-        //         flex: 1;
-        //     }
-        // }
-
-        .right {
-            flex-shrink: 0;
-        }
-
-        .icon {
-            border: 1px solid $GreenColor;
+            .icon {
+                border: 1px solid $GreenColor;
+            }
         }
     }
 }
@@ -2137,7 +2078,10 @@ header {
             margin-left: auto;
             padding-right: 0;
         }
-        @media (max-width: 992px) {
+        @media (min-width: 992px) {
+            margin: 0;
+        }
+        @media (max-width: 768px) {
             padding: 0;
         }
     }
@@ -2201,11 +2145,6 @@ header {
             .text {
                 text-align: justify;
                 line-height: 30px;
-            }
-
-            .text {
-                text-align: justify;
-                line-height: 30px;
 
                 @media (max-width: 480px) {
                     line-height: 24px;
@@ -2231,7 +2170,6 @@ header {
 
         @media (max-width: 1366px) {
             max-width: 1000px;
-            padding-right: 100px;
         }
 
         @media (max-width: 1180px) {
@@ -2327,7 +2265,7 @@ header {
                     margin-bottom: 10px;
                 }
 
-                @media (max-width: 480px) {
+                @media (max-width: 360px) {
                     margin-bottom: 5px;
                 }
 
@@ -2367,7 +2305,7 @@ header {
                         font-size: 22px;
                     }
 
-                    @media (max-width: 480px) {
+                    @media (max-width: 360px) {
                         font-size: 18px;
                     }
                 }
@@ -2777,7 +2715,7 @@ footer {
             }
         }
 
-        .spearator {
+        .separator {
             width: 1px;
             height: 15px;
             background-color: $LightGrayColor;

@@ -764,7 +764,7 @@
                 <div class="bottomBox">
                     <div class="left">
                         <a href="#" class="sitemap">Site Map</a>
-                        <div class="spearator"></div>
+                        <div class="separator"></div>
                         <a href="#" class="policy">Privacy Policy</a>
                     </div>
                     <div class="right">
@@ -893,6 +893,7 @@
                         breakpoint: 1366,
                         settings: {
                             slidesToShow: 2,
+                            centerMode: true,
                         }
                     },
                     {
@@ -906,7 +907,6 @@
                     {
                         breakpoint: 993,
                         settings: {
-                            centerMode: true,
                             prevArrow: $('.teamArea .rightBox .prevArrow'),
                             nextArrow: $('.teamArea .rightBox .nextArrow'),
                         }
@@ -925,10 +925,11 @@
                         breakpoint: 576,
                         settings: {
                             centerMode: true,
+                            centerPadding: '80px',
                             slidesToShow: 1,
                             prevArrow: $('.teamArea .rightBox .prevArrow'),
                             nextArrow: $('.teamArea .rightBox .nextArrow'),
-                            variableWidth: true,
+                            // variableWidth: true,
                         }
                     },
                 ]

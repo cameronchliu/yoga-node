@@ -74,12 +74,12 @@ figure {
 }
 @media (max-width: 1536px) {
   .wrap {
-    padding: 0 50px;
+    padding: 0 40px;
   }
 }
 @media (max-width: 992px) {
   .wrap {
-    padding: 0 40px;
+    padding: 0 35px;
   }
 }
 @media (max-width: 768px) {
@@ -1037,20 +1037,12 @@ header .menuToggle:checked ~ .menuMask {
     padding: 0 0 20px;
   }
 }
-.aboutArea .wrap {
-  max-width: 1715px;
-  padding-right: 0;
-  margin-right: 0;
-  margin-left: auto;
-}
-@media (max-width: 1180px) {
+@media (min-width: 1181px) {
   .aboutArea .wrap {
-    padding: 0 40px;
-  }
-}
-@media (max-width: 768px) {
-  .aboutArea .wrap {
-    padding: 0 30px;
+    max-width: 1715px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 @media (max-width: 575px) {
@@ -1088,17 +1080,17 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 575px) {
   .aboutArea .aboutBox {
-    gap: 50px;
+    gap: 40px;
   }
 }
 @media (max-width: 480px) {
   .aboutArea .aboutBox {
-    gap: 40px;
+    gap: 30px;
   }
 }
 @media (max-width: 360px) {
   .aboutArea .aboutBox {
-    gap: 35px;
+    gap: 25px;
   }
 }
 .aboutArea .leftBox {
@@ -1461,7 +1453,7 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1180px) {
   .aboutArea .rightBox {
     padding-top: 70px;
-    max-width: 950px;
+    max-width: 1000px;
   }
 }
 @media (max-width: 768px) {
@@ -1473,11 +1465,6 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 575px) {
   .aboutArea .rightBox {
     max-width: 100%;
-  }
-}
-@media (max-width: 480px) {
-  .aboutArea .rightBox {
-    padding: 0;
   }
 }
 .aboutArea .rightBox .item {
@@ -1531,6 +1518,7 @@ header .menuToggle:checked ~ .menuMask {
   }
 }
 .aboutArea .aboutList .slick-list {
+  margin: 0 -22.5px;
   overflow: visible;
 }
 @media (max-width: 1667px) {
@@ -2273,13 +2261,15 @@ header .menuToggle:checked ~ .menuMask {
     padding: 30px 0 50px;
   }
 }
-.teamArea .wrap {
-  max-width: 1720px;
-  margin-right: 0;
-  margin-left: auto;
-  padding-right: 0;
+@media (min-width: 1180px) {
+  .teamArea .wrap {
+    max-width: 1720px;
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 0;
+  }
 }
-@media (max-width: 1180px) {
+@media (max-width: 992px) {
   .teamArea .wrap {
     padding: 0;
   }
@@ -2384,12 +2374,7 @@ header .menuToggle:checked ~ .menuMask {
 @media (max-width: 1180px) {
   .teamArea .rightBox {
     max-width: 100%;
-    padding: 0 30px;
-  }
-}
-@media (max-width: 992px) {
-  .teamArea .rightBox {
-    padding: 0;
+    padding-right: 0;
   }
 }
 .teamArea .rightBox .teamList .slick-list {
@@ -2401,6 +2386,16 @@ header .menuToggle:checked ~ .menuMask {
     margin: 0 -20px;
   }
 }
+@media (max-width: 992px) {
+  .teamArea .rightBox .teamList .slick-list {
+    margin: 0 -15px;
+  }
+}
+@media (max-width: 480px) {
+  .teamArea .rightBox .teamList .slick-list {
+    margin: 0 -10px;
+  }
+}
 .teamArea .rightBox .teamList .slick-slide {
   padding: 0 25px;
 }
@@ -2409,9 +2404,9 @@ header .menuToggle:checked ~ .menuMask {
     padding: 0 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .teamArea .rightBox .teamList .slick-slide {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 }
 @media (max-width: 575px) {
@@ -2421,6 +2416,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 480px) {
   .teamArea .rightBox .teamList .slick-slide {
+    padding: 0 10px;
     width: 250px;
   }
 }
@@ -2446,7 +2442,7 @@ header .menuToggle:checked ~ .menuMask {
   margin-bottom: 25px;
   overflow: hidden;
 }
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .teamArea .rightBox .Img {
     margin-bottom: 15px;
   }
@@ -2476,7 +2472,7 @@ header .menuToggle:checked ~ .menuMask {
   height: 30px;
   transition: background-color 0.3s ease-in-out;
 }
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .teamArea .rightBox .textBox .top .tag {
     width: 65px;
     height: 28px;
@@ -2504,7 +2500,7 @@ header .menuToggle:checked ~ .menuMask {
   color: #2d2d2d;
   font-size: 26px;
 }
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .teamArea .rightBox .textBox .top .name {
     font-size: 24px;
   }
@@ -2525,7 +2521,7 @@ header .menuToggle:checked ~ .menuMask {
   color: #2d2d2d;
   font-size: 16px;
 }
-@media (max-width: 996px) {
+@media (max-width: 992px) {
   .teamArea .rightBox .textBox .desc {
     font-size: 15px;
   }

@@ -67,11 +67,11 @@ $BrownColor: #b4a885;
     padding: 0 70px;
 
     @media (max-width: 1536px) {
-        padding: 0 50px;
+        padding: 0 40px;
     }
 
     @media (max-width: 992px) {
-        padding: 0 40px;
+        padding: 0 35px;
     }
 
     @media (max-width: 768px) {
@@ -982,17 +982,13 @@ header {
     @media (max-width: 480px) {
         padding: 0 0 20px;
     }
-    .wrap {
-        max-width: calc(1665px + 50px);
-        padding-right: 0;
-        margin-right: 0;
-        margin-left: auto;
 
-        @media (max-width: 1180px) {
-            padding: 0 40px;
-        }
-        @media (max-width: 768px) {
-            padding: 0 30px;
+    .wrap {
+        @media (min-width: 1181px) {
+            max-width: calc(1665px + 50px);
+            padding-right: 0;
+            margin-right: 0;
+            margin-left: auto;
         }
         @media (max-width: 575px) {
             padding: 0;
@@ -1019,13 +1015,13 @@ header {
             gap: 60px;
         }
         @media (max-width: 575px) {
-            gap: 50px;
-        }
-        @media (max-width: 480px) {
             gap: 40px;
         }
+        @media (max-width: 480px) {
+            gap: 30px;
+        }
         @media (max-width: 360px) {
-            gap: 35px;
+            gap: 25px;
         }
     }
 
@@ -1309,7 +1305,7 @@ header {
         }
         @media (max-width: 1180px) {
             padding-top: 70px;
-            max-width: 950px;
+            max-width: 1000px;
         }
         @media (max-width: 768px) {
             padding-top: 0;
@@ -1317,9 +1313,6 @@ header {
         }
         @media (max-width: 575px) {
             max-width: 100%;
-        }
-        @media (max-width: 480px) {
-            padding: 0;
         }
 
         .item {
@@ -1377,6 +1370,7 @@ header {
 
     .aboutList {
         .slick-list {
+            margin: 0 -22.5px;
             overflow: visible;
 
             @media (max-width: 1667px) {
@@ -1622,7 +1616,6 @@ header {
                     left: 2dvw;
                     top: 2dvw;
                 }
-
             }
 
             .icon {
@@ -2133,12 +2126,13 @@ header {
     }
 
     .wrap {
-        max-width: 1720px;
-        margin-right: 0;
-        margin-left: auto;
-        padding-right: 0;
-
-        @media (max-width: 1180px) {
+        @media (min-width: 1180px) {
+            max-width: 1720px;
+            margin-right: 0;
+            margin-left: auto;
+            padding-right: 0;
+        }
+        @media (max-width: 992px) {
             padding: 0;
         }
     }
@@ -2237,11 +2231,7 @@ header {
 
         @media (max-width: 1180px) {
             max-width: 100%;
-            padding: 0 30px;
-        }
-
-        @media (max-width: 992px) {
-            padding: 0;
+            padding-right: 0;
         }
 
         .teamList {
@@ -2252,6 +2242,12 @@ header {
                 @media (max-width: 1180px) {
                     margin: 0 -20px;
                 }
+                @media (max-width: 992px) {
+                    margin: 0 -15px;
+                }
+                @media (max-width: 480px) {
+                    margin: 0 -10px;
+                }
             }
 
             .slick-slide {
@@ -2261,8 +2257,8 @@ header {
                     padding: 0 20px;
                 }
 
-                @media (max-width: 768px) {
-                    padding: 0 10px;
+                @media (max-width: 992px) {
+                    padding: 0 15px;
                 }
 
                 @media (max-width: 575px) {
@@ -2270,6 +2266,7 @@ header {
                 }
 
                 @media (max-width: 480px) {
+                    padding: 0 10px;
                     width: 250px;
                 }
             }
@@ -2304,7 +2301,7 @@ header {
             margin-bottom: 25px;
             overflow: hidden;
 
-            @media (max-width: 996px) {
+            @media (max-width: 992px) {
                 margin-bottom: 15px;
             }
 
@@ -2334,7 +2331,7 @@ header {
                     height: 30px;
                     transition: background-color 0.3s ease-in-out;
 
-                    @media (max-width: 996px) {
+                    @media (max-width: 992px) {
                         width: 65px;
                         height: 28px;
                         font-size: 15px;
@@ -2357,7 +2354,7 @@ header {
                     transition: color 0.3s ease-in-out;
                     @include text($color: $DarkGrayColor, $size: 26px);
 
-                    @media (max-width: 996px) {
+                    @media (max-width: 992px) {
                         font-size: 24px;
                     }
 
@@ -2374,7 +2371,7 @@ header {
             .desc {
                 @include text($color: $DarkGrayColor);
 
-                @media (max-width: 996px) {
+                @media (max-width: 992px) {
                     font-size: 15px;
                 }
 

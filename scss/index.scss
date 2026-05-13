@@ -23,6 +23,12 @@ $BrownColor: #b4a885;
     font-size: $size;
 }
 
+@mixin maxLine($line) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 // --------- global style --------
 
 .wrap {
@@ -71,6 +77,7 @@ $BrownColor: #b4a885;
     .title {
         // margin-top: 25px;
         @include text($size: 45px);
+        @include maxLine(2);
 
         @media (max-width: 1180px) {
             font-size: 36px;
@@ -93,6 +100,8 @@ $BrownColor: #b4a885;
     .subtitle {
         margin-top: 25px;
         @include text($size: 24px);
+        @include maxLine(2);
+
 
         @media (max-width: 1180px) {
             margin-top: 20px;
@@ -1053,6 +1062,8 @@ header {
     .titleBox {
         width: 100%;
         max-width: 500px;
+        @include maxLine(5);
+
         @media (max-width: 1536px) {
             max-width: 460px;
         }
@@ -1756,6 +1767,7 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            // @include maxLine(2);
         }
     }
 
@@ -1796,6 +1808,7 @@ header {
             margin-bottom: 10px;
             transition: all 0.3s ease-in-out;
             @include text($color: $BlackColor, $size: 22px);
+            @include maxLine(1);
 
             @media (max-width: 768px) {
                 font-size: 20px;
@@ -2015,6 +2028,8 @@ header {
 
         .newsRightItem {
             .title {
+                margin-bottom: 5px;
+
                 @media (max-width: 1366px) {
                     font-size: 20px;
                 }
@@ -2180,6 +2195,7 @@ header {
 
         .titleBox {
             margin-bottom: 25px;
+            @include maxLine(7);
 
             @media (max-width: 480px) {
                 margin-bottom: 15px;

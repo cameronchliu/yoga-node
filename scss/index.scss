@@ -102,7 +102,6 @@ $BrownColor: #b4a885;
         @include text($size: 24px);
         @include maxLine(2);
 
-
         @media (max-width: 1180px) {
             margin-top: 20px;
             font-size: 22px;
@@ -745,6 +744,10 @@ header {
             }
         }
 
+        .text {
+            @include maxLine(2);
+        }
+
         .btn {
             font-family: $font-lato;
         }
@@ -1062,13 +1065,14 @@ header {
     .titleBox {
         width: 100%;
         max-width: 500px;
-        @include maxLine(5);
-
         @media (max-width: 1536px) {
             max-width: 460px;
         }
         @media (max-width: 1180px) {
             max-width: 100%;
+        }
+        .text {
+            @include maxLine(2);
         }
     }
 
@@ -1076,7 +1080,10 @@ header {
         margin-top: 25px;
 
         @media (max-width: 1180px) {
-            margin-top: 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 575px) {
+            margin-top: 0px;
         }
     }
 
@@ -1767,7 +1774,9 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            // @include maxLine(2);
+            .text {
+                @include maxLine(2);
+            }
         }
     }
 
@@ -1808,7 +1817,7 @@ header {
             margin-bottom: 10px;
             transition: all 0.3s ease-in-out;
             @include text($color: $BlackColor, $size: 22px);
-            @include maxLine(1);
+            @include maxLine(2);
 
             @media (max-width: 768px) {
                 font-size: 20px;
@@ -1960,6 +1969,7 @@ header {
 
             .desc {
                 @include text($color: $MidGrayColor);
+                @include maxLine(2);
 
                 @media (max-width: 768px) {
                     font-size: 15px;
@@ -2195,7 +2205,6 @@ header {
 
         .titleBox {
             margin-bottom: 25px;
-            @include maxLine(7);
 
             @media (max-width: 480px) {
                 margin-bottom: 15px;
@@ -2204,6 +2213,7 @@ header {
             .text {
                 text-align: justify;
                 line-height: 30px;
+                @include maxLine(5);
 
                 @media (max-width: 480px) {
                     line-height: 24px;
@@ -2372,6 +2382,7 @@ header {
 
             .desc {
                 @include text($color: $DarkGrayColor);
+                @include maxLine(2);
 
                 @media (max-width: 992px) {
                     font-size: 15px;

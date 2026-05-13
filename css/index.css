@@ -784,6 +784,12 @@ header .menuToggle:checked ~ .menuMask {
     font-size: 28px;
   }
 }
+.bannerArea .titleBox .text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .bannerArea .titleBox .btn {
   font-family: "Lato";
 }
@@ -1137,10 +1143,6 @@ header .menuToggle:checked ~ .menuMask {
 .aboutArea .titleBox {
   width: 100%;
   max-width: 500px;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 @media (max-width: 1536px) {
   .aboutArea .titleBox {
@@ -1152,12 +1154,23 @@ header .menuToggle:checked ~ .menuMask {
     max-width: 100%;
   }
 }
+.aboutArea .titleBox .text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .aboutArea .actionBox {
   margin-top: 25px;
 }
 @media (max-width: 1180px) {
   .aboutArea .actionBox {
-    margin-top: 0;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutArea .actionBox {
+    margin-top: 0px;
   }
 }
 .aboutArea .featureBox {
@@ -1938,6 +1951,12 @@ header .menuToggle:checked ~ .menuMask {
   flex-direction: column;
   align-items: center;
 }
+.newsArea .topBox .titleBox .text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .newsArea .bottomBox {
   display: flex;
   gap: 55px;
@@ -1982,7 +2001,7 @@ header .menuToggle:checked ~ .menuMask {
   color: #000;
   font-size: 22px;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -2139,6 +2158,10 @@ header .menuToggle:checked ~ .menuMask {
   font-weight: 700;
   color: #666;
   font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .newsArea .leftBox .Txt .desc {
@@ -2365,10 +2388,6 @@ header .menuToggle:checked ~ .menuMask {
 }
 .teamArea .leftBox .titleBox {
   margin-bottom: 25px;
-  display: -webkit-box;
-  -webkit-line-clamp: 7;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 @media (max-width: 480px) {
   .teamArea .leftBox .titleBox {
@@ -2378,6 +2397,10 @@ header .menuToggle:checked ~ .menuMask {
 .teamArea .leftBox .titleBox .text {
   text-align: justify;
   line-height: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .teamArea .leftBox .titleBox .text {
@@ -2551,6 +2574,10 @@ header .menuToggle:checked ~ .menuMask {
   font-weight: 700;
   color: #2d2d2d;
   font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (max-width: 992px) {
   .teamArea .rightBox .textBox .desc {

@@ -279,6 +279,14 @@ figure {
   background-color: #2c4109;
   transition: all 0.3s ease-in-out;
 }
+.arrowBox .arrow.prevArrow {
+  -webkit-mask: url("../svg/prevArrow.svg") center/contain no-repeat;
+  mask: url("../svg/prevArrow.svg") center/contain no-repeat;
+}
+.arrowBox .arrow.nextArrow {
+  -webkit-mask: url("../svg/nextArrow.svg") center/contain no-repeat;
+  mask: url("../svg/nextArrow.svg") center/contain no-repeat;
+}
 .arrowBox .arrow:hover {
   background-color: #b4a885;
 }
@@ -287,14 +295,6 @@ figure {
 }
 .arrowBox .arrow:hover.nextArrow {
   transform: translateX(3px);
-}
-.arrowBox .arrow.prevArrow {
-  -webkit-mask: url("../svg/prevArrow.svg") center/contain no-repeat;
-          mask: url("../svg/prevArrow.svg") center/contain no-repeat;
-}
-.arrowBox .arrow.nextArrow {
-  -webkit-mask: url("../svg/nextArrow.svg") center/contain no-repeat;
-          mask: url("../svg/nextArrow.svg") center/contain no-repeat;
 }
 .arrowBox .arrowSeparate {
   display: inline-block;

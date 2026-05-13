@@ -234,6 +234,16 @@ $BrownColor: #b4a885;
         background-color: $GreenColor;
         transition: all 0.3s ease-in-out;
 
+        &.prevArrow {
+            -webkit-mask: url("../svg/prevArrow.svg") center / contain no-repeat;
+            mask: url("../svg/prevArrow.svg") center / contain no-repeat;
+        }
+
+        &.nextArrow {
+            -webkit-mask: url("../svg/nextArrow.svg") center / contain no-repeat;
+            mask: url("../svg/nextArrow.svg") center / contain no-repeat;
+        }
+
         &:hover {
             background-color: $BrownColor;
 
@@ -244,14 +254,6 @@ $BrownColor: #b4a885;
             &.nextArrow {
                 transform: translateX(3px);
             }
-        }
-
-        &.prevArrow {
-            mask: url("../svg/prevArrow.svg") center / contain no-repeat;
-        }
-
-        &.nextArrow {
-            mask: url("../svg/nextArrow.svg") center / contain no-repeat;
         }
     }
 

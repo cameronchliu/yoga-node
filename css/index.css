@@ -2245,11 +2245,6 @@ header .menuToggle:checked ~ .menuMask {
     padding-right: 0;
   }
 }
-@media (min-width: 992px) {
-  .teamArea .wrap {
-    margin: 0;
-  }
-}
 @media (max-width: 768px) {
   .teamArea .wrap {
     padding: 0;

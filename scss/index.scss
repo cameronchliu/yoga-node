@@ -437,6 +437,8 @@ header {
 
     // ---------- burger 🍔 ----------
 
+    
+
     .hamburger {
         display: none;
 
@@ -2075,13 +2077,10 @@ header {
 
     .wrap {
         @media (min-width: 1180px) {
-            max-width: 1720px;
-            margin-right: 0;
-            margin-left: auto;
-            padding-right: 0;
-        }
-        @media (min-width: 992px) {
-            margin: 0;
+        max-width: 1720px;
+        margin-right: 0;
+        margin-left: auto;
+        padding-right: 0;
         }
         @media (max-width: 768px) {
             padding: 0;

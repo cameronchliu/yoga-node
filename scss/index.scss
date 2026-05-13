@@ -155,9 +155,6 @@ $BrownColor: #b4a885;
         @media (max-width: 768px) {
             margin: 10px;
         }
-        @media (max-width: 480px) {
-            margin: 20px;
-        }
     }
 }
 
@@ -172,8 +169,6 @@ $BrownColor: #b4a885;
 }
 
 .btnBox {
-    margin-top: 25px;
-
     @media (max-width: 768px) {
         margin: 10px;
     }
@@ -437,8 +432,6 @@ header {
 
     // ---------- burger 🍔 ----------
 
-    
-
     .hamburger {
         display: none;
 
@@ -484,11 +477,11 @@ header {
             position: absolute;
             top: 100%;
             left: 0;
-        
+
             width: 100%;
             height: auto;
             padding-top: 50px;
-            
+
             justify-content: center;
 
             background-color: $whiteColor;
@@ -514,12 +507,12 @@ header {
     nav {
         @media (max-width: 1180px) {
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     }
 
     .menuBox {
-        height: auto;
+        height: 100%;
         display: flex;
         gap: 15px;
         margin: 0 -10px;
@@ -537,7 +530,7 @@ header {
         }
 
         .menuItem {
-            height: auto;
+            height: 100%;
 
             &:hover a:not(.btn) {
                 color: $BrownColor;
@@ -550,7 +543,7 @@ header {
             a {
                 display: flex;
                 align-items: center;
-                height: auto;
+                height: 100%;
                 padding: 0 10px; //增加使用者體驗
                 @include text;
 
@@ -745,6 +738,13 @@ header {
 
         .btn {
             font-family: $font-lato;
+        }
+    }
+
+    .btnBox {
+        margin-top: 25px;
+        @media (max-width: 480px) {
+            margin: 10px 0;
         }
     }
 
@@ -946,7 +946,7 @@ header {
 // --------- about ---------
 
 .aboutArea {
-    padding: 90px 0 150px;
+    padding: 70px 0 150px;
     overflow: hidden;
 
     @media (max-width: 1180px) {
@@ -1059,10 +1059,13 @@ header {
         @media (max-width: 1180px) {
             max-width: 100%;
         }
+    }
 
-        .btn {
-            margin: 0;
-            margin-top: 10px;
+    .actionBox {
+        margin-top: 25px;
+
+        @media (max-width: 1180px) {
+            margin-top: 0;
         }
     }
 
@@ -1168,7 +1171,7 @@ header {
     .numberBox {
         width: 100%;
         display: flex;
-        gap: 70px;
+        gap: 75px;
         color: $BrownColor;
 
         @media (max-width: 1536px) {
@@ -2078,10 +2081,10 @@ header {
 
     .wrap {
         @media (min-width: 1180px) {
-        max-width: 1720px;
-        margin-right: 0;
-        margin-left: auto;
-        padding-right: 0;
+            max-width: 1720px;
+            margin-right: 0;
+            margin-left: auto;
+            padding-right: 0;
         }
         @media (max-width: 768px) {
             padding: 0;

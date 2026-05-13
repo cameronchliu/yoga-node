@@ -519,8 +519,8 @@ header .right {
 }
 @media (max-width: 1180px) {
   header .right {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 58px;
     left: 0;
     width: 100%;
     height: auto;

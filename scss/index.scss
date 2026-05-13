@@ -482,8 +482,8 @@ header {
         gap: 30px;
 
         @media (max-width: 1180px) {
-            position: absolute;
-            top: 100%;
+            position: fixed;
+            top: 58px;
             left: 0;
 
             width: 100%;

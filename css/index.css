@@ -2089,7 +2089,7 @@ header .menuToggle:checked ~ .menuMask {
 }
 @media (max-width: 480px) {
   .newsArea .leftBox .Img {
-    height: 180px;
+    height: 200px;
   }
 }
 @media (max-width: 360px) {
